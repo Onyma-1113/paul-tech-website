@@ -159,7 +159,7 @@ async function signOut() {
       <h1 class="text-8xl w-3/4 font-bold text-left">Frequently Asked Questions</h1>
     </div>
     <!-- section 6 service FAQ -->
-    <div class="w-full h-screen">
+    <div class="w-full ">
       <Accordion :activeIndex="0">
         <AccordionTab header="Header I" class="accordion-title">
           <p class="m-0">
@@ -230,7 +230,7 @@ async function signOut() {
   </div>
   <!-- footer -->
   <div class="w-screen h-one-quart-vh bg-gray-400 flex justify-between px-20">
-    <div>
+    <div class="h-full flex flex-col justify-around">
       <h3>
         Logo
       </h3>
@@ -238,8 +238,8 @@ async function signOut() {
 
     </div>
 
-    <div>
-      <div>
+    <div class="h-full flex flex-col justify-around">
+      <div class="flex justify-around flex-wrap gap-10">
         <li>
           <NuxtLink to="/about">About</NuxtLink>
         </li>
@@ -264,6 +264,9 @@ async function signOut() {
 
 </template>
 <style>
+li{
+    list-style-type: none;
+}
 .p-accordion {
 
 
