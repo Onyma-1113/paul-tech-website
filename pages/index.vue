@@ -6,15 +6,7 @@ definePageMeta({
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 
-useHead({
-  head: {
-    // Add Typed.js CDN link
-    script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js', body: true }
-      // You can add more script CDN links as needed
-    ],
-  },
-})
+
 
 
 // create client connexion with supabse
@@ -42,13 +34,33 @@ async function signOut() {
   }
 
 }
-// var typed = new Typed('#element', {
-//       strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-//       typeSpeed: 50,
-//     });
+import { ref, onMounted } from 'vue';
+import Typed from "typed.js";
+const typedRef = ref(null);
+
+const clickToUseTyped = () => {
+  if (typedRef.value) {
+    new Typed(typedRef.value, {
+      strings: ["Observabilité","Infonuagique","Intelligence artificielle","Digitalisation de processus"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop:true,
+      showCursor:false,
+    });
+  }
+};
+
+onMounted(() => {
+  clickToUseTyped()
+  typedRef.value = ref.typedRef;
+});
+
+
 
 </script>
+
 <template>
+ 
   <!-- <h1>Hadsddsha</h1>
     <h2>contries database</h2> -->
   <!-- <ul>
@@ -66,13 +78,15 @@ async function signOut() {
 
     <button @click="signOut" class="border-solid border-2 border-sky-500">Logout</button>
     <span>{{errorMsgSignOut}}</span> -->
-  <div class="w-screen mx-auto px-32 ">
+  <!-- <div class="w-screen mx-auto px-32 "> -->
 
     <!-- home section 1 -->
     <div class="w-full h-container flex flex-col justify-center gap-20 items-start">
       <div>
         <h1 id="element" class="text-8xl font-bold">Welcome at Paultech we are specialize at : </h1>
-        <h1 class="text-8xl font-bold text-sky-400">Observabilite</h1>
+       
+        <h1 class="text-8xl font-bold text-sky-400 h-12" ref="typedRef"></h1>
+        
       </div>
 
       <span class="text-3xl">[Since the date]</span>
@@ -120,16 +134,18 @@ async function signOut() {
       <h1 class="text-8xl w-3/4 font-bold text-left">Discover Our Story: Unveiling the Heart of Our Mission</h1>
     </div>
     <!-- section 2 mission -->
-    <div class="w-full h-screen flex flex-col justify-between ">
-      <h3 class="text-5xl h-2/4"><span class="text-8xl text-sky-400">Paultech</span> Lorem ipsum dolor sit amet,
+    
+    <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl ">
+      <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white"><span class="text-6xl text-sky-400 ">Paultech</span> Lorem ipsum dolor sit amet,
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris .</h3>
-      <div class="mission-img">
-
-      </div>
+      <div class="mission-img w-full flex justify-center items-center px-4 py-4">
+<img src="/assets/img/20170613S1_About-Page_Studio-white-board_024_V2.jpg" alt="" srcset="" class="w-5/6 rounded-3xl">
+      
     </div>
+  </div>
     <!-- title of the 3 section -->
     <div class="w-full h-screen flex items-center justify-end">
       <h1 class="text-8xl w-3/4 font-bold text-right">Explore our services</h1>
@@ -137,13 +153,100 @@ async function signOut() {
     <!-- section 3 service (no layout choose ) -->
     <div class="w-full h-screen">
 
+
     </div>
     <!-- title of the 4 section reason to choose us -->
     <div class="w-full h-screen flex items-center justify-start">
       <h1 class="text-8xl w-3/4 font-bold text-left">Why Choose Us: Our Commitment to Excellence and Your Success</h1>
     </div>
     <!-- section 4  -->
-    <div class="w-full h-screen">
+    <div class="w-full flex flex-col gap-64">
+      <!-- container du text et img -->
+      <div class="w-full h-screen flex ">
+        <!-- text container -->
+        <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 ">
+          <h1 class="text-5xl font-bold" >1. Lorem impus lorsn</h1>
+          <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+        <!-- img container -->
+        <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+          <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
+        </div>
+
+
+      </div>
+      <!-- seconde -->
+        <!-- container du text et img -->
+        <div class="w-full h-screen flex">
+       
+        
+        <!-- img container -->
+        <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+          <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
+        </div>
+         <!-- text container -->
+        <div class="w-1/2 h-full flex flex-col justify-end gap-20 pl-32">
+          <h1 class="text-5xl font-bold text-left" >2. Lorem impus lorsn</h1>
+          <p class="text-3xl leading-relaxed text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+
+
+      </div>
+      <!-- third -->
+       <!-- container du text et img -->
+       <div class="w-full h-screen flex ">
+        <!-- text container -->
+        <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 ">
+          <h1 class="text-5xl font-bold" >3. Lorem impus lorsn</h1>
+          <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+        <!-- img container -->
+        <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+          <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
+        </div>
+
+
+      </div>
+
 
     </div>
     <!-- title of the 5 section -->
@@ -216,57 +319,21 @@ async function signOut() {
     </div>
 
     <!-- section 7 contact redirection -->
-    <div class="w-full h-fifty-vh flex flex-col items-center justify-around">
-      <h1 class="text-8xl w-3/4 font-bold text-center">Are you ready to join us ?</h1>
-      <div
-        class="btn-get-in-touch h-14 w-56 bg-black rounded-3xl flex justify-center items-center text-white text-2xl cursor-pointer">
-        <p>Get in touch</p>
-      </div>
-    </div>
+    
 
 
 
 
-  </div>
-  <!-- footer -->
-  <div class="w-screen h-one-quart-vh bg-gray-400 flex justify-between px-20">
-    <div class="h-full flex flex-col justify-around">
-      <h3>
-        Logo
-      </h3>
-      <span>Paultech © 2023, ALL RIGHTS RESERVE</span>
+  <!-- </div> -->
 
-    </div>
-
-    <div class="h-full flex flex-col justify-around">
-      <div class="flex justify-around flex-wrap gap-10">
-        <li>
-          <NuxtLink to="/about">About</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/services">Services</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/caseStudies">Case Studies</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/caseStudies">Contact</NuxtLink>
-        </li>
-      </div>
-      <div>
-        reseaux sociaux
-      </div>
-
-    </div>
-
-  </div>
 
 
 </template>
 <style>
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
+
 .p-accordion {
 
 
@@ -314,11 +381,11 @@ li{
   color: black
 }
 
-.mission-img {
+/* .mission-img {
   height: 70%;
   width: 100%;
-  background-color: black
-}
+  
+} */
 
 svg {
   color: rgb(146, 145, 145);

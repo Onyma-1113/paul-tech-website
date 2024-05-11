@@ -4,7 +4,7 @@
         <div>
             <div class="w-screen mx-auto px-32 ">
         <slot/>
-        <ContactRedirection/>
+       
         </div>
         <Footer/>
 

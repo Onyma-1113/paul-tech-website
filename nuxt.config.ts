@@ -7,7 +7,9 @@ export default defineNuxtConfig({
   //   key: process.env.SUPABASE_KEY
   // }
 
-  
+  plugins: [
+    { src: '@/plugins/vue-typed-js.js', mode: 'client' }
+  ],
  
   supabase:{
     url: process.env.SUPABASE_URL,
