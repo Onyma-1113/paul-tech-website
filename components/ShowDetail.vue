@@ -1,6 +1,6 @@
 <template>
 <div class="">
-    <div class="h-fifty-vh w-full flex justify-between bg-gray-400 rounded-3xl px-10">
+    <div class="h-three-quart-vh w-full flex justify-between bg-gray-400 rounded-3xl px-10">
         <div class="h-full w-1/2 flex justify-start items-center">
             <!-- ici mettre en props pour garder  nimporte quel objet -->
             <h1 class="text-5xl font-bold">Our values</h1>

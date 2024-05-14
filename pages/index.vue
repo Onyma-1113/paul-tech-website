@@ -81,17 +81,17 @@ onMounted(() => {
   <!-- <div class="w-screen mx-auto px-32 "> -->
 
     <!-- home section 1 -->
-    <div class="w-full h-container flex flex-col justify-center gap-20 items-start">
+    <div class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10">
       <div>
-        <h1 id="element" class="text-8xl font-bold">Welcome at Paultech we are specialize at : </h1>
+        <h1 id="element" class="text-8xl max-2xl:text-5xl font-bold">Welcome at Paultech we are specialize at : </h1>
        
-        <h1 class="text-8xl font-bold text-sky-400 h-12" ref="typedRef"></h1>
+        <h1 class="text-8xl max-2xl:text-5xl font-bold text-sky-400 h-12" ref="typedRef"></h1>
         
       </div>
 
-      <span class="text-3xl">[Since the date]</span>
+      <span class="text-3xl max-2xl:text-2xl">[Since the date]</span>
       <div
-        class="btn-get-in-touch h-14 w-56 bg-black rounded-3xl flex justify-center items-center text-white text-2xl cursor-pointer">
+        class="btn-get-in-touch h-14 w-56 bg-black rounded-3xl flex justify-center items-center text-white text-2xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
         <p>Get in touch</p>
       </div>
 
@@ -330,6 +330,11 @@ onMounted(() => {
 
 </template>
 <style>
+body,html{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
 li {
   list-style-type: none;
 }
@@ -360,6 +365,9 @@ li {
   height: 90vh;
 }
 
+.h-eighy-vh{
+    height: 80vh;
+}
 .h-fifty-vh {
   height: 50vh;
 }
