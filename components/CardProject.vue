@@ -1,6 +1,6 @@
 <template>
    
-    <div class="w-5/12 h-fifty-vh   flex flex-col gap-5 mt-10" :class="showDetail">
+    <div class="w-5/12 h-fifty-vh   flex flex-col gap-5 mt-10 max-xl:w-10/12" :class="showDetail">
 
     <NuxtLink :to="`/caseStudies/${1}`">
     <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-full h-4/5">

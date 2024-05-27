@@ -35,8 +35,10 @@ async function signOut() {
 
 }
 import { ref, onMounted } from 'vue';
+import { gsap } from 'gsap'
 import Typed from "typed.js";
 const typedRef = ref(null);
+
 
 const clickToUseTyped = () => {
   if (typedRef.value) {
@@ -50,17 +52,80 @@ const clickToUseTyped = () => {
   }
 };
 
+// animation 
+
+
+const missionAnimation = () => {
+  let tl = gsap.timeline()
+  tl.to('.mission-section',
+    {
+      opacity: 1,
+
+      duration: 1,
+
+
+    })
+
+}
+const serviceAnimation = () => {
+  let tl = gsap.timeline()
+  tl.to('.card-service',
+    {
+      opacity: 1,
+      y: -100,
+      duration: 1,
+      stagger: 0.5
+
+    })
+  tl.to('.card-service-2',
+    {
+      opacity: 1,
+      y: -100,
+      duration: 1,
+      stagger: 0.5
+
+    })
+
+
+}
+const reasonAnimation = () =>{
+  let tl = gsap.timeline()
+ 
+  tl.to('.reason-img',
+    {
+      opacity: 1,
+      duration: 1,
+      // stagger: 0.5
+
+    })
+    tl.to('.reason-text',
+    {
+      opacity: 1,
+      y:-100,
+      duration: 1,
+      // stagger: 0.5
+
+    })
+}
+
 onMounted(() => {
   clickToUseTyped()
   typedRef.value = ref.typedRef;
+  //animation
+  missionAnimation()
+  serviceAnimation()
+  reasonAnimation()
 });
+
+
+
 
 
 
 </script>
 
 <template>
-  
+
 
   <!-- <h1>Hadsddsha</h1>
     <h2>contries database</h2> -->
@@ -138,7 +203,7 @@ onMounted(() => {
   </div>
   <!-- section 2 mission -->
 
-  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl ">
+  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl mission-section opacity-0">
     <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white"><span class="text-6xl text-sky-400 ">Paultech</span> Lorem
       ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -152,39 +217,52 @@ onMounted(() => {
     </div>
   </div>
   <!-- title of the 3 section -->
-  <div class="w-full h-screen flex items-center justify-end">
+  <SubTitle title="Explore our services" justify="justify-end" align="text-right" />
+  <!-- <div class="w-full h-screen flex items-center justify-end">
     <h1 class="text-8xl w-3/4 font-bold text-right">Explore our services</h1>
-  </div>
+  </div> -->
   <!-- section 3 service (no layout choose ) -->
   <div class="w-full min-h-screen">
     <div class="w-full  mx-auto">
 
       <div class="-mx-3 lg:flex items-center">
         <div class="px-3 lg:w-1/3">
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          <div class="card-service opacity-0 top-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          </div>
+          <div class="card-service-2 opacity-0 top-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
+          </div>
 
         </div>
 
         <div class="px-3 lg:w-1/3">
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          <div class="card-service opacity-0 top-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          </div>
+          <div class="card-service-2 opacity-0 top-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
+          </div>
         </div>
         <div class="px-3 lg:w-1/3">
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          <div class="card-service opacity-0 top-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
-          <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
+          </div>
+          <div class="card-service-2 opacity-0 htop-100">
+            <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
                 architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti." />
+          </div>
 
 
         </div>
@@ -195,15 +273,16 @@ onMounted(() => {
 
   </div>
   <!-- title of the 4 section reason to choose us -->
-  <div class="w-full h-screen flex items-center justify-start">
-    <h1 class="text-8xl w-3/4 font-bold text-left">Why Choose Us: Our Commitment to Excellence and Your Success</h1>
-  </div>
+
+  <SubTitle title="Why Choose Us: Our Commitment to Excellence and Your Success" justify="justify-start"
+    align="text-left" />
+
   <!-- section 4  -->
   <div class="w-full flex flex-col gap-64">
     <!-- container du text et img -->
     <div class="w-full h-screen flex ">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 ">
+      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 reason-text opacity-0 top-100">
         <h1 class="text-5xl font-bold">1. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
@@ -222,7 +301,7 @@ onMounted(() => {
         </p>
       </div>
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
 
@@ -234,11 +313,11 @@ onMounted(() => {
 
 
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20 pl-32">
+      <div class="w-1/2 h-full flex flex-col justify-end gap-20 pl-32 reason-text opacity-0 top-100">
         <h1 class="text-5xl font-bold text-left">2. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
@@ -263,7 +342,7 @@ onMounted(() => {
     <!-- container du text et img -->
     <div class="w-full h-screen flex ">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 ">
+      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 reason-text opacity-0 top-100 ">
         <h1 class="text-5xl font-bold">3. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
@@ -282,7 +361,7 @@ onMounted(() => {
         </p>
       </div>
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
 
@@ -292,9 +371,8 @@ onMounted(() => {
 
   </div>
   <!-- title of the 5 section -->
-  <div class="w-full h-screen flex items-center justify-end">
-    <h1 class="text-8xl w-3/4 font-bold text-right">All the compagnies that trusted us</h1>
-  </div>
+
+  <SubTitle title="All the compagnies that trusted us" justify="justify-end" align="text-right" />
   <!-- section 5 service testomonial  -->
   <div class="w-full min-h-screen">
     <div class="w-full  mx-auto">
@@ -320,12 +398,14 @@ onMounted(() => {
 
   </div>
   <!-- title of the 6 section FAQ -->
-  <div class="w-full h-screen flex items-center justify-start">
-    <h1 class="text-8xl w-3/4 font-bold text-left">Frequently Asked Questions</h1>
-  </div>
+
+  <SubTitle title="Frequently Asked Questions" justify="justify-start" align="text-left" />
+
+
   <!-- section 6 service FAQ -->
   <div class="w-full ">
-    <Accordion :activeIndex="0">
+    <!-- <Accordion :activeIndex="0"> -->
+    <Accordion>
       <AccordionTab header="Header I" class="accordion-title">
         <p class="m-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -428,15 +508,23 @@ li {
 .h-container {
   height: 90vh;
 }
+
 .min-h-container {
   min-height: 90vh;
 }
+
 .h-eighy-vh {
   height: 80vh;
 }
+
+.h-thirdy-vh {
+  height: 30vh;
+}
+
 .h-fourty-vh {
   height: 45vh;
 }
+
 .h-fifty-vh {
   height: 50vh;
 }
@@ -444,8 +532,9 @@ li {
 .h-three-quart-vh {
   height: 75vh;
 }
-.min-h-three-quart-vh{
-min-height:75vh;
+
+.min-h-three-quart-vh {
+  min-height: 75vh;
 }
 
 .h-one-quart-vh {

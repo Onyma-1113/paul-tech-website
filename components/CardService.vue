@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full h-fourty-vh  mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+        class="w-full h-fourty-vh  mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6 ">
         
         <div class="w-full flex mb-4 items-center">
             <div class="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
@@ -27,4 +27,15 @@ defineProps({
   title: String,
   description: String
 })
+import {gsap} from "gsap"
+let tl = gsap.timeline()
+
+
+onMounted(() => {
+   
+
+
+  })
+
+
 </script>

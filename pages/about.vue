@@ -12,7 +12,9 @@
 
       <div class="-mx-3 lg:flex items-center justify-center ">
         <div class="px-3 lg:w-1/3 mb-64">
-          <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            <div class="look opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>
           
         </div>
         
@@ -21,16 +23,28 @@
       
       <div class="-mx-3 lg:flex items-center">
         <div class="px-3 lg:w-1/3">
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            <div class="look opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>
+            <div class="look-2 opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>
         </div>
         <div class="px-3 lg:w-1/3">
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            <div class="look opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>           
+            <div class="look-2 opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>
         </div>
         <div class="px-3 lg:w-1/3">
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
-            <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            <div class="look opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>            
+            <div class="look-2 opacity-100">
+                <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
+            </div>
         </div>
     </div>
     </div>
@@ -47,4 +61,30 @@
 definePageMeta({
     layout: 'mainlayout'
 })
+
+import {gsap} from 'gsap'
+let tl = gsap.timeline()
+
+onMounted(() => {
+    
+    tl.from('.look', 
+    { 
+      opacity:0,
+      y:100,
+      duration: 1,
+      stagger:0.5
+      
+      
+    })
+    tl.from('.look-2', 
+    { 
+      opacity:0,
+      y:100,
+      duration: 1,
+      stagger:0.5
+      
+      
+    })
+ 
+  })
 </script>

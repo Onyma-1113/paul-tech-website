@@ -1,14 +1,14 @@
 <template>
 <div class="">
-    <div class="h-three-quart-vh w-full flex justify-between bg-gray-400 rounded-3xl px-10 max-lg:flex-col max-lg:justify-center max-lg:gap-20 max-lg:min-h-container max-lg:py-20 max-lg:min-h-three-quart-vh">
-        <div class="h-full w-1/2 flex justify-start items-center max-lg:w-full max-lg:justify-center">
+    <div class=" w-full flex justify-between bg-gray-400 rounded-3xl px-10 max-lg:flex-col max-lg:justify-center max-lg:gap-20  max-lg:py-20 h-screen max-lg:h-auto show-detail opacity-0" >
+        <div class="h-full w-1/2 flex justify-start items-center max-lg:w-full max-lg:justify-center max-lg:h-auto">
             <!-- ici mettre en props pour garder  nimporte quel objet -->
             <h1 class="text-5xl font-bold">{{ title }}</h1>
         </div>
         <div class="h-full w-1/2 flex items-center text-2xl max-lg:w-full max-lg:justify-center">
              <!-- ici mettre en props pour garder  nimporte quel objet -->
            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-           <p>  <span class="font-bold">Analytics, Performance Measurement and Optimization</span> <br>
+           <p class="">  <span class="font-bold">Analytics, Performance Measurement and Optimization</span> <br>
 
             &bull; Analytics audit (Google Analytics and others)<br>
 &bull; Implementation of measurement tools<br>
@@ -47,4 +47,19 @@ defineProps({
   title: String,
   description: String
 })
+import {gsap} from 'gsap'
+let tl = gsap.timeline()
+
+onMounted(() => {
+    
+    tl.to('.show-detail', 
+    { 
+      opacity:1,
+      
+      duration: 1,
+      
+      
+    })
+ 
+  })
 </script>
