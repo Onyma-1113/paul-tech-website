@@ -6,6 +6,8 @@ definePageMeta({
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 
+// activation de lanimation 
+// sessionStorage.setItem('transition',true)
 
 
 
@@ -88,9 +90,9 @@ const serviceAnimation = () => {
 
 
 }
-const reasonAnimation = () =>{
+const reasonAnimation = () => {
   let tl = gsap.timeline()
- 
+
   tl.to('.reason-img',
     {
       opacity: 1,
@@ -98,14 +100,28 @@ const reasonAnimation = () =>{
       // stagger: 0.5
 
     })
-    tl.to('.reason-text',
+  tl.to('.reason-text',
     {
       opacity: 1,
-      y:-100,
+      y: -100,
       duration: 1,
       // stagger: 0.5
 
     })
+}
+//transition
+
+const homeTransitionAnimation = () =>{
+  let tl = gsap.timeline()
+    setTimeout(() => {
+        tl.to('.transition-wait',{
+            duration:0.5,
+            opacity:1
+        })
+        
+    }, 1000);
+    
+   
 }
 
 onMounted(() => {
@@ -115,6 +131,8 @@ onMounted(() => {
   missionAnimation()
   serviceAnimation()
   reasonAnimation()
+  // transitionAnimation()
+  homeTransitionAnimation()
 });
 
 
@@ -147,7 +165,47 @@ onMounted(() => {
   <!-- <div class="w-screen mx-auto px-32 "> -->
 
   <!-- home section 1 -->
-  <div class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center">
+  <!-- <div class="h-screen w-screen fixed top-0 left-0 z">
+    <img src="../assets/img/duplo24.jpg" alt="">
+  </div> -->
+  <!-- <div class="h-screen w-screen fixed top-0 left-0 transition z-50 flex" :class="[!isPlay ? hiddenTransition  : '', 'flex']">
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="transition-text ">
+      <div class="text-8xl flex">
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span">H</h1>
+        </div>
+
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span ">O</h1>
+        </div>
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span ">M</h1>
+        </div>
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span">E</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div> -->
+  <!-- <TransitionComponent title="Home"/> -->
+  <div class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0">
     <div>
       <h1 id="element" class="text-8xl  font-bold  max-sm:text-center max-2xl:text-5xl max-md:text-4xl ">Welcome at
         Paultech we are specialize at : </h1>
@@ -165,7 +223,7 @@ onMounted(() => {
 
   </div>
   <!-- carrousel -->
-  <div class="w-full text-3xl font-bold flex flex-col items-center justify-start">
+  <div class="w-full text-3xl font-bold flex flex-col items-center justify-start transition-wait opacity-0">
     <h2 class="">Trust by those compagnies</h2>
     <div class="w-full h-28  mt-4 flex justify-around items-center">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 702 200" fill="none" class="hidden md:block h-7">
@@ -198,13 +256,12 @@ onMounted(() => {
 
   </div>
   <!-- title of the 2 section -->
-  <div class="w-full h-screen flex items-center justify-start">
-    <h1 class="text-8xl w-3/4 font-bold text-left">Discover Our Story: Unveiling the Heart of Our Mission</h1>
-  </div>
+
+  <SubTitle title="Discover Our Story: Unveiling the Heart of Our Mission" justify="justify-start" align="text-left" />
   <!-- section 2 mission -->
 
   <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl mission-section opacity-0">
-    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white"><span class="text-6xl text-sky-400 ">Paultech</span> Lorem
+    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl"><span class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
       ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -280,11 +337,11 @@ onMounted(() => {
   <!-- section 4  -->
   <div class="w-full flex flex-col gap-64">
     <!-- container du text et img -->
-    <div class="w-full h-screen flex ">
+    <div class="w-full h-screen flex max-lg:flex-col  max-lg:h-auto ">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 reason-text opacity-0 top-100">
-        <h1 class="text-5xl font-bold">1. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">1. Lorem impus lorsn</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -301,7 +358,7 @@ onMounted(() => {
         </p>
       </div>
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0 max-lg:hidden">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
 
@@ -309,18 +366,18 @@ onMounted(() => {
     </div>
     <!-- seconde -->
     <!-- container du text et img -->
-    <div class="w-full h-screen flex">
+    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto ">
 
 
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0 max-lg:hidden">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20 pl-32 reason-text opacity-0 top-100">
-        <h1 class="text-5xl font-bold text-left">2. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed text-left ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
+      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">2. Lorem impus lorsn</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua.
@@ -340,11 +397,11 @@ onMounted(() => {
     </div>
     <!-- third -->
     <!-- container du text et img -->
-    <div class="w-full h-screen flex ">
+    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto  ">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end gap-20  pr-32 reason-text opacity-0 top-100 ">
-        <h1 class="text-5xl font-bold">3. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">3. Lorem impus lorsn</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -361,7 +418,7 @@ onMounted(() => {
         </p>
       </div>
       <!-- img container -->
-      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0">
+      <div class="w-1/2 h-3/4 border-solid border-2 border-sky-400 reason-img opacity-0 max-lg:hidden">
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
 
@@ -558,5 +615,23 @@ li {
 
 svg {
   color: rgb(146, 145, 145);
+}
+
+.ts {
+  transform: scaleY(0);
+  transform-origin: bottom center;
+}
+
+.transition-text {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+}
+
+.transition-text-span-div {
+  overflow: hidden;
+}
+.hidden-transition{
+  display: none;
 }
 </style>

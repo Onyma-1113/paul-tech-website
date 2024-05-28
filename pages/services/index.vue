@@ -1,5 +1,7 @@
 <template>
-    <div>
+  <TransitionComponent title="Services"/>
+    <div class="transition-wait opacity-0">
+      
         <Hero title="Service"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
             <div class="w-full min-h-screen">
@@ -52,4 +54,23 @@
 definePageMeta({
     layout: 'mainlayout'
 })
+import {gsap} from 'gsap'
+let tl = gsap.timeline()
+
+const serviceAnimation = () =>{
+  setTimeout(() => {
+        tl.to('.transition-wait',{
+            duration:0.5,
+            opacity:1
+        })
+        
+    }, 3000);
+}
+
+
+
+    onMounted(() => {
+ 
+serviceAnimation()
+  })
 </script>

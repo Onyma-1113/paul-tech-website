@@ -1,5 +1,7 @@
 <template>
-    <div>
+     <TransitionComponent title="About"/>
+    <div class="transition-wait opacity-0" >
+       
         <Hero title="About"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
         <div class="gap-20 flex flex-col">
@@ -63,9 +65,21 @@ definePageMeta({
 })
 
 import {gsap} from 'gsap'
-let tl = gsap.timeline()
+import { ref, onMounted } from 'vue';
 
-onMounted(() => {
+
+// burger menu
+
+
+let tl = gsap.timeline()
+const aboutAnimation = () =>{
+    setTimeout(() => {
+        tl.to('.transition-wait',{
+            duration:0.5,
+            opacity:1
+        })
+        
+    }, 3000);
     
     tl.from('.look', 
     { 
@@ -85,6 +99,12 @@ onMounted(() => {
       
       
     })
+}
+
+
+
+onMounted(() => {
  
+ aboutAnimation()
   })
 </script>

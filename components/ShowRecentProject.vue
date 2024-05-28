@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="show-recent opacity-0">
         <div class="h-three-quart-vh w-full flex justify-between bg-gray-400 rounded-3xl px-10 max-lg:flex-col max-lg:justify-center max-lg:gap-20 max-lg:min-h-container max-lg:py-20 max-lg:min-h-three-quart-vh">
             <div class="h-full w-1/2 flex justify-start items-center max-lg:w-full max-lg:justify-center">
                 <!-- ici mettre en props pour garder  nimporte quel objet -->
@@ -18,4 +18,20 @@
       title: String,
       description: String
     })
+
+    import {gsap} from 'gsap'
+let tl = gsap.timeline()
+
+onMounted(() => {
+    
+    tl.to('.show-recent', 
+    { 
+      opacity:1,
+      
+      duration: 1,
+      
+      
+    })
+ 
+  })
     </script>

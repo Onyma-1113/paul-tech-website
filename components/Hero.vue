@@ -26,8 +26,8 @@ import {gsap} from 'gsap'
 let tl = gsap.timeline()
 const jsp = ref(props.description)
 
-onMounted(() => {
-   
+const heroAnimation = () =>{
+  setTimeout(() => {
     tl.from('.selector ', 
     { 
       opacity:0,
@@ -37,6 +37,12 @@ onMounted(() => {
       
     })
 
+   }, 3600);
+}
+
+onMounted(() => {
+  heroAnimation()
+ 
   })
 
   

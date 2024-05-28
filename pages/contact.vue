@@ -1,5 +1,7 @@
 <template>
-    <div class="h-screen  flex justify-center items-center max-md:flex-col">
+  <TransitionComponent title="Contact"/>
+    <div class="h-screen  flex justify-center items-center max-md:flex-col transition-wait opacity-0">
+      
         <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-md:w-full">
             <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector">Contact</h1>
             <p class="text-4xl max-2xl:text-2xl max-md:text-xl selector">
@@ -153,17 +155,20 @@ definePageMeta({
     layout:'contactlayout'
 })
 import {gsap} from 'gsap'
-let tl = gsap.timeline()
+import { ref, onMounted } from 'vue';
 
-// const split =  new SplitText(jsp)
-onMounted(() => {
-    // $gsap.to('#element', 
-    // { 
-    //   rotation: 3,
-    //    x: 100,
-    //   duration: 1 
-    // })
-    tl.from('.selector', 
+
+// burger menu
+
+
+let tl = gsap.timeline()
+const contactAnimation = () =>{
+    setTimeout(() => {
+        tl.to('.transition-wait',{
+            duration:0.5,
+            opacity:1
+        })
+        tl.from('.selector', 
     { 
       opacity:0,
        y: 100,
@@ -171,7 +176,17 @@ onMounted(() => {
       stagger:0.5
       
     })
-  
-    // console.log(split)
+    }, 3000);
+    
+   
+}
+
+
+
+
+
+// const split =  new SplitText(jsp)
+onMounted(() => {
+    contactAnimation()
   })
 </script>
