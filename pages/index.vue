@@ -12,30 +12,30 @@ import AccordionTab from 'primevue/accordiontab';
 
 
 // create client connexion with supabse
-const supabase = useSupabaseClient();
+// const supabase = useSupabaseClient();
 
-// access the current user from supabase
-const user = useSupabaseUser()
+// // access the current user from supabase
+// const user = useSupabaseUser()
 
-// router
-const router = useRouter()
+// // router
+// const router = useRouter()
 
-const errorMsgSignOut = ref(null)
-
-
-const { data: countries } = useFetch('/api/contries/getContries')
+// const errorMsgSignOut = ref(null)
 
 
-async function signOut() {
-  try {
-    const { error } = await supabase.auth.signOut()
-    router.push('/login')
-    if (error) throw error;
-  } catch (error) {
-    errorMsgSignOut.value = error
-  }
+// const { data: countries } = useFetch('/api/contries/getContries')
 
-}
+
+// async function signOut() {
+//   try {
+//     const { error } = await supabase.auth.signOut()
+//     router.push('/login')
+//     if (error) throw error;
+//   } catch (error) {
+//     errorMsgSignOut.value = error
+//   }
+
+// }
 import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap'
 import Typed from "typed.js";

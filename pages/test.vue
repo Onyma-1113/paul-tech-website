@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
  <div>
     <h1 style="font-size: 40px" ref="useTypedHere"></h1>
 
@@ -24,4 +24,6 @@ export default {
     }
   }
 };
-</script>
+</script> -->
+<script></script>
+<template></template>

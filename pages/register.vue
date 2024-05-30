@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 const supabase = useSupabaseClient();
 const email = ref('')
 const password = ref(null)
@@ -41,4 +41,6 @@ async function signUpNewUser() {
         </div>
     </div>
 </template>
-<style scoped></style>
+<style scoped></style> -->
+<script></script>
+<template></template>

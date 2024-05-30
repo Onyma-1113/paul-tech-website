@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 
 
 const supabase = useSupabaseClient();
@@ -44,4 +44,6 @@ async function signInWithEmail() {
         </div>
     </div>
 </template>
-<style scoped></style>
+<style scoped></style> -->
+<script></script>
+<template></template>
