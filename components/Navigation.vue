@@ -69,13 +69,19 @@ onMounted(() => {
 
                 <div class="flex w-1/4 justify-between max-2xl:w-1/3">
                     <li>
-                        <NuxtLink to="/about">About</NuxtLink>
+                        <NuxtLink to="/about">Company</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink to="/services">Services</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink to="/caseStudies">Case Studies</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/career">Career</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/client">Client</NuxtLink>
                     </li>
                 </div>
 

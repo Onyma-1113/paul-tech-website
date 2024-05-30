@@ -128,13 +128,17 @@ onMounted(() => {
   clickToUseTyped()
   typedRef.value = ref.typedRef;
   //animation
-  missionAnimation()
-  serviceAnimation()
+  // missionAnimation()
+  // serviceAnimation()
   reasonAnimation()
   // transitionAnimation()
   homeTransitionAnimation()
-});
 
+  contentAnimation({element: '.test'})
+  cardServiceAnimation({element: '.card-container',element2: ".card-service",element3: ".card-service-2"})
+
+
+});
 
 
 
@@ -204,7 +208,7 @@ onMounted(() => {
     </div>
 
   </div> -->
-  <!-- <TransitionComponent title="Home"/> -->
+  <TransitionComponent title="Home"/>
   <div class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0">
     <div>
       <h1 id="element" class="text-8xl  font-bold  max-sm:text-center max-2xl:text-5xl max-md:text-4xl ">Welcome at
@@ -260,8 +264,8 @@ onMounted(() => {
   <SubTitle title="Discover Our Story: Unveiling the Heart of Our Mission" justify="justify-start" align="text-left" />
   <!-- section 2 mission -->
 
-  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl mission-section opacity-0">
-    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl"><span class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
+  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl ">
+    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl test"><span class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
       ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -282,7 +286,7 @@ onMounted(() => {
   <div class="w-full min-h-screen">
     <div class="w-full  mx-auto">
 
-      <div class="-mx-3 lg:flex items-center">
+      <div class="-mx-3 lg:flex items-center card-container">
         <div class="px-3 lg:w-1/3">
           <div class="card-service opacity-0 top-100">
             <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
@@ -339,7 +343,7 @@ onMounted(() => {
     <!-- container du text et img -->
     <div class="w-full h-screen flex max-lg:flex-col  max-lg:h-auto ">
       <!-- text container -->
-      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+      <div class="w-1/2 h-full flex flex-col justify-end  gap-20 pr-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">1. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
@@ -374,7 +378,7 @@ onMounted(() => {
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
       <!-- text container -->
-      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+      <div class="w-1/2 h-full flex flex-col justify-end  gap-20  pl-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0 ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">2. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
@@ -399,7 +403,7 @@ onMounted(() => {
     <!-- container du text et img -->
     <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto  ">
       <!-- text container -->
-      <div class="w-full h-full flex flex-col justify-end  gap-20   reason-text opacity-0 top-100 max-lg:h-auto ">
+      <div class="w-1/2 h-full flex flex-col justify-end  gap-20  pr-32 reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">3. Lorem impus lorsn</h1>
         <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
@@ -633,5 +637,26 @@ svg {
 }
 .hidden-transition{
   display: none;
+}
+
+/* lenis */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
 </style>

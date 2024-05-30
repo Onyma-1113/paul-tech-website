@@ -19,19 +19,15 @@
       description: String
     })
 
-    import {gsap} from 'gsap'
-let tl = gsap.timeline()
 
-onMounted(() => {
+
+
     
-    tl.to('.show-recent', 
-    { 
-      opacity:1,
-      
-      duration: 1,
-      
-      
+   
+    onMounted(() => {
+    
+    cardShowAnimation({element :'.show-recent'})
     })
  
-  })
+
     </script>

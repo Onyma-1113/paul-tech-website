@@ -2,12 +2,12 @@
   <TransitionComponent title="Services"/>
     <div class="transition-wait opacity-0">
       
-        <Hero title="Service"
+        <Hero title="Services"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
             <div class="w-full min-h-screen">
     <div class="w-full  mx-auto">
 
-      <div class="-mx-3 lg:flex items-center">
+      <div class="-mx-3 lg:flex items-center card-container opacity-0">
         <div class="px-3 lg:w-1/3">
           <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi
@@ -54,9 +54,8 @@
 definePageMeta({
     layout: 'mainlayout'
 })
-import {gsap} from 'gsap'
-let tl = gsap.timeline()
 
+let tl = gsap.timeline()
 const serviceAnimation = () =>{
   setTimeout(() => {
         tl.to('.transition-wait',{
@@ -72,5 +71,6 @@ const serviceAnimation = () =>{
     onMounted(() => {
  
 serviceAnimation()
+cardShowAnimation({element :'.card-container'})
   })
 </script>

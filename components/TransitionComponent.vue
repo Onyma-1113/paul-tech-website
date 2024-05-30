@@ -88,7 +88,7 @@ onMounted(() => {
     <div class="h-screen w-1/5 bg-red-400 ts">
 
     </div>
-    <div v-if="title == 'Home'">
+    <div v-if="title == 'Home' && general.isPreloaderVisible == true" >
       <div class="transition-text ">
         <div class="text-8xl flex">
           <div class="transition-text-span-div">

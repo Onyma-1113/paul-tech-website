@@ -11,11 +11,15 @@ export default defineNuxtConfig({
     { src: '@/plugins/vue-typed-js.js', mode: 'client' }
   ],
  
-  supabase:{
-    url: process.env.SUPABASE_URL,
-    key: process.env.SUPABASE_KEY,
-    redirect: false
-  },
+  // supabase:{
+  //   url: process.env.SUPABASE_URL,
+  //   key: process.env.SUPABASE_KEY,
+  //   redirect: false
+  // },
+  imports: {
+		dirs: ['utils', 'animations','store'],
+	},
 
 
 })
+

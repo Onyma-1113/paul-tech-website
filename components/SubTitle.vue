@@ -10,18 +10,10 @@ defineProps({
   align: String
 })
 
-import {gsap} from 'gsap'
-let tl = gsap.timeline()
+
 onMounted(() => {
    
-   tl.to('.subtitle', 
-   { 
-     opacity:1,
-       y: 0,
-     duration: 1 ,
-    //  stagger:0.5
-     
-   })
+ contentAnimation({element: '.subtitle'})
 
  })
 </script>

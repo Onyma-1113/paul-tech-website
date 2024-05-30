@@ -47,19 +47,10 @@ defineProps({
   title: String,
   description: String
 })
-import {gsap} from 'gsap'
-let tl = gsap.timeline()
+
 
 onMounted(() => {
     
-    tl.to('.show-detail', 
-    { 
-      opacity:1,
-      
-      duration: 1,
-      
-      
-    })
- 
+  cardShowAnimation({element :'.show-detail'})
   })
 </script>

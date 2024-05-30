@@ -9,7 +9,8 @@
             <ShowDetail title="Our Values"></ShowDetail>
         </div>
         <div class="w-full min-h-screen">
-            <CardTitle justify="justify-center" align="text-center" title="Our Team"/>
+            <!-- <CardTitle justify="justify-center" align="text-center" title="Our Team"/> -->
+            <SubTitle title="Our Team" justify="justify-center" align="text-center" />
     <div class="w-full  mx-auto mb-64">
 
       <div class="-mx-3 lg:flex items-center justify-center ">
@@ -23,28 +24,28 @@
        
       </div>
       
-      <div class="-mx-3 lg:flex items-center">
+      <div class="-mx-3 lg:flex items-center card-container">
         <div class="px-3 lg:w-1/3">
-            <div class="look opacity-100">
+            <div class="look opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>
-            <div class="look-2 opacity-100">
+            <div class="look-2 opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>
         </div>
         <div class="px-3 lg:w-1/3">
-            <div class="look opacity-100">
+            <div class="look opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>           
-            <div class="look-2 opacity-100">
+            <div class="look-2 opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>
         </div>
         <div class="px-3 lg:w-1/3">
-            <div class="look opacity-100">
+            <div class="look opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>            
-            <div class="look-2 opacity-100">
+            <div class="look-2 opacity-0">
                 <CardTeam title="Chef executif - john doe" description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement "/>
             </div>
         </div>
@@ -81,24 +82,7 @@ const aboutAnimation = () =>{
         
     }, 3000);
     
-    tl.from('.look', 
-    { 
-      opacity:0,
-      y:100,
-      duration: 1,
-      stagger:0.5
-      
-      
-    })
-    tl.from('.look-2', 
-    { 
-      opacity:0,
-      y:100,
-      duration: 1,
-      stagger:0.5
-      
-      
-    })
+    cardServiceAnimation({element: '.card-container',element2: ".look",element3: ".look-2"})
 }
 
 
