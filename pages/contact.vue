@@ -1,5 +1,5 @@
 <template>
-  <TransitionComponent title="Contact"/>
+  <TransitionComponent/>
     <div class="h-screen  flex justify-center items-center max-md:flex-col transition-wait opacity-0">
       
         <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-md:w-full">
@@ -176,7 +176,7 @@ const contactAnimation = () =>{
       stagger:0.5
       
     })
-    }, 3000);
+    }, 4000);
     
    
 }

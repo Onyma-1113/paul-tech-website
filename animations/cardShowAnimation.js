@@ -6,8 +6,8 @@ export function cardShowAnimation({ element }) {
 	$elements.forEach((el) => {
 		ScrollTrigger.create({
 			trigger: el,
-            start:'30% bottom',
-            markers:true,
+            start:'25% bottom',
+            //  markers:true,
 			animation: useAnimateShowCard(el)
 		})
 	})

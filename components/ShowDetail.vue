@@ -1,7 +1,7 @@
 <template>
-<div class="">
-    <div class=" w-full flex justify-between bg-gray-400 rounded-3xl px-10 max-lg:flex-col max-lg:justify-center max-lg:gap-20  max-lg:py-20 h-screen max-lg:h-auto show-detail opacity-0" >
-        <div class="h-full w-1/2 flex justify-start items-center max-lg:w-full max-lg:justify-center max-lg:h-auto">
+<div class="cd-detail ">
+    <div class=" w-full flex justify-between bg-gray-800 rounded-3xl px-10 max-lg:flex-col max-lg:justify-center max-lg:gap-20  max-lg:py-20 h-screen max-lg:h-auto show-detail opacity-0" >
+        <div class="h-full w-1/2 flex  justify-start items-center max-lg:w-full max-lg:justify-center max-lg:h-auto">
             <!-- ici mettre en props pour garder  nimporte quel objet -->
             <h1 class="text-5xl font-bold">{{ title }}</h1>
         </div>
@@ -54,3 +54,13 @@ onMounted(() => {
   cardShowAnimation({element :'.show-detail'})
   })
 </script>
+<style scoped>
+.cd-detail{
+  /* 0, 132, 199, */
+  background: rgba(41, 41, 41, 0);
+box-shadow: 0 0px 100px 0 rgba( 0, 132, 199, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 30px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}</style>

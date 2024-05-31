@@ -1,11 +1,11 @@
-export function titleHomeAnimation({ element }) {
+export function imageContentAnimation({  element }) {
 	const $elements = document.querySelectorAll(element)
 
 	$elements.forEach((el) => {
 		ScrollTrigger.create({
 			trigger: el,
-            // markers:true,
-			animation: useAnimateTitleHome(el)
+            //  markers:true,
+			animation: useAnimateImage(el)
 		})
 	})
 }

@@ -1,5 +1,5 @@
 <template>
-     <TransitionComponent title="About"/>
+     <TransitionComponent/>
     <div class="transition-wait opacity-0" >
        
         <Hero title="About"
@@ -80,7 +80,7 @@ const aboutAnimation = () =>{
             opacity:1
         })
         
-    }, 3000);
+    }, 4000);
     
     cardServiceAnimation({element: '.card-container',element2: ".look",element3: ".look-2"})
 }

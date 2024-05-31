@@ -56,39 +56,50 @@ onMounted(() => {
 
 })
 
+const links =[
+    {href:'/about' ,text:'About'},
+    {href:'/services' ,text:'Services'},
+    {href:'/caseStudies' ,text:'Case Studies'},
+    {href:'/careers' ,text:'Careers'},
+    // {href:'/client' ,text:'Client'}
+]
+
+const toggleLinks  = () =>{
+    general.isTransitionFinish = false
+    console.log(general.isTransitionFinish)
+}
+
 </script>
 <template>
     <div class="">
         <nav
             class="h-32 w-screen mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-16  max-md:px-5 fixed z-10 max-lg:hidden">
             <ul
-                class="h-1/2 w-full flex flex-row justify-between px-20 items-center text-red-400 bg-gray-700 rounded-3xl text-lg">
-                <li class="w-36">
+                class="h-1/2 w-full flex flex-row justify-between px-20 items-center text-black rounded-3xl text-lg ul-nav ">
+                <li class="w-36 hover:text-sky-600 hover:duration-200  duration-200">
                     <NuxtLink to="/">Paultech</NuxtLink>
                 </li>
 
                 <div class="flex w-1/4 justify-between max-2xl:w-1/3">
-                    <li>
-                        <NuxtLink to="/about">Company</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/services">Services</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/caseStudies">Case Studies</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/career">Career</NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink to="/client">Client</NuxtLink>
-                    </li>
+                    
+                <!-- <NuxtLink 
+                v-for="link in links"
+                :to="link.href"
+                @click.native="toggleLinks()">
+                {{ link.text }}
+            </NuxtLink> -->
+
+            <li v-for="link in links"
+            class="hover:text-sky-600 hover:duration-200  duration-200">
+            <NuxtLink :to="link.href" @click.native="toggleLinks()" >{{ link.text }}</NuxtLink>
+        
+        </li>
                 </div>
 
 
                 <li>
                     <NuxtLink to="/contact">
-                        <div class="contact-btn bg-white h-11 w-36 flex justify-center items-center rounded-3xl">
+                        <div class="contact-btn   text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch
                         </div>
                     </NuxtLink>
@@ -127,7 +138,7 @@ onMounted(() => {
             </ul>
 
             <div
-                class="menu-phone h-screen w-screen bg-black absolute top-0 left-0  text-white text-5xl flex justify-center items-center">
+                class="menu-phone h-screen w-screen bg-white absolute top-0 left-0  text-black text-5xl flex justify-center items-center">
                 <div class="flex gap-52 w-1/4 justify-between items-center flex-col max-2xl:w-1/3 ">
                     <div class="li-phone-container">
                         <li class="li-phone">
@@ -161,16 +172,21 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.ul-nav{
+    background-color:#fefffe
+}
 .li-phone-container {
     overflow: hidden;
 }
 .contact-btn {
     transition: 0.3s;
+    background-color: #0d0f14
+    
 }
 
 .contact-btn:hover {
 
-    background-color: black
+    background-color: rgb(0, 132, 199);
 }
 
 .contact-btn-2 {
@@ -208,17 +224,17 @@ onMounted(() => {
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-    background-color: white;
+    background-color: black;
 }
 
 .change .bar2 {
     opacity: 0;
-    background-color: white;
+    background-color: black
 }
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-    background-color: white;
+    background-color: black
 }
 
 .menu-phone {

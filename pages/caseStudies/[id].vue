@@ -1,4 +1,5 @@
 <template>
+    <TransitionComponent/>
     <div>
         <Hero title="Hydro Quebec"
             description="Case studies" />
@@ -27,10 +28,10 @@
             </div>
 
             <div class="w-full flex flex-wrap justify-around items-center gap-10">
-                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12">
-                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12">
-                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12">
-                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12">
+                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12 img-p">
+                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12 img-p">
+                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12 img-p">
+                <img src="/assets/img/digital_camera.jpg" alt="" srcset="" class="w-5/12 img-p">
             </div>
     </div>
 </template>
@@ -39,6 +40,10 @@
 definePageMeta({
 
 layout: 'mainlayout'
+})
+
+onMounted(()  =>{
+    imageContentAnimation({element: '.img-p'})
 })
 
 </script>

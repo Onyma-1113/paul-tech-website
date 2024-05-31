@@ -5,7 +5,7 @@ export const useSmoothScroll = () => {
     
 
 	general.scrollLenis = new Lenis({
-		duration: 2,
+		duration: 1,
 		orientation: 'vertical',
 		gestureOrientation: 'vertical',
 		smoothWheel: true,

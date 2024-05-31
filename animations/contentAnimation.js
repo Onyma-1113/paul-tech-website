@@ -4,8 +4,10 @@ export function contentAnimation({  element }) {
 	$elements.forEach((el) => {
 		ScrollTrigger.create({
 			trigger: el,
-            markers:true,
+            //  markers:true,
+			start:'25% bottom',
 			animation: useAnimateText(el)
+
 		})
 	})
 }

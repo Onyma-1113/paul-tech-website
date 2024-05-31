@@ -6,7 +6,7 @@ export function cardServiceAnimation({  element,element2,element3 }) {
 	
 		ScrollTrigger.create({
 			trigger: $elements,
-            markers:true,
+            // markers:true,
 			animation: useAnimateCardService(element2,element3)
 		})
 	

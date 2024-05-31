@@ -18,6 +18,9 @@
 defineProps({
     showDetail: String
 })
+onMounted(()  =>{
+    imageContentAnimation({element: '.img-project'})
+})
 </script>
 <style scoped>
 .img-project:hover{

@@ -45,7 +45,7 @@ const typedRef = ref(null);
 const clickToUseTyped = () => {
   if (typedRef.value) {
     new Typed(typedRef.value, {
-      strings: ["Observabilité", "Infonuagique", "Intelligence artificielle", "Digitalisation de processus"],
+      strings: ["Cloud", "Observability", "Process digitalization", "Cybersecurity" , "Artificial Intelligence"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -57,39 +57,6 @@ const clickToUseTyped = () => {
 // animation 
 
 
-const missionAnimation = () => {
-  let tl = gsap.timeline()
-  tl.to('.mission-section',
-    {
-      opacity: 1,
-
-      duration: 1,
-
-
-    })
-
-}
-const serviceAnimation = () => {
-  let tl = gsap.timeline()
-  tl.to('.card-service',
-    {
-      opacity: 1,
-      y: -100,
-      duration: 1,
-      stagger: 0.5
-
-    })
-  tl.to('.card-service-2',
-    {
-      opacity: 1,
-      y: -100,
-      duration: 1,
-      stagger: 0.5
-
-    })
-
-
-}
 const reasonAnimation = () => {
   let tl = gsap.timeline()
 
@@ -111,17 +78,17 @@ const reasonAnimation = () => {
 }
 //transition
 
-const homeTransitionAnimation = () =>{
+const homeTransitionAnimation = () => {
   let tl = gsap.timeline()
-    setTimeout(() => {
-        tl.to('.transition-wait',{
-            duration:0.5,
-            opacity:1
-        })
-        
-    }, 1000);
-    
-   
+  setTimeout(() => {
+    tl.to('.transition-wait', {
+      duration: 0.5,
+      opacity: 1
+    })
+
+  }, 4000);
+
+
 }
 
 onMounted(() => {
@@ -134,8 +101,9 @@ onMounted(() => {
   // transitionAnimation()
   homeTransitionAnimation()
 
-  contentAnimation({element: '.test'})
-  cardServiceAnimation({element: '.card-container',element2: ".card-service",element3: ".card-service-2"})
+  // contentAnimation({ element: '.test' })
+  // cardServiceAnimation({ element: '.card-container', element2: ".card-service", element3: ".card-service-2" })
+  cardShowAnimation({ element: '.card-container'})
 
 
 });
@@ -208,26 +176,29 @@ onMounted(() => {
     </div>
 
   </div> -->
-  <TransitionComponent title="Home"/>
-  <div class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0">
+
+  <TransitionComponent/>
+  <div
+    class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0 relative z-100 section-1">
     <div>
       <h1 id="element" class="text-8xl  font-bold  max-sm:text-center max-2xl:text-5xl max-md:text-4xl ">Welcome at
-        Paultech we are specialize at : </h1>
+        Paultech we are specialize at  </h1>
 
-      <h1 class="text-8xl font-bold text-sky-400 h-12 max-2xl:text-5xl max-md:text-4xl  max-sm:text-center"
+      <h1 class="text-8xl font-bold text-sky-600 h-12 max-2xl:text-5xl max-md:text-4xl  max-sm:text-center"
         ref="typedRef"></h1>
 
     </div>
 
     <span class="text-3xl max-2xl:text-2xl">[Since the date]</span>
     <div
-      class="btn-get-in-touch h-14 w-56 bg-black rounded-3xl flex justify-center items-center text-white text-2xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
+      class="btn-get-in-touch h-14 w-56 bg-white text-black rounded-3xl flex justify-center items-center text-2xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
       <p>Get in touch</p>
     </div>
 
   </div>
   <!-- carrousel -->
-  <div class="w-full text-3xl font-bold flex flex-col items-center justify-start transition-wait opacity-0">
+  <div
+    class="w-full text-3xl font-bold flex flex-col items-center justify-start transition-wait opacity-0  relative z-100">
     <h2 class="">Trust by those compagnies</h2>
     <div class="w-full h-28  mt-4 flex justify-around items-center">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 702 200" fill="none" class="hidden md:block h-7">
@@ -260,12 +231,15 @@ onMounted(() => {
 
   </div>
   <!-- title of the 2 section -->
-
+<div class="transition-wait opacity-0">
   <SubTitle title="Discover Our Story: Unveiling the Heart of Our Mission" justify="justify-start" align="text-left" />
+
+</div>
   <!-- section 2 mission -->
 
-  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl ">
-    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl test"><span class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
+  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl  relative z-100 transition-wait opacity-0">
+    <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl"><span
+        class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
       ipsum dolor sit amet,
       consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -278,15 +252,47 @@ onMounted(() => {
     </div>
   </div>
   <!-- title of the 3 section -->
-  <SubTitle title="Explore our services" justify="justify-end" align="text-right" />
+  <div class="transition-wait opacity-0">
+    <SubTitle title="Explore our services" justify="justify-end" align="text-right" />
+
+  </div>
   <!-- <div class="w-full h-screen flex items-center justify-end">
     <h1 class="text-8xl w-3/4 font-bold text-right">Explore our services</h1>
   </div> -->
   <!-- section 3 service (no layout choose ) -->
-  <div class="w-full min-h-screen">
+  <div class="w-full min-h-screen relative z-100 transition-wait opacity-0">
     <div class="w-full  mx-auto">
+      <div class="-mx-3 lg:flex items-center card-container opacity-0">
+        <div class="px-3 lg:w-2/4">
 
-      <div class="-mx-3 lg:flex items-center card-container">
+          <!-- <div class="card-service opacity-0 top-100"> -->
+            <CardService title="Cloud adoption"
+              description="Maximize efficiency with cloud adoption by integrating shift-left practices and embracing cloud-native migration. Transform your infrastructure with cloud adoption: prioritize a shift-left approach and advance through cloud-native migration, accelerating innovation and seamless integration." />
+          <!-- </div> -->
+          <!-- <div class="card-service-2 opacity-0 top-100"> -->
+            <CardService title="Process digitalization and AI"
+            description="Enhance process efficiency through digitalization by leveraging data, automation, and AI for streamlined operations and optimized performance." />
+          <!-- </div> -->
+         
+
+        </div>
+
+        <div class="px-3 lg:w-2/4">
+          <!-- <div class="card-service opacity-0 top-100"> -->
+            <CardService title="Observability"
+            description="Enhance end-user experience through observability by integrating advanced monitoring tools, ensuring comprehensive visibility and proactive issue resolution." />
+          <!-- </div> -->
+       
+          <!-- <div class="card-service-2 opacity-0 top-100"> -->
+            <CardService title="Cybersecurity"
+            description="Strengthen cybersecurity by integrating the necessary tools to detect and address vulnerabilities, ensuring robust protection and swift threat mitigation. " />
+          <!-- </div> -->
+       
+         
+        </div>
+
+      </div>
+      <!-- <div class="-mx-3 lg:flex items-center card-container">
         <div class="px-3 lg:w-1/3">
           <div class="card-service opacity-0 top-100">
             <CardService title="Digitalisation" description="Lorem ipsum dolor sit amet
@@ -327,25 +333,30 @@ onMounted(() => {
 
 
         </div>
-      </div>
+      </div> -->
     </div>
 
 
 
   </div>
   <!-- title of the 4 section reason to choose us -->
-
+<div class="transition-wait opacity-0">
   <SubTitle title="Why Choose Us: Our Commitment to Excellence and Your Success" justify="justify-start"
     align="text-left" />
+</div>
+
+ 
 
   <!-- section 4  -->
-  <div class="w-full flex flex-col gap-64">
+  <div class="w-full flex flex-col gap-64 relative z-100 transition-wait opacity-0">
     <!-- container du text et img -->
     <div class="w-full h-screen flex max-lg:flex-col  max-lg:h-auto ">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end  gap-20 pr-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
+      <div
+        class="w-1/2 h-full flex flex-col justify-end  gap-20 pr-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">1. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -370,7 +381,7 @@ onMounted(() => {
     </div>
     <!-- seconde -->
     <!-- container du text et img -->
-    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto ">
+    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto  relative z-100">
 
 
       <!-- img container -->
@@ -378,9 +389,11 @@ onMounted(() => {
         <img src="/assets/img/memory.jpg" alt="" srcset="" class="h-full w-full">
       </div>
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end  gap-20  pl-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0 ">
+      <div
+        class="w-1/2 h-full flex flex-col justify-end  gap-20  pl-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0 ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">2. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -401,11 +414,13 @@ onMounted(() => {
     </div>
     <!-- third -->
     <!-- container du text et img -->
-    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto  ">
+    <div class="w-full h-screen flex max-md:flex-col  max-md:h-auto  relative z-100">
       <!-- text container -->
-      <div class="w-1/2 h-full flex flex-col justify-end  gap-20  pr-32 reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
+      <div
+        class="w-1/2 h-full flex flex-col justify-end  gap-20  pr-32 reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
         <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">3. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et
           dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -432,13 +447,15 @@ onMounted(() => {
 
   </div>
   <!-- title of the 5 section -->
-
+<div class="transition-wait opacity-0">
   <SubTitle title="All the compagnies that trusted us" justify="justify-end" align="text-right" />
-  <!-- section 5 service testomonial  -->
-  <div class="w-full min-h-screen">
-    <div class="w-full  mx-auto">
 
-      <div class="-mx-3 lg:flex items-center">
+</div>
+  <!-- section 5 service testomonial  -->
+  <div class="w-full min-h-screen relative z-100 transition-wait opacity-0">
+    <div class="w-full  mx-auto relative z-100">
+
+      <div class="-mx-3 lg:flex items-center relative z-100">
         <div class="px-3 lg:w-1/3">
           <CardTestimonial />
           <CardTestimonial />
@@ -459,12 +476,14 @@ onMounted(() => {
 
   </div>
   <!-- title of the 6 section FAQ -->
+  <div class="transition-wait opacity-0">
+    <SubTitle title="Frequently Asked Questions" justify="justify-start" align="text-left" />
 
-  <SubTitle title="Frequently Asked Questions" justify="justify-start" align="text-left" />
+</div>
 
 
   <!-- section 6 service FAQ -->
-  <div class="w-full ">
+  <div class="w-full transition-wait opacity-0">
     <!-- <Accordion :activeIndex="0"> -->
     <Accordion>
       <AccordionTab header="Header I" class="accordion-title">
@@ -538,7 +557,13 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #0d0f14;
+
+
+
 }
+
+.section-1 {}
 
 li {
   list-style-type: none;
@@ -635,12 +660,14 @@ svg {
 .transition-text-span-div {
   overflow: hidden;
 }
-.hidden-transition{
+
+.hidden-transition {
   display: none;
 }
 
 /* lenis */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -658,5 +685,16 @@ html.lenis, html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* page transition for the id page */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }
 </style>

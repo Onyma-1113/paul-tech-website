@@ -21,6 +21,7 @@
 		}, {
 			clipPath: 'polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)',
 			duration: 1,
+            ease: 'expo.out',
 		})
 	})
 
@@ -28,7 +29,7 @@
 <template>
 
 	<div class="preloader">
-		<div class="preloader-percent h1">
+		<div class="preloader-percent h1 text-8xl">
 			{{ percentage }}%
 		</div>
 	</div>
