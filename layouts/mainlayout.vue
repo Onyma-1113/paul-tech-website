@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <template>
     <div>
         <ThePrealoder></ThePrealoder>
@@ -11,7 +15,13 @@
                 
                 <!-- <img src="../assets/img/squares.jpg" alt="" srcset="" class="fixed top-0 left-0 w-screen h-screen z-0"> -->
                 <slot />
-                <ContactRedirection />
+                <div v-if="routeName != careers">
+                    <ContactRedirection />
+                </div>
+                <div v-if="routeName == careers">
+                    <JoinTeamRedirection />
+                </div>
+                
             </div>
             <Footer />
 
@@ -19,8 +29,12 @@
     </div>
 </template>
 <script setup>
+const careers = "careers"
+const route = useRoute()
+  const routeName = route.name
 onMounted(() => {
     useSmoothScroll()
+    console.log(routeName)
 })
 </script>
 <style>

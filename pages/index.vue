@@ -45,7 +45,7 @@ const typedRef = ref(null);
 const clickToUseTyped = () => {
   if (typedRef.value) {
     new Typed(typedRef.value, {
-      strings: ["Cloud", "Observability", "Process digitalization", "Cybersecurity" , "Artificial Intelligence"],
+      strings: ["Cloud", "Observability", "Process digitalization", "Cybersecurity", "Artificial Intelligence"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -103,7 +103,7 @@ onMounted(() => {
 
   // contentAnimation({ element: '.test' })
   // cardServiceAnimation({ element: '.card-container', element2: ".card-service", element3: ".card-service-2" })
-  cardShowAnimation({ element: '.card-container'})
+  cardShowAnimation({ element: '.card-container' })
 
 
 });
@@ -177,12 +177,12 @@ onMounted(() => {
 
   </div> -->
 
-  <TransitionComponent/>
+  <TransitionComponent />
   <div
-    class="w-full h-eighy-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0 relative z-100 section-1">
+    class="w-full h-screen flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0 relative z-100 section-1">
     <div>
       <h1 id="element" class="text-8xl  font-bold  max-sm:text-center max-2xl:text-5xl max-md:text-4xl ">Welcome at
-        Paultech we are specialize at  </h1>
+        Paultech we are specialize at </h1>
 
       <h1 class="text-8xl font-bold text-sky-600 h-12 max-2xl:text-5xl max-md:text-4xl  max-sm:text-center"
         ref="typedRef"></h1>
@@ -231,19 +231,21 @@ onMounted(() => {
 
   </div>
   <!-- title of the 2 section -->
-<div class="transition-wait opacity-0">
-  <SubTitle title="Discover Our Story: Unveiling the Heart of Our Mission" justify="justify-start" align="text-left" />
+  <div class="transition-wait opacity-0">
+    <SubTitle title="Discover Our Story: Unveiling the Heart of Our Mission" justify="justify-start"
+      align="text-left" />
 
-</div>
+  </div>
   <!-- section 2 mission -->
 
-  <div class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl  relative z-100 transition-wait opacity-0">
+  <div
+    class="w-full m-h-screen flex flex-col justify-around bg-gray-400  rounded-3xl  relative z-100 transition-wait opacity-0">
     <h3 class="text-3xl h-2/4 px-10 py-10 pb-40 text-white  max-2xl:text-2xl max-lg:text-xl"><span
-        class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech</span> Lorem
-      ipsum dolor sit amet,
-      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        class="text-6xl text-sky-400 max-2xl:text-5xl max-lg:text-text-4xl ">Paultech,</span> John Paul, founder and
+      CEO, started the company in 2021, to provide a space where interns and juniors could enter the tech market with
+      the necessary orientation, guidance training and gain experience to develop and grow into senior techs. Our
+      company believe in the next generation and we want to bring them on to speed on the top demanding sectors of the
+      market.
       exercitation ullamco laboris .</h3>
     <div class="mission-img w-full flex justify-center items-center px-4 py-4">
       <img src="/assets/img/20170613S1_About-Page_Studio-white-board_024_V2.jpg" alt="" srcset=""
@@ -266,29 +268,29 @@ onMounted(() => {
         <div class="px-3 lg:w-2/4">
 
           <!-- <div class="card-service opacity-0 top-100"> -->
-            <CardService title="Cloud adoption"
-              description="Maximize efficiency with cloud adoption by integrating shift-left practices and embracing cloud-native migration. Transform your infrastructure with cloud adoption: prioritize a shift-left approach and advance through cloud-native migration, accelerating innovation and seamless integration." />
+          <CardService title="Cloud adoption"
+            description="Maximize efficiency with cloud adoption by integrating shift-left practices and embracing cloud-native migration. Transform your infrastructure with cloud adoption: prioritize a shift-left approach and advance through cloud-native migration, accelerating innovation and seamless integration." />
           <!-- </div> -->
           <!-- <div class="card-service-2 opacity-0 top-100"> -->
-            <CardService title="Process digitalization and AI"
+          <CardService title="Process digitalization and AI"
             description="Enhance process efficiency through digitalization by leveraging data, automation, and AI for streamlined operations and optimized performance." />
           <!-- </div> -->
-         
+
 
         </div>
 
         <div class="px-3 lg:w-2/4">
           <!-- <div class="card-service opacity-0 top-100"> -->
-            <CardService title="Observability"
+          <CardService title="Observability"
             description="Enhance end-user experience through observability by integrating advanced monitoring tools, ensuring comprehensive visibility and proactive issue resolution." />
           <!-- </div> -->
-       
+
           <!-- <div class="card-service-2 opacity-0 top-100"> -->
-            <CardService title="Cybersecurity"
+          <CardService title="Cybersecurity"
             description="Strengthen cybersecurity by integrating the necessary tools to detect and address vulnerabilities, ensuring robust protection and swift threat mitigation. " />
           <!-- </div> -->
-       
-         
+
+
         </div>
 
       </div>
@@ -340,12 +342,12 @@ onMounted(() => {
 
   </div>
   <!-- title of the 4 section reason to choose us -->
-<div class="transition-wait opacity-0">
-  <SubTitle title="Why Choose Us: Our Commitment to Excellence and Your Success" justify="justify-start"
-    align="text-left" />
-</div>
+  <div class="transition-wait opacity-0">
+    <SubTitle title="Why Choose Us: Our Commitment to Excellence and Your Success" justify="justify-start"
+      align="text-left" />
+  </div>
 
- 
+
 
   <!-- section 4  -->
   <div class="w-full flex flex-col gap-64 relative z-100 transition-wait opacity-0">
@@ -354,22 +356,14 @@ onMounted(() => {
       <!-- text container -->
       <div
         class="w-1/2 h-full flex flex-col justify-end  gap-20 pr-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
-        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">1. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">1.Commitment to Transparency</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">All our products, services, and solutions
+          are delivered with complete transparency, ensuring that our clients have a clear understanding of every step
+          in the process. We believe in fostering trust through open communication and detailed documentation, providing
+          comprehensive insights into our methodologies and decision-making. From the initial consultation to the final
+          delivery, we maintain a consistent flow of information, allowing our clients to track progress, ask questions,
+          and receive prompt, honest answers. This commitment to transparency not only strengthens our client
+          relationships but also upholds the highest standards of integrity and accountability in all our operations.
         </p>
       </div>
       <!-- img container -->
@@ -391,22 +385,8 @@ onMounted(() => {
       <!-- text container -->
       <div
         class="w-1/2 h-full flex flex-col justify-end  gap-20  pl-32  reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0 ">
-        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">2. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">2. Comprehensive and Supportive</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">We provide a 360-degree view on costs, our solution selection process, project management, delivery, and operation support, ensuring our clients have complete visibility at every stage. By offering detailed cost breakdowns and transparent insights into how we choose the best solutions, we empower our clients to make informed decisions. Our project management practices are meticulously documented, allowing clients to track progress and understand each milestone. From initial planning to final delivery and ongoing operation support, we maintain open lines of communication, guaranteeing that our clients are always informed and confident in the value they receive.
         </p>
       </div>
 
@@ -418,22 +398,8 @@ onMounted(() => {
       <!-- text container -->
       <div
         class="w-1/2 h-full flex flex-col justify-end  gap-20  pr-32 reason-text opacity-0 top-100 max-lg:h-auto max-lg:w-full max-lg:pr-0  ">
-        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">3. Lorem impus lorsn</h1>
-        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-          dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
+        <h1 class="text-5xl font-bold max-2xl:text-3xl max-md:text-3xl">3. Empowering Your Digital Success</h1>
+        <p class="text-3xl leading-relaxed max-2xl:text-2xl max-md:text-xl">Our services are designed to propel your business forward in today's digital landscape. We specialize in delivering transformative solutions that optimize processes, drive innovation, and enhance security. Whether it's harnessing the power of cloud technology, implementing advanced AI solutions, or ensuring robust observability and cybersecurity measures, we excel in providing tailored strategies to meet your unique needs. Choose us for a partner committed to your success in every aspect of your digital journey.
         </p>
       </div>
       <!-- img container -->
@@ -447,10 +413,10 @@ onMounted(() => {
 
   </div>
   <!-- title of the 5 section -->
-<div class="transition-wait opacity-0">
-  <SubTitle title="All the compagnies that trusted us" justify="justify-end" align="text-right" />
+  <div class="transition-wait opacity-0">
+    <SubTitle title="All the compagnies that trusted us" justify="justify-end" align="text-right" />
 
-</div>
+  </div>
   <!-- section 5 service testomonial  -->
   <div class="w-full min-h-screen relative z-100 transition-wait opacity-0">
     <div class="w-full  mx-auto relative z-100">
@@ -479,7 +445,7 @@ onMounted(() => {
   <div class="transition-wait opacity-0">
     <SubTitle title="Frequently Asked Questions" justify="justify-start" align="text-left" />
 
-</div>
+  </div>
 
 
   <!-- section 6 service FAQ -->
@@ -692,6 +658,7 @@ html.lenis body {
 .page-leave-active {
   transition: all 0.4s;
 }
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;

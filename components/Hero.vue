@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-container flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-2xl:h-eighy-vh">
     <div>
-      <h1 id="element" class="selector text-8xl font-bold max-2xl:text-5xl max-md:text-4xl">{{ title }}</h1>
+      <h1 id="element" class="selector text-8xl font-bold max-2xl:text-5xl max-md:text-4xl bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">{{ title }}</h1>
 
 
 

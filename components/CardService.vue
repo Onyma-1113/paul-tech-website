@@ -1,8 +1,8 @@
 <template>
     <div
-        class="w-full h-fourty-vh  mx-auto rounded-lg bg-black text-white border border-gray-200 p-5 text-gray-800 font-light mb-6 flex flex-col justify-between cd-service">
+        class="w-full h-fourty-vh  mx-auto rounded-lg  text-white border border-gray-200 p-5 text-gray-800 font-light mb-6 flex flex-col justify-between cd-service ">
         
-        <div class="w-full flex mb-4 items-center  ">
+        <div class="w-full flex mb-4 items-center">
             <div class="overflow-hidden rounded-full w-16 h-16 bg-gray-50 border border-gray-200">
                 <img src="https://i.pravatar.cc/100?img=1" alt="">
             </div>
@@ -44,10 +44,10 @@ onMounted(() => {
 .cd-service{
   /* 0, 132, 199, */
   background: rgba(41, 41, 41, 0);
-box-shadow: 0 8px 100px 0 rgba( 0, 132, 199, 0.37 );
+box-shadow: 0 0px 32px 0 rgba( 0, 132, 199, 0.37 );
 backdrop-filter: blur( 0px );
 -webkit-backdrop-filter: blur( 0px );
-border-radius: 10px;
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 </style>
