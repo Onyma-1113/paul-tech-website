@@ -1,6 +1,6 @@
 <template>
-  <TransitionComponent/>
-    <div class="h-screen  flex justify-center items-center max-md:flex-col transition-wait opacity-0">
+  <!-- <TransitionComponent/> -->
+    <div class="h-screen  flex justify-center items-center max-md:flex-col">
       
         <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-md:w-full">
             <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector">Contact</h1>

@@ -5,12 +5,12 @@ export function useAnimateTitleHome(el) {
 
     if (element) {
        
-        tl.to(element,
+        tl.from(element,
             {
-                opacity: 1,
-                y: 0,
+                opacity: 0,
+                y: 100,
                 duration: 1,
-                //  stagger:0.5
+                stagger:0.5
 
             })
     }

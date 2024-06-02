@@ -30,8 +30,8 @@ const toggleClass = () => {
     }
     if (isActive.value === true) {
         tl2.to('.li-phone-container', 1, {
-        opacity:0,
-        ease:'expo.out',
+            opacity: 0,
+            ease: 'expo.out',
 
         })
         tl2.to('.menu-phone', {
@@ -43,8 +43,8 @@ const toggleClass = () => {
             ease: 'expo.out',
         })
         tl2.to('.li-phone-container', 0.1, {
-        opacity:1,
-        ease:'expo.out',
+            opacity: 1,
+            ease: 'expo.out',
 
         })
     }
@@ -56,15 +56,15 @@ onMounted(() => {
 
 })
 
-const links =[
-    {href:'/about' ,text:'About'},
-    {href:'/services' ,text:'Services'},
-    {href:'/caseStudies' ,text:'Case Studies'},
-    {href:'/careers' ,text:'Careers'},
+const links = [
+    { href: '/about', text: 'About' },
+    { href: '/services', text: 'Services' },
+    { href: '/caseStudies', text: 'Case Studies' },
+    { href: '/careers', text: 'Careers' },
     // {href:'/client' ,text:'Client'}
 ]
 
-const toggleLinks  = () =>{
+const toggleLinks = () => {
     general.isTransitionFinish = false
     console.log(general.isTransitionFinish)
 }
@@ -73,33 +73,39 @@ const toggleLinks  = () =>{
 <template>
     <div class="">
         <nav
-            class="h-32 w-screen mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-16  max-md:px-5 fixed z-10 max-lg:hidden">
+            class="h-32 w-screen mx-auto bg-black px-site flex justify-center items-center max-2xl:h-26 max-2xl:px-16  max-md:px-5 fixed z-10 max-lg:hidden">
             <ul
-                class="h-1/2 w-full flex flex-row justify-between px-20 items-center text-black rounded-3xl text-lg ul-nav ">
-                <li class="w-36 hover:text-sky-600 hover:duration-200  duration-200">
-                    <NuxtLink to="/">Paultech</NuxtLink>
-                </li>
+                class="h-1/2 w-full flex flex-row justify-between items-center text-white rounded-3xl text-lg ul-nav ">
+                <div class="flex  items-center"> 
+                    <li class="pr-32 text-4xl font-bold hover:text-sky-600 hover:duration-200  duration-200">
+                        <NuxtLink to="/">Paultech</NuxtLink>
+                    </li>
+                    <div class="flex gap-10">
+                        <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200">
+                        <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink>
+
+                    </li>
+                    </div>
+                  
+                </div>
+
 
                 <div class="flex w-1/4 justify-between max-2xl:w-1/3">
-                    
-                <!-- <NuxtLink 
+
+                    <!-- <NuxtLink 
                 v-for="link in links"
                 :to="link.href"
                 @click.native="toggleLinks()">
                 {{ link.text }}
             </NuxtLink> -->
 
-            <li v-for="link in links"
-            class="hover:text-sky-600 hover:duration-200  duration-200">
-            <NuxtLink :to="link.href" @click.native="toggleLinks()" >{{ link.text }}</NuxtLink>
-        
-        </li>
+                   
                 </div>
 
 
                 <li>
                     <NuxtLink to="/contact">
-                        <div class="contact-btn   text-white h-11 w-36 flex justify-center items-center rounded-3xl">
+                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch
                         </div>
                     </NuxtLink>
@@ -172,16 +178,17 @@ const toggleLinks  = () =>{
 </template>
 
 <style scoped>
-.ul-nav{
-    background-color:#fefffe
+.ul-nav {
+    /* background-color: #fefffe */
 }
+
 .li-phone-container {
     overflow: hidden;
 }
+
 .contact-btn {
     transition: 0.3s;
     background-color: #0d0f14
-    
 }
 
 .contact-btn:hover {

@@ -1,8 +1,14 @@
+
+
 <template>
     <NuxtLink :to="redirection" >
       <div
-        class=" h-14 w-56 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-blue-500 hover:to-cyan-500  hover:duration-300 duration-300 rounded-3xl flex justify-center items-center text-white text-2xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
+        class=" h-5  mt-7 font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start items-center gap-5 items-center text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
     <p>{{title}}</p>
+    <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
+        <div class=" arrow right"></div>
+    </div>
+ 
         
       </div>
     </NuxtLink>
@@ -10,6 +16,80 @@
 <script setup>
 defineProps({
     title: String,
-    redirection : String
+    redirection : String,
+    showarrow : String,
 })
 </script>
+<style scoped>
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+
+button {
+    border: 0;
+    position: relative;
+}
+
+button::before,
+button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.spin {
+    height: 200px;
+    width: 200px;
+}
+
+.spin::before,
+.spin::after {
+    top: 0;
+    left: 0;
+}
+
+.spin::before {
+    border: 2px solid transparent;
+}
+
+.spin:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    border-bottom-color: #0eb7da;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
+}
+
+.spin::after {
+    border: 0 solid transparent;
+}
+
+.spin:hover::after {
+    border-top: 2px solid #0eb7da;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+}
+
+.circle {
+    border-radius: 100%;
+    box-shadow: none;
+}
+
+.circle::before,
+.circle::after {
+    border-radius: 100%;
+}
+
+</style>

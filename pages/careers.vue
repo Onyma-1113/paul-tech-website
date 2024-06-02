@@ -1,10 +1,19 @@
 <template>
-  <TransitionComponent/>
-  <div class="transition-wait opacity-0">
+  <!-- <TransitionComponent/> -->
+  <div class="">
 
-    <Hero title="Careers"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-    <div class="w-full min-h-screen flex flex-col gap-52 mt-52">
+    <div class="h-fifty-vh  w-full flex flex-col justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+            <HeroPage title="Pushing the boundaries of digital asset liquidity provision" description="Join our vibrant and forward-thinking team in the burgeoning field of digital asset liquidity provision."
+                 />
+                 <div class="w-1/2">
+                  <BtnRedirection redirection="/candidaturelibre" title="CANDITATURE LIBRE" showarrow="true"/>
+
+                 </div>
+                 
+        </div>
+
+
+        <div class="h-auto  w-full flex flex-col pb-56 gap-52 mx-auto px-site max-2xl:px-16 max-md:px-5">
 <div class="card-career opacity-0" >
   <CardCareer title="Developer - DevOps" redirection="/contact"/>
 
@@ -17,13 +26,32 @@
   <CardCareer title="Senior DevOps Engineer - Cryptocurrency" redirection="/contact"/>
 
 </div>
+<div class="card-career opacity-0">
+  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
+
+</div>
+<div class="card-career opacity-0">
+  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
+
+</div>
+<div class="card-career opacity-0">
+  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
+
+</div>
+
+</div>
+
+<!-- <div class="w-screen  flex justify-around">
+  <Menubar :model="items"  class=""/>
+</div> -->
 
 
     </div>
-  </div>
+ 
 
 </template>
 <script setup>
+import Menubar from 'primevue/menubar';
 definePageMeta({
   layout: 'mainlayout'
 })
@@ -40,11 +68,71 @@ const serviceAnimation = () => {
 }
 
 
+import { ref } from "vue";
+
+const items = ref([
+    {
+        label: 'Home',
+        icon: 'pi pi-home'
+    },
+    {
+        label: 'Features',
+        icon: 'pi pi-star'
+    },
+    {
+        label: 'Projects',
+        icon: 'pi pi-search',
+        items: [
+            {
+                label: 'Components',
+                icon: 'pi pi-bolt'
+            },
+            {
+                label: 'Blocks',
+                icon: 'pi pi-server'
+            },
+            {
+                label: 'UI Kit',
+                icon: 'pi pi-pencil'
+            },
+            {
+                label: 'Templates',
+                icon: 'pi pi-palette',
+                items: [
+                    {
+                        label: 'Apollo',
+                        icon: 'pi pi-palette'
+                    },
+                    {
+                        label: 'Ultima',
+                        icon: 'pi pi-palette'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        label: 'Contact',
+        icon: 'pi pi-envelope'
+    }
+]);
+
 
 onMounted(() => {
 
-  serviceAnimation()
+  // serviceAnimation()
   cardShowAnimation({ element: '.card-career' })
 })
 </script>
-<style scoped></style>
+<style scoped>
+.p-menubar{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.p-menubar-root-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+</style>

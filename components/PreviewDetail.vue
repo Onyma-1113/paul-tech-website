@@ -1,0 +1,75 @@
+<template>
+    <div class="flex flex-col">
+
+
+    <div class="w-full h-3/6 flex justify-between items-start ">
+        <div class="flex flex-col w-1/2 gap-10 ">
+            <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
+            <h2 class="font bold">HOOTSUITE</h2>
+            <h1 class="text-4xl">Redefining an iconic social media brand</h1>
+    
+            <div class="w-auto">
+                <div class="ici">
+                    <p class="font-bold uppercase">Learn more</p>
+                    <div class="h-1 bg-sky-400 line-blue"></div>
+                </div>
+         
+                <!-- <div class="h-1 w-52 bg-sky-400"></div> -->
+            </div>
+    
+        </div>
+        <div class="flex flex-col gap-10 w-auto w-1/2 ">
+           <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project ">
+        </div>
+    </div>
+    <!-- les autre case studies -->
+    <div class="w-full h-3/6 flex justify-between gap-10 mt-10">
+       <div class="h-full w-1/3 flex flex-col justify-center">
+        <img src="../assets/img/digital_camera.jpg" alt="" class="h-1/2 w-full img-project">
+        <h2 class="font bold">HOOTSUITE</h2>
+        <p>Don’t Ignore Brand During the Banking M&A Riptide </p>
+       </div>
+       <div class="h-full w-1/3 flex flex-col justify-center">
+        <img src="../assets/img/digital_camera.jpg" alt="" class="h-1/2 w-full img-project ">
+        <h2 class="font bold">HOOTSUITE</h2>
+        <p>Don’t Ignore Brand During the Banking M&A Riptide </p>
+       </div>
+       <div class="h-full w-1/3 flex flex-col ">
+        <BtnRedirection title="VIEW ALL THINKING" redirection="/about"/>
+       </div>
+    </div>
+</div>
+    </template>
+    <script setup>
+
+    </script>
+    <style scoped>
+    .line-blue{width: 100%;}
+.ici {
+    color: #fff;
+   width: 105px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ici::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: lightgreen;
+    transition:  .2s;
+}
+
+.ici:hover::after {
+    width: 100%;
+}
+    
+</style>
+<script setup>
+onMounted(()  =>{
+    imageContentAnimation({element: '.img-project'})
+})
+</script>

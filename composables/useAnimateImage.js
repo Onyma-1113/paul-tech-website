@@ -14,7 +14,7 @@ export function useAnimateImage(el) {
 		}, {
 			transition: 'unset',
 			clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-			duration: 1.5,
+			duration: 1,
 			delay: 0.1,
 			clearProps: 'all',
             ease:'ease-in-out'

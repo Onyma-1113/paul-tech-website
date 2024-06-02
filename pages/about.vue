@@ -1,86 +1,12 @@
 <template>
-    <TransitionComponent />
-    <div class="transition-wait opacity-0">
+    <!-- <TransitionComponent /> -->
+    <div class="">
 
-        <Hero title="About"
-            description="Our business expertise, marketing prowess, and technological foundation empower us to address your digital modernization needs. By prioritizing customer experience, we create impactful digital solutions that drive profitability." />
-        <div class="gap-20 flex flex-col">
-            <ShowDetail title="Our Values" title1="Human" title2="Responsible" title3="Performance-Driven"
-                description1="We prioritize the human aspect in all we do, fostering relationships built on trust, transparency, and respect. Whether it's our customers, employees, or communities, our commitment to being human-centric ensures everyone feels heard, valued, and supported."
-                description2=""
-            </ShowDetail>
-            <ShowDetail title="Our Values"></ShowDetail>
-
-
-            <!-- <p class="text-4xl mb-0 text-sky-400"> Human</p>
-        <p>
-
-          We prioritize the human aspect in all we do, fostering relationships built on trust, transparency, and respect. Whether it's our customers, employees, or communities, our commitment to being human-centric ensures everyone feels heard, valued, and supported..</p>
-        <p class="text-4xl mb-0 text-sky-400" > Responsible </p>
-        <p>
-
-          Our commitment to responsibility encompasses accountability, integrity, and sustainability. Guided by ethical choices and transparent communication, we strive to inspire positive change and contribute to a better world
-          experiences for everyone involved.</p>
-        <p class="text-4xl mb-0 text-sky-400"> Performance-Driven </p>
-        <p>
-
-          We are driven by performance. Committed to excellence, we push boundaries to achieve optimal outcomes for our
-          clients. Our relentless pursuit of success ensures every action contributes to our objectives, enhancing the
-          value we provide.</p> -->
+        <div class="h-fifty-vh   w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+            <HeroPage title="Prophet unleashes the power of people, businesses and brands to move society forward."
+                description="Our interdisciplinary experts across consulting, experience and creative capabilities enable us to quickly implement and accelerate our clients’ growth goals." />
         </div>
-        <div class="w-full min-h-screen">
-            <!-- <CardTitle justify="justify-center" align="text-center" title="Our Team"/> -->
-            <SubTitle title="Our Team" justify="justify-center" align="text-center" />
-            <div class="w-full  mx-auto mb-64">
 
-                <div class="-mx-3 lg:flex items-center justify-center ">
-                    <div class="px-3 lg:w-1/3 mb-64">
-                        <div class="look opacity-100">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div class="-mx-3 lg:flex items-center card-container">
-                    <div class="px-3 lg:w-1/3">
-                        <div class="look opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                        <div class="look-2 opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                    </div>
-                    <div class="px-3 lg:w-1/3">
-                        <div class="look opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                        <div class="look-2 opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                    </div>
-                    <div class="px-3 lg:w-1/3">
-                        <div class="look opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                        <div class="look-2 opacity-0">
-                            <CardTeam title="Chef executif - john doe"
-                                description="Il s'occupe de la qualité client et le bon fonctionnement du déroulement " />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
 
 
     </div>
@@ -116,6 +42,6 @@ const aboutAnimation = () => {
 
 onMounted(() => {
 
-    aboutAnimation()
+    // aboutAnimation()
 })
 </script>

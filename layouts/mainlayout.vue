@@ -4,23 +4,23 @@
 
 <template>
     <div>
-        <ThePrealoder></ThePrealoder>
+        <!-- <ThePrealoder></ThePrealoder> -->
         <Navigation></Navigation>
         <div class="square"></div>
         <div class="square-2"></div>
         <div class="square-3"></div>
         <div class="under-container">
  
-            <div class="w-screen mx-auto px-32 max-2xl:px-16 max-md:px-5 ">
+            <div class="w-screen">
                 
                 <!-- <img src="../assets/img/squares.jpg" alt="" srcset="" class="fixed top-0 left-0 w-screen h-screen z-0"> -->
                 <slot />
-                <div v-if="routeName != careers">
+      
                     <ContactRedirection />
-                </div>
-                <div v-if="routeName == careers">
-                    <JoinTeamRedirection />
-                </div>
+         
+               
+                  
+             
                 
             </div>
             <Footer />

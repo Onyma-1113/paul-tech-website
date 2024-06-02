@@ -1,17 +1,20 @@
 <template>
-    <TransitionComponent/>
-    <div class="transition-wait opacity-0">
-        
-        <Hero title="Case studies"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
-            <div class="w-full flex justify-between flex-wrap test">
-    <CardProject showDetail="w-5/12"/>
-    <CardProject showDetail="w-5/12"/>
-    <CardProject showDetail="w-5/12"/>
-    <CardProject showDetail="w-5/12"/>
-    <CardProject showDetail="w-5/12"/>
+    <!-- <TransitionComponent/> -->
+    <div class="">
+        <div class="h-fifty-vh  w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+            <HeroPage title="Solutions that spark transformation, build relevance and fuel sustainable growth."
+                 />
+        </div>
+     <!-- case studies -->
+<div class="h-eighy-vh w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <PreviewDetail/>
   </div>
-  
+
+  <!-- preview testomonial -->
+<div class="h-96 w-full flex mx-auto px-site  max-2xl:px-16 max-md:px-5">
+  <CardTestimonial2/>
+</div>
+     
     </div>
 </template>
 <script setup>
@@ -22,13 +25,13 @@ definePageMeta({
 import {gsap} from 'gsap'
 const caseTransitionAnimation = () =>{
   let tl = gsap.timeline()
-    setTimeout(() => {
+  
         tl.to('.transition-wait',{
             duration:0.5,
             opacity:1
         })
         
-    }, 5000);
+   
     
  
 }
