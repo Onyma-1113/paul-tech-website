@@ -77,7 +77,7 @@ const toggleLinks = () => {
             <ul
                 class="h-1/2 w-full flex flex-row justify-between items-center text-white rounded-3xl text-lg ul-nav ">
                 <div class="flex  items-center"> 
-                    <li class="pr-32 text-4xl font-bold hover:text-sky-600 hover:duration-200  duration-200">
+                    <li class="pr-32 text-4xl font-bold">
                         <NuxtLink to="/">Paultech</NuxtLink>
                     </li>
                     <div class="flex gap-10">
@@ -103,13 +103,17 @@ const toggleLinks = () => {
                 </div>
 
 
-                <li>
+                <li class="pt-9">
                     <NuxtLink to="/contact">
                         <div class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch
                         </div>
                     </NuxtLink>
+                   <!-- <div class="h-32">
+                    hah
+                   </div> -->
                 </li>
+                
 
 
 

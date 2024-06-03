@@ -5,12 +5,24 @@
         <div class="h-fifty-vh   w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage title="Prophet unleashes the power of people, businesses and brands to move society forward."
                 description="Our interdisciplinary experts across consulting, experience and creative capabilities enable us to quickly implement and accelerate our clients’ growth goals." />
+                <AbstractAnimation2 />
+        </div>
+        <!-- preview testomonial -->
+        <div class="h-96 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+            <CardReason />
         </div>
 
+        <div class="h-fifty-vh w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52">
+            <PreviewServices />
+        </div>
 
+        <!-- redirection team -->
+        <div class="w-full h-fifty-vh bg-sky-400 flex flex-col px-site justify-center items-center">
+
+            <CardTestomonial3 />
+        </div>
 
     </div>
-
 
 </template>
 <script setup>
