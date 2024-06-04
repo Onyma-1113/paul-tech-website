@@ -2,7 +2,7 @@
     <!-- <TransitionComponent /> -->
     <div class="">
 
-        <div class="h-fifty-vh   w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+        <div class="h-three-quart-vh  w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage title="Prophet unleashes the power of people, businesses and brands to move society forward."
                 description="Our interdisciplinary experts across consulting, experience and creative capabilities enable us to quickly implement and accelerate our clients’ growth goals." />
                 <AbstractAnimation2 />

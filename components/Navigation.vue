@@ -80,7 +80,7 @@ const toggleLinks = () => {
                     <li class="pr-32 text-4xl font-bold">
                         <NuxtLink to="/">Paultech</NuxtLink>
                     </li>
-                    <div class="flex gap-10">
+                    <div class="flex gap-10 text-center">
                         <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200">
                         <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink>
 

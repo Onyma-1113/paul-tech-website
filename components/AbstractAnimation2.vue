@@ -1,5 +1,5 @@
 <template>
-    <div class="w-1/2 flex flex-col items-center justify-center h-fifty-vh justify-center gap-2 max-2xl:gap-10 max-2xl:h-eighy-vh">
+    <div class="w-1/2 flex flex-col items-center justify-center h-three-quart-vh justify-center gap-2 max-2xl:gap-10 max-2xl:h-eighy-vh">
         <div class="h-28 w-auto px-5 flex items-center justify-center border-2 border-white  direction d1">
             <h1 class="text-2xl">Humain</h1>
         </div>

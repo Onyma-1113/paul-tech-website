@@ -97,7 +97,7 @@ onMounted(() => {
     </div>
 
     <!-- compagny that trust us -->
-    <div class="w-full h-fifty-vh bg-white flex flex-col gap-32 justify-center items-center">
+    <div class="w-full h-three-quart-vh bg-white flex flex-col gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
       <div class="flex justify-center items-center gap-20">
         <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96">
@@ -178,7 +178,24 @@ onMounted(() => {
   padding-left: 34rem;
   padding-right: 34rem;
 }
-
+@media  screen and (max-width: 2200px){
+  .px-site {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+}
+@media  screen and (max-width: 1800px){
+  .px-site {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+}
+@media  screen and (max-width: 1600px){
+  .px-site {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+}
 @font-face {
   font-family: Graphik;
   src: url('../assets/fonts/Graphik-Regular-Trial.otf');
