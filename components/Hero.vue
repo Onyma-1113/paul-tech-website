@@ -1,15 +1,15 @@
 <template>
-  <div class="w-1/2  flex flex-col justify-center  items-start  max-2xl:h-eighy-vh">
-    <div class="h-72 max-2xl:h-56">
-      <h2 id="element" class="  h-full selector opacity-0 text-6xl h-auto font-bold max-2xl:text-5xl max-2xl:flex max-2xl:justify-center max-2xl:items-center         max-md:text-4xl bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">{{ title }}</h2>
+  <div class="w-1/2 flex flex-col h-auto gap-5 max-2xl:h-auto max-2xl:mt-5">
+    <div class="h-auto">
+      <h2 id="element" class="  h-full selector opacity-100 text-6xl h-auto font-bold max-2xl:text-5xl max-2xl:flex max-2xl:justify-center max-2xl:items-center         max-md:text-4xl bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">{{ title }}</h2>
 
     </div>
 
-    <span class="    opacity-0 selector text-2xl max-2xl:text-xl max-md:text-xl" ref="descrip">{{ description }}</span>
-    <div class="selector opacity-0">
+    <span class="h-auto opacity-100 selector text-2xl max-2xl:text-base max-md:text-xl" ref="descrip">{{ description }}</span>
+    <div class="selector opacity-100">
       <BtnRedirection :title="redirectiontitle" :redirection="redirection" :showarrow="showarrow"/>
     </div>
-    <div class="selector opacity-0">
+    <div class="selector opacity-100">
       <BtnRedirection :title="redirectiontitle2" :redirection="redirection2" :showarrow="showarrow" />
     </div>
 
@@ -67,7 +67,7 @@ onMounted(() => {
 
 <style scoped>
 .selector{
-  position: relative;
-  transform: translate(0px, 100px);
+  opacity: 0;
+  transform: translateY(100px);
 }
 </style>

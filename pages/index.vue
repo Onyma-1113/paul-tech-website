@@ -82,7 +82,7 @@ onMounted(() => {
 
     <!-- <ThePrealoder/> -->
 
-    <div class="h-screen w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
       <Hero title="We are a growth and transformation consulting firm."
         description="Prophet is dedicated to helping you unlock uncommon growth—growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
@@ -97,21 +97,21 @@ onMounted(() => {
     </div>
 
     <!-- compagny that trust us -->
-    <div class="w-full h-three-quart-vh bg-white flex flex-col gap-32 justify-center items-center">
+    <div class="w-full h-three-quart-vh max-2xl:gap-10  bg-white flex flex-col gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
-      <div class="flex justify-center items-center gap-20">
-        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96">
+      <div class="flex justify-center items-center gap-20 max-2xl:gap-0">
+        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
+        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
 
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96">
+        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96 max-2xl:w-72">
 
 
       </div>
 
-      <div class="flex justify-center items-center gap-20">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96">
-        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96">
+      <div class="flex justify-center items-center gap-20 max-2xl:gap-0">
+        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96 max-2xl:w-72">
+        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
+        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
 
 
 
@@ -120,38 +120,21 @@ onMounted(() => {
 
     </div>
     <!-- case studies -->
-    <div class="h-screen w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
       <PreviewDetail />
     </div>
 
     <!-- preview testomonial -->
-    <div class="h-96 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-80 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
       <CardTestimonial2 />
     </div>
 
     <!-- redirection team -->
-    <div class="w-full h-fifty-vh bg-sky-400 flex flex-col px-site justify-center items-center">
+    <!-- avant c etait h-fifty-vh -->
+    <div class="w-full  h-eighy-vh  bg-sky-400 flex flex-col px-site justify-center items-center">
 
-      <div class="flex justify-between items-center gap-20">
-        <img src="https://i.pravatar.cc/100?img=1" alt="" srcset="" class="w-96 h-full rounded-full">
-        <div class="flex flex-col gap-10">
-          <p class="text-2xl text-white w-auto"> “Prophet is an insightful consulting firm. Their highly engaged team is
-            easy to work with and provides actionable recommendations. They bring to the table a unique mix of both
-            analytical and creative thinking.”</p>
-
-          <div>
-            <p class="font-bold underline text-black">Michael Dunn</p>
-            <p>Chief Executive Officer, Chairman</p>
-          </div>
-
-        </div>
-        <div class="w-96">
-          <BtnRedirection title="MEET OUR TEAM" redirection="/about" />
-
-        </div>
-
-
-      </div>
+      
+    <CardTestomonial3/>
 
 
 

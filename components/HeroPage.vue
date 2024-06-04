@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/2  flex flex-col justify-center gap-10 items-start max-2xl:gap-10 max-2xl:h-eighy-vh">
+  <div class="w-1/2  flex flex-col justify-center gap-10 items-start max-2xl:gap-10 max-lg:h-eighy-vh ">
     <div class="h-auto">
       <h2 id="element" class=" h-full selector opacity-100 text-6xl h-auto font-bold max-2xl:text-5xl max-md:text-4xl bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">{{ title }}</h2>
 

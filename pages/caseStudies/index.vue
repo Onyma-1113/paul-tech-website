@@ -1,17 +1,17 @@
 <template>
     <!-- <TransitionComponent/> -->
     <div class="">
-        <div class="h-three-quart-vh w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+        <div class="h-screen w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage title="Solutions that spark transformation, build relevance and fuel sustainable growth."
                  />
         </div>
      <!-- case studies -->
-<div class="h-eighy-vh w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+<div class="h-eigthy-vh max-lg:h-screen w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
     <PreviewDetail/>
   </div>
 
   <!-- preview testomonial -->
-<div class="h-96 w-full flex mx-auto px-site  max-2xl:px-16 max-md:px-5">
+<div class="h-screen w-full flex items-center mx-auto px-site  max-2xl:px-16 max-md:px-5">
   <CardTestimonial2/>
 </div>
      

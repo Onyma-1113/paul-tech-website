@@ -73,15 +73,15 @@ const toggleLinks = () => {
 <template>
     <div class="">
         <nav
-            class="h-32 w-screen mx-auto bg-black px-site flex justify-center items-center max-2xl:h-26 max-2xl:px-16  max-md:px-5 fixed z-10 max-lg:hidden">
+            class="h-32 w-screen mx-auto bg-black px-site flex justify-center items-center max-2xl:h-16 max-2xl:px-16  max-md:px-5 fixed z-10 max-lg:hidden">
             <ul
                 class="h-1/2 w-full flex flex-row justify-between items-center text-white rounded-3xl text-lg ul-nav ">
-                <div class="flex  items-center"> 
-                    <li class="pr-32 text-4xl font-bold">
+                <div class="flex items-center"> 
+                    <li class="pr-32 text-4xl font-bold max-2xl:text-2xl">
                         <NuxtLink to="/">Paultech</NuxtLink>
                     </li>
-                    <div class="flex gap-10 text-center">
-                        <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200">
+                    <div class="flex gap-10  text-center items-center">
+                        <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200 w-24 max-2xl:text-base">
                         <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink>
 
                     </li>
@@ -103,7 +103,7 @@ const toggleLinks = () => {
                 </div>
 
 
-                <li class="pt-9">
+                <li class="">
                     <NuxtLink to="/contact">
                         <div class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch

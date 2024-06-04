@@ -1,18 +1,18 @@
 <template>
-    <div class="w-1/2 flex flex-col  h-eighty-vh justify-center gap-20  max-2xl:gap-10 max-2xl:h-eighy-vh">
+    <div class="w-1/2 flex flex-col h-auto justify-center items-center  gap-20  max-2xl:gap-10 max-2xl:h-eighy-vh">
         <div class="directional d-1">
 
         </div>
-        <div class="directional d-2">
+        <div class="directional">
 
         </div>
-        <div class="directional d-3">
+        <div class="directional">
 
         </div>
-        <div class="directional d-4">
+        <div class="directional">
 
         </div>
-        <div class="directional d-5">
+        <div class="directional">
 
         </div>
 
@@ -69,7 +69,8 @@ onMounted(()=>{
 
 .d-1 {
     position: relative;
-    left: 300px;
+    top:100px;
+    
    
 }
 .d-1:before{

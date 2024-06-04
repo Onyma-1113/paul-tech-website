@@ -3,7 +3,7 @@
     <div class="">
       
             
-              <div class="h-three-quart-vh w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+              <div class="h-screen w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
                 <HeroPage title="We help leaders turn uncertainty into competitive advantage."></HeroPage>
               </div>
 
