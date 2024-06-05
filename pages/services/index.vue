@@ -7,7 +7,7 @@
                 <HeroPage title="We help leaders turn uncertainty into competitive advantage."></HeroPage>
               </div>
 
-              <div class="h-auto w-full mb-20 flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52">
+              <div class="h-screen max-2xl:h-auto w-full max-2xl:mb-20 flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52">
                 <div class="w-full h-auto flex flex-col justify-between items-center">
         <div class="flex flex-col  w-full gap-20">
             <h2 class="text-4xl font-bold">Services</h2>
@@ -56,7 +56,13 @@
     </div>
 
 </template>
+
+
+
 <script setup>
+const route = useRoute()
+onMounted(() =>{console.log(route.name)
+})
 definePageMeta({
     layout: 'mainlayout'
 })

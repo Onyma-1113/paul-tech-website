@@ -84,8 +84,8 @@ onMounted(() => {
 
     <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
-      <Hero title="We are a growth and transformation consulting firm."
-        description="Prophet is dedicated to helping you unlock uncommon growth—growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
+      <Hero title="We are a digitalize and transformation consulting firm."
+        description="Paultech is dedicated to helping you unlock uncommon growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
         showarrow='true' 
         redirectiontitle="ABOUT"
         redirection="/about"
@@ -157,6 +157,24 @@ onMounted(() => {
 
 </template>
 <style>
+/* nav */
+
+@media  screen and (max-width: 1800px){
+  .p-breadcrumb-list{
+  padding-top: 5vh;
+    display: flex;
+    
+    flex-direction: row;
+    gap:2px; width:100px;
+}
+}
+.p-breadcrumb-list{
+  padding-top: 10vh;
+    display: flex;
+    
+    flex-direction: row;
+    gap:2px; width:100px;
+}
 .px-site {
   padding-left: 34rem;
   padding-right: 34rem;

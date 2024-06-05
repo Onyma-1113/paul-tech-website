@@ -1,11 +1,13 @@
 <script>
 
+
+
 </script>
 
 <template>
     <div>
         <!-- <ThePrealoder></ThePrealoder> -->
-        <Navigation></Navigation>
+        <Navigation :items="items"></Navigation>
         <div class="square"></div>
         <div class="square-2"></div>
         <div class="square-3"></div>
@@ -29,6 +31,18 @@
     </div>
 </template>
 <script setup>
+
+
+// const home = ref({
+//     label:'Home',
+//     route: '/'
+// });
+// const items = ref([
+//     { label: 'Components' },
+//     { label: 'Form' },
+//     { label: 'InputText', route: '/contact' }
+
+// ]);
 const careers = "careers"
 const route = useRoute()
   const routeName = route.name
@@ -36,6 +50,19 @@ onMounted(() => {
     useSmoothScroll()
     console.log(routeName)
 })
+
+// if(route.name == 'index'){
+//     const home = ref(
+    
+//     { label: 'Home' },
+// );
+//     const items = ref([
+
+//     { label: 'Home' },
+ 
+
+// ]);
+// }
 </script>
 <style>
 body {
@@ -77,7 +104,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     background-color:#1111
 } */
 
-
+.router-link-active{
+    color: aqua
+}
 
 
 </style>

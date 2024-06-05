@@ -3,16 +3,16 @@
         <div class="directional d-1">
 
         </div>
-        <div class="directional">
+        <div class="directional d-2">
 
         </div>
-        <div class="directional">
+        <div class="directional d-3">
 
         </div>
-        <div class="directional">
+        <div class="directional d-4">
 
         </div>
-        <div class="directional">
+        <div class="directional d-5">
 
         </div>
 

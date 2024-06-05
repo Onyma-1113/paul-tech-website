@@ -3,8 +3,8 @@
     <div class="">
 
         <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <HeroPage title="Prophet unleashes the power of people, businesses and brands to move society forward."
-                description="Our interdisciplinary experts across consulting, experience and creative capabilities enable us to quickly implement and accelerate our clients’ growth goals." />
+            <HeroPage title="Paultech harnesses the potential of individuals, enterprises, and brands to propel progress within society."
+                description="Leveraging our cross-disciplinary expertise in consulting and experience fields, we facilitate the rapid realization and amplification of our clients growth aspirations." />
             <AbstractAnimation2 />
         </div>
         <!-- preview testomonial -->
@@ -12,7 +12,7 @@
             <CardReason />
         </div>
 
-        <div class=" max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52">
+        <div class=" max-2xl:h-auto mb-56 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52">
             <PreviewServices />
         </div>
 

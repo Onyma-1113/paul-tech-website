@@ -8,7 +8,7 @@
 
     </div>
     <div class="flex flex-col h-full w-full  gap-10 w-auto pl-80 max-2xl:pl-0 ">
-        <p class="text-2xl text-sky-400"> “Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”</p>
+        <p class="text-3xl text-sky-400 max-2xl:text-2xl"> “Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”</p>
         <BtnRedirection title="TESTOMONIAL" redirection="/"/>
     </div>
 </div>

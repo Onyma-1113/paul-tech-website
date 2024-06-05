@@ -2,7 +2,7 @@
     
 <div class="w-full h-full flex justify-between items-center">
     <div class="flex flex-col w-full gap-20">
-        <h2 class="text-4xl font-bold">Paultech is different</h2>
+        <h2 class="text-4xl font-bold">Why Paultech is different</h2>
         <div class="flex flex-col gap-5">
         <p class="font bold text-2xl duration-300 hover:text-green-400 cursor-pointer">Commitment to Transparency</p>
         <p class="font bold text-2xl  duration-300 hover:text-green-400 cursor-pointer">Comprehensive and Supportive</p>
