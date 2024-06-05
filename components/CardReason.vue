@@ -12,8 +12,11 @@
 
     </div>
     <div class=" w-full flex flex-col gap-10 w-auto">
-        <p class="text-3xl text-sky-400"> “Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”</p>
-      
+        <!-- <p class="text-3xl text-sky-400"> “All our products, services, and solutions
+          are delivered with complete transparency, ensuring that our clients have a clear understanding of every step
+          in the process.”</p> -->
+          <!-- <p class="text-3xl text-sky-400"> “We provide a 360-degree view on costs, our solution selection process, project management, delivery, and operation support, ensuring our clients have complete visibility at every stage. By offering detailed cost breakdowns and transparent insights into how we choose the best solutions.”</p> -->
+              <p class="text-3xl text-sky-400"> “Our services are designed to propel your business forward in today's digital landscape. We specialize in delivering transformative solutions that optimize processes, drive innovation, and enhance security.”</p>
     </div>
 </div>
 </template>
