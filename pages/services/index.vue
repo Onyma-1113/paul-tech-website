@@ -30,13 +30,13 @@
             </div>
             <div class="flex wrap justify-around gap-5 w-full">
                 
-                <div class="flex flex-col gap-10 w-1/2">
+                <div class="flex flex-col justify-between gap-10 w-1/2">
                     <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32 max-2xl:h-24 max-2xl:w-24 ">
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Cybersecurity
                     </p>
-                    <p>Strengthen cybersecurity by integrating the necessary tools to detect and address vulnerabilities, ensuring robust protection and swift threat mitigation.</p>
+                    <p>Strengthen cybersecurity by integrating the necessary tools to detect and address vulnerabilities, ensuring robust protection and swift threat mitigation. </p>
                 </div>
-                <div class="flex flex-col gap-10 w-1/2  ">
+                <div class="flex flex-col gap-10 justify-between w-1/2  ">
                     <img src="../../assets/img/Pathways-to-Growth.png" alt="" srcset="" class="h-32 w-32 max-2xl:h-24 max-2xl:w-24 ">
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Process digitalization and AI
                     </p>
