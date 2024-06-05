@@ -2,7 +2,7 @@
     <!-- <TransitionComponent/> -->
     <div class="">
   
-      <div class="h-fifty-vh  w-full flex flex-col justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+      <div class="h-screen w-full flex flex-col justify-center items-start mx-auto px-site max-2xl:px-16 max-md:px-5">
               <HeroPage title="Candidature libre" description="Postuler pour une carrière à la hauteur de ton talent"
                    />
                  

@@ -1,7 +1,7 @@
 <template>
     <!-- <TransitionComponent/> -->
     <div class="">
-        <div class="h-screen w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+        <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage title="Solutions that spark transformation, build relevance and fuel sustainable growth."
                  />
         </div>

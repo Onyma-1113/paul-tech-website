@@ -2,11 +2,11 @@
   <!-- <TransitionComponent/> -->
   <div class="">
 
-    <div class="h-screen  w-full flex flex-col justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-screen w-full flex flex-col justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage title="Pushing the boundaries of digital asset liquidity provision" description="Join our vibrant and forward-thinking team in the burgeoning field of digital asset liquidity provision."
                  />
                  <div class="w-1/2">
-                  <BtnRedirection redirection="/careers/candidaturelibre" title="CANDITATURE LIBRE" showarrow="true"/>
+                  <BtnRedirection redirection="/careers/candidaturelibre" title="CANDITATURE" showarrow="true"/>
 
                  </div>
                  
