@@ -7,8 +7,10 @@
                 
                 <div class="flex flex-col items-center gap-10 w-1/2">
                     <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
+                    <NuxtLink :to="`/services/${1}`">
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Cloud adoption
                     </p>
+                </NuxtLink>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32">
