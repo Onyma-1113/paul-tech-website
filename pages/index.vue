@@ -225,7 +225,7 @@ html {
 
     background-color:#010923;
 
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
 
 
 
