@@ -48,6 +48,20 @@ onMounted(()=>{
     right:130px
 }
 
+@media screen and (max-width:1000px) {
+    .d1{
+        position: relative;
+        right:120px
+    }
+    .d2{
+        position: relative;
+        left:50px
+    }
+    .d3{
+        position: relative;
+        right:90px
+    }
+}
 
 
 </style>

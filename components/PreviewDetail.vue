@@ -2,7 +2,7 @@
     <div class="flex flex-col">
 
 
-    <div class="w-full h-3/6 flex justify-between items-start ">
+    <div class="w-full h-3/6 flex  justify-between items-start max-lg:hidden ">
         <div class="flex flex-col w-1/2 gap-10 ">
             <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
             <h2 class="font bold">HOOTSUITE</h2>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <!-- les autre case studies -->
-    <div class="w-full h-3/6 flex justify-between gap-10 mt-10">
+    <div class="w-full h-3/6 flex justify-between gap-10 mt-10 max-lg:hidden">
        <div class="h-full w-1/3 flex flex-col justify-center">
         <img src="../assets/img/digital_camera.jpg" alt="" class="h-1/2 w-full img-project">
         <h2 class="font bold">HOOTSUITE</h2>
@@ -37,6 +37,59 @@
        <div class="h-full w-1/3 flex flex-col ">
         <BtnRedirection title="VIEW ALL THINKING" redirection="/about"/>
        </div>
+    </div>
+
+    <!-- responsive  -->
+    
+    <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex  pb-10">
+       
+        <div class="flex flex-col  w-auto w-1/2 ">
+           <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project ">
+        </div>
+        <div class="flex flex-col w-full gap-5 pt-2 ">
+            <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
+            <h2 class="font-bold">HOOTSUITE</h2>
+            <h1 class="text-2xl">Redefining an iconic social media brand</h1>
+    
+            <div class="w-auto">
+                <div class="ici">
+                    <p class="font-bold uppercase">Learn more</p>
+                    <div class="h-1 bg-sky-400 line-blue"></div>
+                </div>
+         
+                <!-- <div class="h-1 w-52 bg-sky-400"></div> -->
+            </div>
+    
+        </div>
+    </div>
+    <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex   pb-10">
+       
+        <div class="flex flex-col  w-auto w-1/2 ">
+           <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project ">
+        </div>
+        <div class="flex flex-col w-full gap-5 pt-2 ">
+            <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
+            <h2 class="font-bold">HOOTSUITE</h2>
+            <h1 class="text-2xl">Redefining an iconic social media brand</h1>
+    
+          
+        </div>
+    </div>
+    <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex   pb-10 ">
+       
+        <div class="flex flex-col  w-auto w-1/2 ">
+           <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project ">
+        </div>
+        <div class="flex flex-col w-full gap-5 pt-2 ">
+            <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
+            <h2 class="font-bold">HOOTSUITE</h2>
+            <h1 class="text-2xl">Redefining an iconic social media brand</h1>
+    
+        
+            <div class="h-full w-1/3 flex flex-col ">
+                <BtnRedirection title="VIEW ALL THINKING" redirection="/about"/>
+               </div>
+        </div>
     </div>
 </div>
     </template>

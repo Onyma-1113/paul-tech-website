@@ -1,6 +1,6 @@
 <template>
     
-<div class="w-full h-full flex justify-between gap-20 items-center">
+<div class="w-full h-full flex justify-between gap-20 items-center max-2xl:flex-col max-2xl:items-start">
     <div class="flex flex-col h-full w-2/6">
         <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36">
         <p class="font bold">Andres Engel</p>

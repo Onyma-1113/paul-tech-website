@@ -82,7 +82,7 @@ onMounted(() => {
 
     <!-- <ThePrealoder/> -->
 
-    <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
       <Hero title="We are a digitalize and transformation consulting firm."
         description="Paultech is dedicated to helping you unlock uncommon growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
@@ -97,9 +97,9 @@ onMounted(() => {
     </div>
 
     <!-- compagny that trust us -->
-    <div class="w-full h-three-quart-vh max-2xl:gap-10  bg-white flex flex-col gap-32 justify-center items-center">
+    <div class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-white flex max-lg:flex-row gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
-      <div class="flex justify-center items-center gap-20 max-2xl:gap-0">
+      <div class="flex max-lg:flex-col justify-center items-center gap-20 max-2xl:gap-0">
         <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
         <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
 
@@ -108,7 +108,7 @@ onMounted(() => {
 
       </div>
 
-      <div class="flex justify-center items-center gap-20 max-2xl:gap-0">
+      <div class="flex justify-center items-center max-lg:flex-col  gap-20 max-2xl:gap-0">
         <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96 max-2xl:w-72">
         <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
         <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
@@ -125,16 +125,16 @@ onMounted(() => {
     </div>
 
     <!-- preview testomonial -->
-    <div class="h-80 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class="h-80 max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
       <CardTestimonial2 />
     </div>
 
     <!-- redirection team -->
     <!-- avant c etait h-fifty-vh -->
-    <div class="w-full  h-eighy-vh  bg-sky-400 flex flex-col px-site justify-center items-center">
+    <div class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-sky-400 flex flex-col px-site justify-center items-center">
 
       
-    <CardTestomonial3/>
+    <CardTestomonial3 title="“Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
 
 
 
@@ -195,6 +195,12 @@ onMounted(() => {
   .px-site {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+}
+@media  screen and (max-width: 1000px){
+  .px-site {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 }
 @font-face {

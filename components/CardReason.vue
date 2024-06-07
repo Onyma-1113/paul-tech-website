@@ -1,6 +1,6 @@
 <template>
     
-<div class="w-full h-full flex justify-between items-center">
+<div class="w-full h-full flex max-lg:flex-col justify-between max-lg:justify-around items-center">
     <div class="flex flex-col w-full gap-20">
         <h2 class="text-4xl font-bold">Why Paultech is different</h2>
         <div class="flex flex-col gap-5">

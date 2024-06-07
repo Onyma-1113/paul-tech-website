@@ -3,7 +3,7 @@
     <div class="w-full h-auto flex flex-col justify-between items-center">
         <div class="flex flex-col  w-full gap-20">
             <h2 class="text-4xl font-bold">WHAT WE DO</h2>
-            <div class="flex wrap justify-around  gap-5 w-full">
+            <div class="flex wrap justify-around  gap-5 w-full max-lg:flex-col max-lg:items-center">
                 
                 <div class="flex flex-col items-center gap-10 w-1/2">
                     <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
@@ -19,7 +19,7 @@
                 </div>
                
             </div>
-            <div class="flex wrap justify-around gap-5 w-full">
+            <div class="flex wrap justify-around gap-5 w-full max-lg:flex-col max-lg:items-center">
                 
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32">

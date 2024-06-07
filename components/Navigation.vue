@@ -154,7 +154,7 @@ defineProps({
     </div>
         </div>
         <nav
-            class="h-32 w-screen mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-5  max-md:px-5 fixed z-10 lg:hidden">
+            class="h-32 max-md:h-28 w-screen mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-5  max-md:px-5 fixed z-10 lg:hidden">
             <ul
                 class="h-1/2 w-full flex flex-row justify-between px-2 items-center text-red-400 bg-gray-700 rounded-3xl text-lg max-lg:bg-transparent">
                 <li class="w-36 flex items-center justify-between">
@@ -163,7 +163,7 @@ defineProps({
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
-                    <div class="text-white text-4xl pl-10 ">
+                    <div class="text-white text-4xl pl-10 max-md:text-2xl max-md:pl-5 ">
                         <NuxtLink to="/">PaulTech</NuxtLink>
                     </div>
                     
@@ -189,7 +189,7 @@ defineProps({
 
             <div
                 class="menu-phone h-screen w-screen bg-white absolute top-0 left-0  text-black text-5xl flex justify-center items-center">
-                <div class="flex gap-24 w-1/4 justify-between items-center flex-col max-2xl:w-1/3 ">
+                <div class="flex gap-24 w-1/4 justify-between items-center flex-col max-2xl:w-1/3 text-center">
                     <div class="li-phone-container">
                         <li class="li-phone " @click="toggleClass">
                             <NuxtLink to="/">Home</NuxtLink>

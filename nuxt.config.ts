@@ -21,6 +21,12 @@ export default defineNuxtConfig({
 		dirs: ['utils', 'animations','store'],
 	},
 
+  // seo
+  app:{
+    head:{
+      title: 'PaulTech',
+    }
+  }
 
 })
 
