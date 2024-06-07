@@ -1,11 +1,11 @@
 <template>
   <!-- <TransitionComponent/> -->
-    <div class="h-screen  flex justify-center items-center max-md:flex-col">
+    <div class="h-screen max-lg:h-auto flex justify-center items-center max-md:flex-col">
       
         <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-md:w-full">
-            <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector">Contact</h1>
+            <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">Contact</h1>
             <p class="text-4xl max-2xl:text-2xl max-md:text-xl selector">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              Dear client, if you'd like to discuss future projects or have any other questions, please don't hesitate to contact us. We look forward to hearing from you.
             </p>
         </div>
         <div class="h-three-quart-vh w-1/2 flex justify-center items-center max-sm:h-auto max-md:w-full">
@@ -76,7 +76,7 @@
         <div class="relative flex items-center">
           <label class="text-[13px] absolute top-[-30px] left-0 text-white">First Name</label>
           <input type="text" placeholder="Enter first name"
-            class="px-2 pt-5 pb-2 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+            class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
           <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
             viewBox="0 0 24 24">
             <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
@@ -89,7 +89,7 @@
         <div class="relative flex items-center">
           <label class="text-[13px] absolute top-[-30px] left-0 text-white">Last Name</label>
           <input type="text" placeholder="Enter last name"
-            class="px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+            class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
           <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
             viewBox="0 0 24 24">
             <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
@@ -114,7 +114,7 @@
         <div class="relative flex items-center sm:col-span-2">
           <label class="text-[13px] absolute top-[-30px] left-0 text-white">Email</label>
           <input type="email" placeholder="Enter email"
-            class="px-2pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+            class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
           <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
             viewBox="0 0 682.667 682.667">
             <defs>
@@ -133,7 +133,7 @@
           </svg>
         </div>
         <div class="sm:col-span-2">
-                    <label for="message" class="block text-sm font-medium text-white">Message</label>
+                    <label for="message" class="block text-sm font-medium text-white">Subject Message</label>
                     <div class="mt-1">
                         <textarea required="" name="message" id="message" rows="4" class="border-2 .border-gray-100  block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 "></textarea>
                     </div>
@@ -142,7 +142,7 @@
       </div>
 
       <button type="button"
-        class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm bg-[#333] hover:bg-[#222] text-white">Submit</button>
+        class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm bg-[#333] hover:bg-[#222] text-white bg-gradient-to-r from-cyan-500 to-blue-500">Submit</button>
     </form>
 
         </div>
@@ -161,25 +161,25 @@ import { ref, onMounted } from 'vue';
 // burger menu
 
 
-let tl = gsap.timeline()
-const contactAnimation = () =>{
-    setTimeout(() => {
-        tl.to('.transition-wait',{
-            duration:0.5,
-            opacity:1
-        })
-        tl.from('.selector', 
-    { 
-      opacity:0,
-       y: 100,
-      duration: 1 ,
-      stagger:0.5
+// let tl = gsap.timeline()
+// const contactAnimation = () =>{
+//     setTimeout(() => {
+//         tl.to('.transition-wait',{
+//             duration:0.5,
+//             opacity:1
+//         })
+//         tl.from('.selector', 
+//     { 
+//       opacity:0,
+//        y: 100,
+//       duration: 1 ,
+//       stagger:0.5
       
-    })
-    }, 4000);
+//     })
+//     }, 4000);
     
    
-}
+// }
 
 
 
@@ -187,6 +187,6 @@ const contactAnimation = () =>{
 
 // const split =  new SplitText(jsp)
 onMounted(() => {
-    contactAnimation()
+    // contactAnimation()
   })
 </script>

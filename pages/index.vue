@@ -6,6 +6,8 @@ definePageMeta({
 import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 
+const {data : products} = await useFetch('../data-text')
+
 
 import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap'
@@ -69,6 +71,10 @@ onMounted(() => {
   cardShowAnimation({ element: '.card-container' })
 
 
+  
+  console.log(products)
+
+
 });
 
 
@@ -126,7 +132,7 @@ onMounted(() => {
 
     <!-- preview testomonial -->
     <div class="h-80 max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <CardTestimonial2 />
+      <CardTestimonial2  title="“Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
     </div>
 
     <!-- redirection team -->
@@ -134,7 +140,7 @@ onMounted(() => {
     <div class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-sky-400 flex flex-col px-site justify-center items-center">
 
       
-    <CardTestomonial3 title="“Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
+    <CardTestomonial3 title="“PaulTech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
 
 
 

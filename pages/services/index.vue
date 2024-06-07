@@ -3,7 +3,7 @@
     <div class="">
       
             
-              <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+              <div class="h-screen  w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
                 <HeroPage title="We help leaders turn uncertainty into competitive advantage."></HeroPage>
               </div>
 
@@ -13,12 +13,15 @@
             <h2 class="text-4xl font-bold">Services</h2>
             <div class="flex max-lg:flex-col wrap justify-between max-lg:justify-around gap-5 w-full">
                 
-                <div class="flex flex-col  gap-10 w-1/2  max-lg:w-full">
+                
+                <div class="flex flex-col  gap-10 w-1/2  max-lg:w-full ">
                     <img src="../../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Cloud adoption
                     </p>
                     <p>Maximize efficiency with cloud adoption by integrating shift-left practices and embracing cloud-native migration. Transform your infrastructure with cloud adoption: prioritize a shift-left approach and advance through cloud-native migration, accelerating innovation and seamless integration.</p>
                 </div>
+
+           
                 <div class="flex flex-col gap-10 w-1/2 max-lg:w-full ">
                     <img src="../../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Observability
@@ -38,8 +41,11 @@
                 </div>
                 <div class="flex flex-col gap-10 justify-between w-1/2 max-lg:w-full ">
                     <img src="../../assets/img/Pathways-to-Growth.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
+                    <NuxtLink :to="`./services/${1}`">
+
                     <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Process digitalization and AI
                     </p>
+                    </NuxtLink>
                     <p>Enhance process efficiency through digitalization by leveraging data, automation, and AI for streamlined operations and optimized performance.</p>
                 </div>
                

@@ -3,11 +3,11 @@
       <div class="">
       
             
-        <div class="h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+        <div class="h-screen  w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
           <HeroPage title="Process digitalization and AI" description="Enhance process efficiency through digitalization by leveraging data, automation, and AI for streamlined operations and optimized performance."></HeroPage>
         </div>
 
-        <div class="h-screen max-2xl:h-auto w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52 max-2xl:mt-0">
+        <div class="h-screen max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52 max-2xl:mt-0">
             <div class="w-full h-auto flex flex-col justify-between items-center">
     <div class="flex flex-col  w-full gap-20 max-lg:gap-10">
         <h2 class="text-4xl font-bold">How it works</h2>
