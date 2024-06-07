@@ -96,7 +96,7 @@ defineProps({
                 class="h-1/2 w-full flex flex-row justify-between items-center text-white rounded-3xl text-lg ul-nav ">
                 <div class="flex items-center"> 
                     <li class="pr-16 text-4xl font-bold max-2xl:text-2xl">
-                        <NuxtLink to="/">Paultech</NuxtLink>
+                        <NuxtLink to="/"><img src="../assets/img/dark-version-logo-with-typo.png" alt="" srcset="" ></NuxtLink>
                     </li>
                     <div class="flex  gap-10 text-center items-center">
                         <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200  max-2xl:text-base">
@@ -229,7 +229,10 @@ defineProps({
 
 <style scoped>
 
-
+img{
+    height: 100px;
+    width: 100px;
+}
 
 .li-phone-container {
     overflow: hidden;
