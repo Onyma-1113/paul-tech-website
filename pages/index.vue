@@ -103,7 +103,7 @@ onMounted(() => {
     </div>
 
     <!-- compagny that trust us -->
-    <div class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-white flex max-lg:flex-row gap-32 justify-center items-center">
+    <div class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-[#DFE5F5] flex max-lg:flex-row gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
       <div class="flex max-lg:flex-col justify-center items-center gap-20 max-2xl:gap-0">
         <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
@@ -219,7 +219,9 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #000000;
+
+    background-color:#010923;
+
   font-family: Graphik;
 
 
@@ -242,12 +244,6 @@ li {
 
 }
 
-.p-accordion-header {
-  font-size: 2em;
-  border: 3px solid black;
-  border-radius: 30px;
-  padding: 0.7em
-}
 
 .p-accordion-content {
   padding-left: 2vw;
