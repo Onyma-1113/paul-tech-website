@@ -14,7 +14,7 @@
 <script setup>
 
 onMounted(() =>{
-  titleHomeAnimation({element: '.subtitle'})
+  // titleHomeAnimation({element: '.subtitle'})
 })
 
 </script>
