@@ -172,6 +172,7 @@ onMounted(() => {
     
     flex-direction: row;
     gap:2px; width:100px;
+    
 }
 }
 .p-breadcrumb-list{
@@ -209,11 +210,13 @@ onMounted(() => {
   padding-right: 1rem;
 }
 }
-@font-face {
+/* @font-face {
   font-family: Graphik;
   src: url('../assets/fonts/Graphik-Regular-Trial.otf');
+} */@font-face {
+  font-family:Roboto;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
 }
-
 body,
 html {
   margin: 0;
@@ -222,7 +225,7 @@ html {
 
     background-color:#010923;
 
-  font-family: Graphik;
+  font-family: Roboto;
 
 
 
