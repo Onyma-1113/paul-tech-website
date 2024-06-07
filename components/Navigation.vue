@@ -99,7 +99,7 @@ defineProps({
                     <li class="pr-16 text-4xl font-bold max-2xl:text-2xl">
                         <!-- <NuxtLink to="/"><img src="../assets/img/dark-version-logo-with-typo.png" alt="" srcset=""></NuxtLink> -->
                         <NuxtLink to="/">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"height=100px width="100px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.37 1215.77">
+                            <svg id="Layer_1" class="max-2xl:mt-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"height=100px width="100px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.37 1215.77">
   <defs>
  
     <clipPath id="clippath">
