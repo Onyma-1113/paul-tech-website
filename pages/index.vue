@@ -3,7 +3,12 @@ definePageMeta({
 
   layout: 'mainlayout'
 })
-
+useHead({
+  title: 'PaulTech|Home',
+  meta: [
+    { name: 'description', property:'og:description',content: "Welcome to Paultech! We are a digitalize and transformation consulting firm dedicated to helping you unlock uncommon growth anchored in purpose. We specialize in Azure, AWS, and Google Cloud adoption, observability, cybersecurity, process digitalization, and AI. Partner with us to manage disruption and uncover transformative opportunities." }
+  ]
+})
 
 
 
@@ -31,7 +36,7 @@ onMounted(() => {
   typedRef.value = ref.typedRef;
   cardShowAnimation({ element: '.card-container' })
 
-  
+
 
 
 
@@ -48,22 +53,21 @@ onMounted(() => {
 
     <!-- <ThePrealoder/> -->
 
-    <div class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div
+      class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
       <Hero title="We are a digitalize and transformation consulting firm."
         description="Paultech is dedicated to helping you unlock uncommon growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
-        showarrow='true' 
-        redirectiontitle="ABOUT"
-        redirection="/about"
-        redirectiontitle2="SERVICES"
-        redirection2="/services"/>
+        showarrow='true' redirectiontitle="ABOUT" redirection="/about" redirectiontitle2="SERVICES"
+        redirection2="/services" />
 
       <AbstractAnimation1 />
 
     </div>
 
     <!-- compagny that trust us -->
-    <div class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-[#DFE5F5] flex max-lg:flex-row gap-32 justify-center items-center">
+    <div
+      class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-[#DFE5F5] flex max-lg:flex-row gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
       <div class="flex max-lg:flex-col justify-center items-center gap-20 max-2xl:gap-0">
         <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
@@ -86,21 +90,25 @@ onMounted(() => {
 
     </div>
     <!-- case studies -->
-    <div class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div
+      class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
       <PreviewDetail />
     </div>
 
     <!-- preview testomonial -->
     <div class="h-80 max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <CardTestimonial2  title="“Paultech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
+      <CardTestimonial2
+        title="“Paultech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”" />
     </div>
 
     <!-- redirection team -->
     <!-- avant c etait h-fifty-vh -->
-    <div class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-[#0067f4]  flex flex-col px-site justify-center items-center">
+    <div
+      class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-[#0067f4]  flex flex-col px-site justify-center items-center">
 
-      
-    <CardTestomonial3 title="“PaulTech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
+
+      <CardTestomonial3
+        title="“PaulTech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”" />
 
 
 
@@ -125,7 +133,7 @@ onMounted(() => {
 <style>
 /* nav */
 
-@media  screen and (max-width: 1800px){
+@media screen and (max-width: 1800px) {
   /* .p-breadcrumb-list{
   padding-top: 5vh;
     display: flex;
@@ -135,6 +143,7 @@ onMounted(() => {
     
 } */
 }
+
 /* .p-breadcrumb-list{
   padding-top: 10vh;
     display: flex;
@@ -146,44 +155,51 @@ onMounted(() => {
   padding-left: 34rem;
   padding-right: 34rem;
 }
-@media  screen and (max-width: 2200px){
+
+@media screen and (max-width: 2200px) {
   .px-site {
-  padding-left: 20rem;
-  padding-right: 20rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
 }
-}
-@media  screen and (max-width: 1800px){
+
+@media screen and (max-width: 1800px) {
   .px-site {
-  padding-left: 15rem;
-  padding-right: 15rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
-}
-@media  screen and (max-width: 1600px){
+
+@media screen and (max-width: 1600px) {
   .px-site {
-  padding-left: 5rem;
-  padding-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
-}
-@media  screen and (max-width: 1000px){
+
+@media screen and (max-width: 1000px) {
   .px-site {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
-}
+
 /* @font-face {
   font-family: Graphik;
   src: url('../assets/fonts/Graphik-Regular-Trial.otf');
-} */@font-face {
-  font-family:Roboto;
+} */
+@font-face {
+  font-family: Roboto;
   src: url('../assets/fonts/Roboto-Regular.ttf');
 }
+
 body,
 html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 
-    background-color:#010923;
+  background-color: #010923;
 
   font-family: Arial, Helvetica, sans-serif;
 
@@ -289,11 +305,10 @@ html.lenis body {
  * nav
  */
 
- .router-link-active{
+.router-link-active {
   color: #0067f4;
   /* background: -webkit-linear-gradient(#0067f4, #DFE5F5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
-
 </style>
