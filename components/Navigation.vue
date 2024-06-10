@@ -219,7 +219,7 @@ defineProps({
 
             <div
                 class="menu-phone h-screen w-screen bg-white absolute top-0 left-0  text-black text-5xl flex justify-center items-center">
-                <div class="flex gap-24 w-1/4 justify-between items-center flex-col max-2xl:w-1/3 text-center">
+                <div class=" h-3/4 flex gap-24 w-1/4 justify-between items-center flex-col max-2xl:w-1/3 text-center">
                     <div class="li-phone-container">
                         <li class="li-phone " @click="toggleClass">
                             <NuxtLink to="/">Home</NuxtLink>

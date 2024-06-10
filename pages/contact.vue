@@ -1,10 +1,10 @@
 <template>
   <!-- <TransitionComponent/> -->
   <div
-    class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+    class="h-screen w-full flex items-center max-lg:flex-col  max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
     <!-- <div class="h-screen max-lg:h-auto flex justify-center items-center max-lg:flex-col"> -->
 
-    <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-lg:w-full max-lg:mt-56">
+    <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-lg:w-full max-lg:mt-24 max-lg:mb-24">
       <!-- <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">Contact</h1>
             <p class="text-4xl max-2xl:text-2xl max-md:text-xl selector">
               Dear client, if you'd like to discuss future projects or have any other questions, please don't hesitate to contact us. We look forward to hearing from you.
