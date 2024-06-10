@@ -2,7 +2,7 @@
     <!-- <TransitionComponent /> -->
     <div class="">
 
-        <div class=" max-lg:flex-col max-lg:pt-28 max-lg:h-auto h-screen w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+        <div class=" max-lg:flex-col max-lg:pt-28 max-lg:h-auto h-screen w-full flex items-center  mx-auto px-site  max-2xl:px-16 max-md:px-5">
             <HeroPage title="Paultech harnesses the potential of individuals, enterprises, and brands to propel progress within society."
                 description="Leveraging our cross-disciplinary expertise in consulting and experience fields, we facilitate the rapid realization and amplification of our clients growth aspirations." />
             <AbstractAnimation2 />

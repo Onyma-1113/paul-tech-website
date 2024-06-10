@@ -1,14 +1,14 @@
 <template>
   <!-- <TransitionComponent/> -->
-    <div class="h-screen max-lg:h-auto flex justify-center items-center max-md:flex-col">
+    <div class="h-screen max-lg:h-auto flex justify-center items-center max-lg:flex-col">
       
-        <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-md:w-full">
+        <div class="h-full w-1/2 flex flex-col justify-center gap-20 max-lg:w-full max-lg:mt-56">
             <h1 class="text-8xl font-bold max-2xl:text-5xl max-md:text-4xl selector bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">Contact</h1>
             <p class="text-4xl max-2xl:text-2xl max-md:text-xl selector">
               Dear client, if you'd like to discuss future projects or have any other questions, please don't hesitate to contact us. We look forward to hearing from you.
             </p>
         </div>
-        <div class="h-three-quart-vh w-1/2 flex justify-center items-center max-sm:h-auto max-md:w-full">
+        <div class="h-three-quart-vh w-1/2 flex justify-center items-center max-sm:h-auto max-lg:w-full">
             <!-- <div>
                 <h1 class="text-8xl text-center">Formulaire</h1>
             </div> -->

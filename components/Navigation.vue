@@ -17,7 +17,6 @@ const toggleClass = () => {
             scaleY: 1,
             // transformOrigin:'left center',
             transformOrigin: 'top center',
-
             duration: 1,
             ease: 'power2.inOut',
         })
@@ -52,9 +51,6 @@ const toggleClass = () => {
 
 // const { $gsap } = useNuxtApp()
 
-onMounted(() => {
-
-})
 
 const links = [
     { href: '/about', text: 'About' },
@@ -99,7 +95,7 @@ defineProps({
                     <li class="pr-16 text-4xl font-bold max-2xl:text-2xl">
                         <!-- <NuxtLink to="/"><img src="../assets/img/dark-version-logo-with-typo.png" alt="" srcset=""></NuxtLink> -->
                         <NuxtLink to="/">
-                            <svg id="Layer_1" class="max-2xl:mt-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"height=100px width="100px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.37 1215.77">
+                            <svg id="Layer_1" class="max-2xl:mt-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height=80px width="80px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.37 1215.77">
   <defs>
  
     <clipPath id="clippath">
@@ -132,7 +128,7 @@ defineProps({
   
                     </li>
                     <div class="flex  gap-10 text-center items-center">
-                        <li v-for="link in links" class="hover:text-sky-600 hover:duration-200  duration-200  max-2xl:text-base">
+                        <li v-for="link in links" class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
                         <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink>
                       
 
@@ -188,7 +184,7 @@ defineProps({
     </div>
         </div>
         <nav
-            class="h-32 max-md:h-28 w-screen mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-5  max-md:px-5 fixed z-10 lg:hidden">
+            class="h-32 max-md:h-28 w-screen  bg-[#010923] mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-5  max-md:px-5 fixed z-10 lg:hidden">
             <ul
                 class="h-1/2 w-full flex flex-row justify-between px-2 items-center text-red-400 bg-gray-700 rounded-3xl text-lg max-lg:bg-transparent">
                 <li class="w-36 flex items-center justify-between">
@@ -248,6 +244,11 @@ defineProps({
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
                             <NuxtLink to="/careers">Careers</NuxtLink>
+                        </li>
+                    </div>
+                    <div class="li-phone-container" @click="toggleClass">
+                        <li class="li-phone">
+                            <NuxtLink to="/contact">Contact</NuxtLink>
                         </li>
                     </div>
 

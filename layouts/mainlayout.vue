@@ -104,9 +104,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     background-color:#1111
 } */
 
-.router-link-active{
-    color: aqua
-}
 
 
 </style>

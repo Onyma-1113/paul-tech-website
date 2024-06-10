@@ -1,8 +1,8 @@
 <template>
   
-  <div class="w-1/2 flex flex-col h-auto gap-5 max-lg:w-full max-2xl:h-auto max-2xl:mt-5">
+  <div class="w-1/2 flex flex-col h-auto gap-5 max-lg:w-full max-2xl:h-auto max-2xl:mt-20">
     <div class="h-auto">
-      <h2 id="element" class=" h-full pb-2 selector opacity-100 text-6xl h-auto font-bold max-2xl:text-5xl max-2xl:flex max-2xl:justify-center max-2xl:items-center         max-md:text-4xl text-[#0067f4]">{{ title }}</h2>
+      <h2 id="element" class=" h-full pb-2 selector opacity-100 text-6xl h-auto font-bold max-2xl:text-5xl max-2xl:flex max-2xl:justify-center max-2xl:items-center         max-md:text-4xl bg-gradient-to-r from-[#0067f4] to-[#DFE5F5] text-transparent bg-clip-text">{{ title }}</h2>
 
     </div>
 

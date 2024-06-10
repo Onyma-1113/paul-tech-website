@@ -18,12 +18,12 @@
             </div>
     
         </div>
-        <div class="flex flex-col gap-10 w-auto w-1/2 ">
+        <div class="flex flex-col gap-10 w-auto w-1/2  ">
            <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project ">
         </div>
     </div>
     <!-- les autre case studies -->
-    <div class="w-full h-3/6 flex justify-between gap-10 mt-10 max-lg:hidden">
+    <div class="w-full h-3/6 flex justify-between items-center gap-10 mt-10 max-lg:hidden">
        <div class="h-full w-1/3 flex flex-col justify-center">
         <img src="../assets/img/digital_camera.jpg" alt="" class="h-1/2 w-full img-project">
         <h2 class="font bold">HOOTSUITE</h2>
@@ -34,8 +34,8 @@
         <h2 class="font bold">HOOTSUITE</h2>
         <p>Don’t Ignore Brand During the Banking M&A Riptide </p>
        </div>
-       <div class="h-full w-1/3 flex flex-col ">
-        <BtnRedirection title="VIEW ALL THINKING" redirection="/about"/>
+       <div class="h-full w-1/3 flex flex-col justify-center ">
+        <BtnRedirection title="CASE STUDIES" redirection="/about"/>
        </div>
     </div>
 

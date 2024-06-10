@@ -3,7 +3,7 @@
 <template>
     <NuxtLink :to="redirection" >
       <div
-        class=" h-5   font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start items-center gap-5 items-center text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
+        class="h-5  font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start items-center gap-5 items-center text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
     <p>{{title}}</p>
     <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
         <div class=" arrow right"></div>

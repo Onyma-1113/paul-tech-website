@@ -137,7 +137,7 @@ onMounted(() => {
 
     <!-- redirection team -->
     <!-- avant c etait h-fifty-vh -->
-    <div class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-[#010923]  flex flex-col px-site justify-center items-center">
+    <div class="w-full  h-eighy-vh  max-2xl:h-auto  max-2xl:mb-20 bg-[#0067f4]  flex flex-col px-site justify-center items-center">
 
       
     <CardTestomonial3 title="“PaulTech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
@@ -360,4 +360,13 @@ html.lenis body {
   opacity: 0;
   filter: blur(1rem);
 }
+
+/**
+ * nav
+ */
+
+ .router-link-active{
+  color: #0067f4
+}
+
 </style>
