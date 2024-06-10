@@ -10,7 +10,7 @@
     
             <div class="w-auto">
                 <div class="ici">
-                    <p class="font-bold uppercase">Learn more</p>
+                    <p class="font-bold uppercase w-32">Learn more</p>
                     <div class="h-1 bg-sky-400 line-blue"></div>
                 </div>
          

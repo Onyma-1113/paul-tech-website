@@ -67,7 +67,7 @@ onMounted(() => {
 <style>
 body {
     /* background-color:rgb(1, 74, 172) */
-color: white;
+color: #DFE5F5;
 }
 /* 
 .under-container {

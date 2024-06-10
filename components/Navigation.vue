@@ -153,7 +153,7 @@ defineProps({
 
                 <li class="">
                     <NuxtLink to="/contact">
-                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
+                        <div class="bg-[#0067f4] hover:bg-white  hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch
                         </div>
                     </NuxtLink>
@@ -207,7 +207,7 @@ defineProps({
                         <!-- <div class="contact-btn-2  h-11 w-36 flex justify-center items-center rounded-3xl bg-black">
                             Get in touch
                         </div> -->
-                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
+                        <div class="bg-[#0067f4] hover:bg-white  hover:text-black hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             Get in touch
                         </div>
                     </NuxtLink>

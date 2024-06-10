@@ -17,7 +17,7 @@
         </div>
 
         <!-- redirection team -->
-        <div class="w-full h-eighy-vh  max-2xl:h-auto max-2xl:mb-20 bg-sky-400 flex flex-col px-site justify-center items-center">
+        <div class="w-full h-eighy-vh  max-2xl:h-auto max-2xl:mb-20 bg-[#0067f4] flex flex-col px-site justify-center items-center">
 
             <CardTestomonial3 title="“PaulTech is a perceptive consulting agency. Their dedicated team is a pleasure to collaborate with and delivers practical advice. They offer a distinctive blend of both strategic analysis and innovative ideas.”"/>
         </div>

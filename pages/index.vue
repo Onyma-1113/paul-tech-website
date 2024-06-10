@@ -366,7 +366,10 @@ html.lenis body {
  */
 
  .router-link-active{
-  color: #0067f4
+  color: #0067f4;
+  /* background: -webkit-linear-gradient(#0067f4, #DFE5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 </style>

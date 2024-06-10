@@ -162,7 +162,7 @@
         </div>
 
         <button type="button"
-          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm bg-[#333] hover:bg-[#222] text-white bg-gradient-to-r from-cyan-500 to-blue-500">Submit</button>
+          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] " >Submit</button>
       </form>
 
     </div>
