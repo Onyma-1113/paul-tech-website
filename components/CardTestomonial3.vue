@@ -17,7 +17,7 @@
 
   </div>
   <div class="w-96 pb-5">
-    <BtnRedirection title="ABOUT" redirection="/about" widthtext="w-24"/>
+    <BtnRedirection title="ABOUT" redirection="/about" widthtext="w-14"/>
 
   </div>
 

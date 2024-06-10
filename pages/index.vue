@@ -3,14 +3,11 @@ definePageMeta({
 
   layout: 'mainlayout'
 })
-import Accordion from 'primevue/accordion';
-import AccordionTab from 'primevue/accordiontab';
 
-const {data : products} = await useFetch('../data-text')
+
 
 
 import { ref, onMounted } from 'vue';
-import { gsap } from 'gsap'
 import Typed from "typed.js";
 const typedRef = ref(null);
 
@@ -27,52 +24,15 @@ const clickToUseTyped = () => {
   }
 };
 
-// animation 
 
-
-const reasonAnimation = () => {
-  let tl = gsap.timeline()
-
-  tl.to('.reason-img',
-    {
-      opacity: 1,
-      duration: 1,
-      // stagger: 0.5
-
-    })
-  tl.to('.reason-text',
-    {
-      opacity: 1,
-      y: -100,
-      duration: 1,
-      // stagger: 0.5
-
-    })
-}
-//transition
-
-const homeTransitionAnimation = () => {
-  let tl = gsap.timeline()
-  setTimeout(() => {
-    tl.to('.transition-wait', {
-      duration: 0.5,
-      opacity: 1
-    })
-
-  }, 4000);
-
-
-}
 
 onMounted(() => {
   clickToUseTyped()
   typedRef.value = ref.typedRef;
-
   cardShowAnimation({ element: '.card-container' })
 
-
   
-  console.log(products)
+
 
 
 });
@@ -166,22 +126,22 @@ onMounted(() => {
 /* nav */
 
 @media  screen and (max-width: 1800px){
-  .p-breadcrumb-list{
+  /* .p-breadcrumb-list{
   padding-top: 5vh;
     display: flex;
     
     flex-direction: row;
     gap:2px; width:100px;
     
+} */
 }
-}
-.p-breadcrumb-list{
+/* .p-breadcrumb-list{
   padding-top: 10vh;
     display: flex;
     
     flex-direction: row;
     gap:2px; width:100px;
-}
+} */
 .px-site {
   padding-left: 34rem;
   padding-right: 34rem;
@@ -231,27 +191,13 @@ html {
 
 }
 
-.section-1 {}
+
 
 li {
   list-style-type: none;
 }
 
-.p-accordion {
 
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 70px;
-
-}
-
-
-.p-accordion-content {
-  padding-left: 2vw;
-  font-size: 2em;
-}
 
 .h-container {
   height: 90vh;
@@ -313,19 +259,7 @@ svg {
   transform-origin: bottom center;
 }
 
-.transition-text {
-  position: absolute;
-  top: 50vh;
-  left: 5vw;
-}
 
-.transition-text-span-div {
-  overflow: hidden;
-}
-
-.hidden-transition {
-  display: none;
-}
 
 /* lenis */
 html.lenis,
@@ -349,17 +283,7 @@ html.lenis body {
   pointer-events: none;
 }
 
-/* page transition for the id page */
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
 
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
 
 /**
  * nav

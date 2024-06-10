@@ -30,30 +30,10 @@ definePageMeta({
     layout: 'mainlayout'
 })
 
-import { gsap } from 'gsap'
-import { ref, onMounted } from 'vue';
-
-
-// burger menu
-
-
-let tl = gsap.timeline()
-const aboutAnimation = () => {
-    setTimeout(() => {
-        tl.to('.transition-wait', {
-            duration: 0.5,
-            opacity: 1
-        })
-
-    }, 4000);
-
-    cardServiceAnimation({ element: '.card-container', element2: ".look", element3: ".look-2" })
-}
 
 
 
-onMounted(() => {
 
-    // aboutAnimation()
-})
+
+
 </script>

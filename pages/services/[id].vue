@@ -15,7 +15,7 @@
             
             <div class="flex flex-col  gap-10 w-1/2  max-lg:w-full">
                 <img src="../../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Analyse
+                <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Analyse
                     d’opportunité
                 </p>
                 <p>Notre équipe d’analyste d’affaires
@@ -28,7 +28,7 @@
             </div>
             <div class="flex flex-col gap-10 w-1/2 max-lg:w-full ">
                 <img src="../../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Mapping de
+                <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Mapping de
                     processus
                 </p>
 <p>Notre équipe d’analyste d’affaires se
@@ -45,7 +45,7 @@
             
             <div class="flex flex-col justify-between gap-10 w-1/2 max-lg:w-full">
                 <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Digitalisation et suivi
+                <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Digitalisation et suivi
                     de performance
                 </p><p>Notre équipe de développement
                     se charge de faire la digitalisation
