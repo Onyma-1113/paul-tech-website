@@ -167,7 +167,7 @@ defineProps({
 
             </ul>
         </nav>
-        <div class="card flex flex-row justify-start px-site fixed bg-black z-10 pb-2 w-full">
+        <!-- <div class="card flex flex-row justify-start px-site fixed  z-10 pb-2 w-full">
             <Breadcrumb :home="home" :model="itemss">
             <template #item="{ item, props }">
                 <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
@@ -181,7 +181,7 @@ defineProps({
                 </a>
             </template>
         </Breadcrumb>
-    </div>
+    </div> -->
         </div>
         <nav
             class="h-32 max-md:h-28 w-screen  bg-[#010923] mx-auto px-32 flex justify-center items-center max-2xl:h-26 max-2xl:px-5  max-md:px-5 fixed z-10 lg:hidden">
