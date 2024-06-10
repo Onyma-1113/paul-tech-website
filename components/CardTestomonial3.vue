@@ -17,7 +17,7 @@
 
   </div>
   <div class="w-96 pb-5">
-    <BtnRedirection title="OUR TEAM" redirection="/about" widthtext="w-24"/>
+    <BtnRedirection title="ABOUT" redirection="/about" widthtext="w-24"/>
 
   </div>
 
