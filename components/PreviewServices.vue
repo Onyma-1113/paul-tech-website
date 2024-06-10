@@ -8,13 +8,13 @@
                 <div class="flex flex-col items-center gap-10 w-1/2">
                     <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
                     <NuxtLink :to="`/services/${1}`">
-                    <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Cloud adoption
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Cloud adoption
                     </p>
                 </NuxtLink>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32">
-                    <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Observability
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Observability
                     </p>
                 </div>
                
@@ -23,13 +23,16 @@
                 
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32">
-                    <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Cybersecurity
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Cybersecurity
                     </p>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Pathways-to-Growth.png" alt="" srcset="" class="h-32 w-32">
-                    <p class=" text-2xl  duration-300 hover:text-green-400 cursor-pointer">Process digitalization and AI
+                    <NuxtLink :to="`/services/${1}`">
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Process digitalization and AI
+                        
                     </p>
+                </NuxtLink>
                 </div>
                
             </div>

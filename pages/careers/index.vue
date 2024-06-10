@@ -6,7 +6,7 @@
             <HeroPage title="Pushing the boundaries of digital asset liquidity provision" description="Join our vibrant and forward-thinking team in the burgeoning field of digital asset liquidity provision."
                  />
                  <div class="w-1/2">
-                  <BtnRedirection redirection="/careers/candidaturelibre" title="CANDITATURE" showarrow="true"/>
+                  <BtnRedirection redirection="/careers/candidaturelibre" title="CANDITATURE" showarrow="true" widthtext="w-28"/>
 
                  </div>
                  

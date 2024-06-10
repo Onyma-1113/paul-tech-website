@@ -3,12 +3,17 @@
 <template>
     <NuxtLink :to="redirection" >
       <div
-        class="h-5  font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start items-center gap-5 items-center text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
-    <p>{{title}}</p>
-    <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
+        class="h-5  w-full  flex-col font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r from-[#0067f4] to-[#DFE5F5] hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start  gap-5 text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
+   <div class="ici" :class="widthtext">
+        <p>{{title}}</p>
+    <!-- <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
         <div class=" arrow right"></div>
+    </div> -->
+   
+                 
+        <div class="h-1 bg-[#DFE5F5] line-blue"></div>
     </div>
- 
+                
         
       </div>
     </NuxtLink>
@@ -18,9 +23,34 @@ defineProps({
     title: String,
     redirection : String,
     showarrow : String,
+    widthtext:String
 })
 </script>
 <style scoped>
+
+.line-blue{width: auto;}
+.ici {
+    color: #fff;
+   /* width: auto; */
+    cursor: pointer;
+    position: relative;
+}
+
+.ici::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #0067F4;
+    transition:  .2s;
+}
+
+.ici:hover::after {
+    width: 100%;
+}
+    
 .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;

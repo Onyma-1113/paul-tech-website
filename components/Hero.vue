@@ -8,10 +8,10 @@
 
     <span class="h-auto opacity-100 selector text-2xl max-2xl:text-base max-md:text-xl" ref="descrip">{{ description }}</span>
     <div class="selector opacity-100">
-      <BtnRedirection :title="redirectiontitle" :redirection="redirection" :showarrow="showarrow"/>
+      <BtnRedirection :title="redirectiontitle" :redirection="redirection" :showarrow="showarrow" widthtext="w-16"/>
     </div>
     <div class="selector opacity-100">
-      <BtnRedirection :title="redirectiontitle2" :redirection="redirection2" :showarrow="showarrow" />
+      <BtnRedirection :title="redirectiontitle2" :redirection="redirection2" :showarrow="showarrow" widthtext="w-20"/>
     </div>
 
 

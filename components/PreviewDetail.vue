@@ -9,9 +9,9 @@
             <h1 class="text-4xl">Redefining an iconic social media brand</h1>
     
             <div class="w-auto">
-                <div class="ici">
+                <div class="ici w-32">
                     <p class="font-bold uppercase w-32">Learn more</p>
-                    <div class="h-1 bg-sky-400 line-blue"></div>
+                    <div class="h-1 bg-[#DFE5F5] line-blue"></div>
                 </div>
          
                 <!-- <div class="h-1 w-52 bg-sky-400"></div> -->
@@ -35,7 +35,7 @@
         <p>Don’t Ignore Brand During the Banking M&A Riptide </p>
        </div>
        <div class="h-full w-1/3 flex flex-col justify-center ">
-        <BtnRedirection title="CASE STUDIES" redirection="/about"/>
+        <BtnRedirection title="CASE STUDIES" redirection="/about" widthtext="w-32"/>
        </div>
     </div>
 
@@ -52,7 +52,7 @@
             <h1 class="text-2xl">Redefining an iconic social media brand</h1>
     
             <div class="w-auto">
-                <div class="ici w-full">
+                <div class="ici w-32">
                     <p class="font-bold uppercase w-32">Learn more</p>
                     <div class="h-1 bg-sky-400 line-blue"></div>
                 </div>
@@ -112,7 +112,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    background: lightgreen;
+    background: #0067F4;
     transition:  .2s;
 }
 
