@@ -52,8 +52,8 @@
             <h1 class="text-2xl">Redefining an iconic social media brand</h1>
     
             <div class="w-auto">
-                <div class="ici">
-                    <p class="font-bold uppercase">Learn more</p>
+                <div class="ici w-full">
+                    <p class="font-bold uppercase w-32">Learn more</p>
                     <div class="h-1 bg-sky-400 line-blue"></div>
                 </div>
          
@@ -87,7 +87,7 @@
     
         
             <div class="h-full w-1/3 flex flex-col ">
-                <BtnRedirection title="VIEW ALL THINKING" redirection="/about"/>
+                <BtnRedirection title="VIEW ALL" redirection="/about"/>
                </div>
         </div>
     </div>
