@@ -4,9 +4,9 @@ definePageMeta({
   layout: 'mainlayout'
 })
 useHead({
-  title: 'PaulTech|Home',
+  title: 'PaulTech | Home',
   meta: [
-    { name: 'description', property:'og:description',content: "Welcome to Paultech! We are a digitalize and transformation consulting firm dedicated to helping you unlock uncommon growth anchored in purpose. We specialize in Azure, AWS, and Google Cloud adoption, observability, cybersecurity, process digitalization, and AI. Partner with us to manage disruption and uncover transformative opportunities." }
+    { name: 'description', property:'og:description',content: "Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. Our services help clients fully leverage the benefits of cloud computing, automate their business processes, and maximize the advantages of AI. With our customer-centric approach and commitment to excellence, we are the ideal partner to support your digital transformation." }
   ]
 })
 
@@ -57,7 +57,7 @@ onMounted(() => {
       class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
       <Hero title="We are a digitalize and transformation consulting firm."
-        description="Paultech is dedicated to helping you unlock uncommon growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities."
+        description="Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. Our services help clients fully leverage the benefits of cloud computing, automate their business processes, and maximize the advantages of AI. With our customer-centric approach and commitment to excellence, we are the ideal partner to support your digital transformation."
         showarrow='true' redirectiontitle="ABOUT" redirection="/about" redirectiontitle2="SERVICES"
         redirection2="/services" />
 

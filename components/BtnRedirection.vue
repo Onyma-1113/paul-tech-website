@@ -5,13 +5,13 @@
       <div
         class="h-5  w-full  flex-col font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r from-[#0067f4] to-[#DFE5F5] hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start  gap-5 text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
    <div class="ici" :class="widthtext">
-        <p>{{title}}</p>
+        <p class="hover:text-[#0067F4] duration-300">{{title}} &#x279E;</p>
     <!-- <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
         <div class=" arrow right"></div>
     </div> -->
    
                  
-        <div class="h-1 bg-[#DFE5F5] line-blue"></div>
+        <!-- <div class="h-1 bg-[#DFE5F5] line-blue"></div> -->
     </div>
                 
         
@@ -28,15 +28,15 @@ defineProps({
 </script>
 <style scoped>
 
-.line-blue{width: auto;}
+/* .line-blue{width: auto;} */
 .ici {
     color: #fff;
-   /* width: auto; */
+   width: auto;
     cursor: pointer;
     position: relative;
 }
 
-.ici::after {
+/* .ici::after {
     content: '';
     position: absolute;
     height: 5px;
@@ -50,7 +50,7 @@ defineProps({
 .ici:hover::after {
     width: 100%;
 }
-    
+     */
 .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;
