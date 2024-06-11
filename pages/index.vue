@@ -92,7 +92,7 @@ onMounted(() => {
     <!-- case studies -->
     <div
       class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <PreviewDetail />
+      <PreviewDetail firstText="CHECK OUR RECENT CASE STUDIES"/>
     </div>
 
     <!-- preview testomonial -->

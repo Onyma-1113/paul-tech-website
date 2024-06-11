@@ -9,7 +9,7 @@
     </div>
     <div class="flex flex-col h-full w-full  gap-10 w-auto pl-80 max-2xl:pl-0 ">
         <p class="text-3xl text-sky-400 max-2xl:text-2xl"> {{ title }}</p>
-        <BtnRedirection title="TESTOMONIAL" redirection="/" widthtext="w-32"/>
+        <!-- <BtnRedirection title="TESTOMONIAL" redirection="/" widthtext="w-32"/> -->
     </div>
 </div>
 </template>
