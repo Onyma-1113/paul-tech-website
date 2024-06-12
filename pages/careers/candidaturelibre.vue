@@ -3,48 +3,62 @@
     <div class="">
   
       <div class="h-screen w-full flex flex-col justify-center items-start mx-auto px-site max-2xl:px-16 max-md:px-5">
-              <HeroPage title="Candidature libre" description="Postuler pour une carrière à la hauteur de ton talent"
+              <HeroPage :title="$t('canditature_title')" :description="$t('canditature_description')"
                    />
                  
                    
           </div>
   
+          <!-- 
+             redirection_title_candidature:'APPLICATION',
+            canditature_title: "Open Application",
+            canditature_description: "Apply for a career that matches your talent",
+            canditature_mention: "Unless otherwise indicated, all fields are required.",
+            canditature_first_name: 'First Name',
+            canditature_last_name: 'Last Name',
+            canditature_email: 'Email',
+            canditature_phone: 'Phone',
+            canditature_cv_title: 'Attach your resume',
+            canditature_nb_file: 'One File',
+            canditature_limit: 'Limit 3 Mo.',
+            canditature_file_auth: 'File authorize',
+           -->
   
           <div class="h-auto  w-full flex flex-col pb-56 gap-52 mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <p class="text-3xl">Sauf indication contraire, tous les champs sont obligatoires.</p>
+            <p class="text-3xl">{{ $t('canditature_mention') }}</p>
             <form action="" class="flex flex-col gap-10 items-center">
               <div class="flex flex-col w-1/2">
-                <label for="prenom" class=" pl-2 text-3xl">Prenom</label>
+                <label for="prenom" class=" pl-2 text-3xl">{{ $t('canditature_first_name') }}</label>
                 <input type="text"  class="mt-5 pt-4 pb-4 pl-2 rounded-xl text-black">
               </div>
               <div class="flex flex-col w-1/2">
-                <label for="prenom" class=" pl-2 text-3xl">Nom</label>
+                <label for="prenom" class=" pl-2 text-3xl">{{ $t('canditature_last_name') }}</label>
                 <input type="text"  class="mt-5 pt-4 pb-4 pl-2 rounded-xl text-black">
               </div>
               <div class="flex flex-col w-1/2">
-                <label for="prenom" class=" pl-2 text-3xl">Courriel</label>
+                <label for="prenom" class=" pl-2 text-3xl">{{ $t('canditature_email') }}</label>
                 <input type="email"  class="mt-5 pt-4 pb-4 pl-2 rounded-xl text-black">
               </div>
               <div class="flex flex-col w-1/2">
-                <label for="prenom" class=" pl-2 text-3xl">Telephone</label>
+                <label for="prenom" class=" pl-2 text-3xl">{{ $t('canditature_phone') }}</label>
                 <input type="number"  class="mt-5 pt-4 pb-4 pl-2 rounded-xl text-black ">
               </div>
               <div class="flex flex-col w-1/2">
-                <label for="file" class=" pl-2 text-3xl">Ajoute ton CV</label>
+                <label for="file" class=" pl-2 text-3xl">{{ $t('canditature_cv_title') }}</label>
                 <input type="file" name="file"  class="mt-5 pt-10 pb-10 pl-2 rounded-xl text-black bg-white">
-                <p class="text-gray-400">Un seul fichier.</p>
-                <p class="text-gray-400">Limité à 3 Mo.</p>
-                <p class="text-gray-400">Types autorisés : jpg, png, pdf, doc, docx.</p>
+                <p class="text-gray-400">{{ $t('canditature_nb_file') }}</p>
+                <p class="text-gray-400">{{ $t('canditature_limit') }}</p>
+                <p class="text-gray-400">{{ $t('canditature_file_auth') }}: jpg, png, pdf, doc, docx.</p>
               </div>
               <div class="flex flex-col w-1/2">
-                <label for="file" class=" pl-2 text-3xl">Ajoute ton portfolio (optionnel)</label>
-                <input type="file" name="file"  class="mt-5 pt-10 pb-10 pl-2 rounded-xl text-black bg-white">
-                <p class="text-gray-400">Un seul fichier.</p>
-                <p class="text-gray-400">Limité à 3 Mo.</p>
-                <p class="text-gray-400">Types autorisés : jpg, png, pdf, doc, docx.</p>
+                <label for="file" class=" pl-2 text-3xl">{{ $t('canditature_porfolio_title') }}</label>
+                <input type="file" id="file" name="file" placeholder="haha" class="mt-5 pt-10 pb-10 pl-2 rounded-xl text-black bg-white">
+                <p class="text-gray-400">{{ $t('canditature_nb_file') }}</p>
+                <p class="text-gray-400">{{ $t('canditature_limit') }}</p>
+                <p class="text-gray-400">{{ $t('canditature_file_auth') }}: jpg, png, pdf, doc, docx.</p>
               </div>
               <div>
-                <input type="submit" value="Soumettre" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-14 w-56 text-2xl  flex justify-center items-center rounded-3xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
+                <input type="submit" :value="$t('candidature_submit')" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-black hover:from-white hover:to-white hover:text-black  hover:duration-300 duration-300  text-white h-14 w-56 text-2xl  flex justify-center items-center rounded-3xl cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
               </div>
             </form>
   

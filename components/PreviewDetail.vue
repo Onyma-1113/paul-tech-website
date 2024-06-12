@@ -52,32 +52,30 @@
     <!-- responsive  -->
     
     <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex  pb-10">
-        <h2 class="font-bold pb-10">{{firstText}}</h2>
-        <div class="flex flex-col  w-auto w-1/2 ">
-           <img src="../assets/img/courriels.jpg" alt="" class="h-full w-full  ">
+        <h2 class="font-bold text-3xl pb-10">{{firstText}}</h2>
+        <NuxtLink :to="`/caseStudies/1`">
+        
+         <div class="flex flex-col  w-auto w-1/2 ">
+           <img src="../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full  ">
         </div>
         <div class="flex flex-col w-full gap-5 pt-2 ">
             <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
-            
-            <h1 class="text-2xl">Email manager for a construction business</h1>
+            <h2 class="font-bold">{{$t('case_title_type_1')}}</h2>
+            <h1 class="text-2xl">{{$t('case_title_1')}}</h1>
     
-            <div class="w-auto">
-                <BtnRedirection title="LEARN MORE" :redirection="`/caseStudies/${1}`" widthtext="w-32"/>
-         
-                <!-- <div class="h-1 w-52 bg-sky-400"></div> -->
-            </div>
-    
+          
         </div>
+    </NuxtLink>
     </div>
     <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex   pb-10">
-        <NuxtLink :to="`/caseStudies/3`">
+        <NuxtLink :to="`/caseStudies/2`">
         <div class="flex flex-col  w-auto w-1/2 ">
-           <img src="../assets/img/b2c.jpg" alt="" class="h-full w-full  ">
+           <img src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-full w-full  ">
         </div>
         <div class="flex flex-col w-full gap-5 pt-2 ">
             <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
-            <h2 class="font-bold">CASE STUDIES : CLOUD ADOPTION</h2>
-            <h1 class="text-2xl">Implementation of an Azure B2C</h1>
+            <h2 class="font-bold">{{$t('case_title_type_2')}}</h2>
+            <h1 class="text-2xl">{{$t('case_title_2')}}</h1>
     
           
         </div>
@@ -86,13 +84,13 @@
     <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex   pb-10 ">
         <NuxtLink :to="`/caseStudies/3`">
         <div class="flex flex-col  w-auto w-1/2 ">
-           <img src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-full w-full  ">
+           <img src="../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-full w-full  ">
         </div>
     </NuxtLink>
         <div class="flex flex-col w-full gap-5 pt-2 ">
             <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
-            <h2 class="font-bold">CASE STUDIES : CLOUD ADOPTION</h2>
-            <h1 class="text-2xl">Implementation of an AWS B2C</h1>
+            <h2 class="font-bold">{{$t('case_title_type_3')}}</h2>
+            <h1 class="text-2xl">{{$t('case_title_type_3')}}</h1>
     
         
             <div class="h-full w-1/3 flex flex-col ">

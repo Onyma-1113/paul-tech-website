@@ -18,7 +18,7 @@
 
         </div>
 
-        <span class="h-auto opacity-100 selector text-2xl max-2xl:text-base max-md:text-xl" ref="descrip"> Dear client, if you'd like to discuss future projects or have any other questions, please don't hesitate to contact us. We look forward to hearing from you.</span>
+    <span class="h-auto opacity-100 selector text-2xl max-2xl:text-base max-md:text-xl" ref="descrip"> {{$t('contact_description')}}</span>
 
 
 
@@ -90,11 +90,16 @@
         </div>
     </div>
 </div> -->
-      <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10">
+<!--   contact_form_last_name:'Last Name',
+            contact_form_first_name:'First Name',
+            contact_form_phone:'Phone',
+            contact_form_email:'Email',
+            contact_form_message:'Subject Message', -->
+      <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" method="post" action="" name="contact-form">
         <div class="grid sm:grid-cols-2 gap-10">
           <div class="relative flex items-center">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white">First Name</label>
-            <input type="text" placeholder="Enter first name"
+            <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_first_name')}}</label>
+            <input type="text"  name="prenom"
               class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
@@ -106,8 +111,8 @@
           </div>
 
           <div class="relative flex items-center">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white">Last Name</label>
-            <input type="text" placeholder="Enter last name"
+            <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_last_name')}}</label>
+            <input type="text" name="nom"
               class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
@@ -119,8 +124,8 @@
           </div>
 
           <div class="relative flex items-center sm:col-span-2">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white">Phone</label>
-            <input type="email" placeholder="Enter Phone"
+            <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_phone')}}</label>
+            <input type="phone"  name="telephone"
               class="px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg fill="#bbb" class="w-[18px] h-[18px] absolute right-2" viewBox="0 0 64 64">
               <path
@@ -131,8 +136,8 @@
 
 
           <div class="relative flex items-center sm:col-span-2">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white">Email</label>
-            <input type="email" placeholder="Enter email"
+            <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_email')}}</label>
+            <input type="email"  name="courriel"
               class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 682.667 682.667">
@@ -152,7 +157,7 @@
             </svg>
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="block text-sm font-medium text-white">Subject Message</label>
+            <label for="message" class="block text-sm font-medium text-white">{{$t('contact_form_message')}}</label>
             <div class="mt-1">
               <textarea required="" name="message" id="message" rows="4"
                 class="border-2 .border-gray-100  block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 "></textarea>
@@ -161,8 +166,8 @@
 
         </div>
 
-        <button type="button"
-          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] " >Submit</button>
+        <input type="submit" 
+          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] "  :value="$t('candidature_submit')" id="submit">
       </form>
 
     </div>

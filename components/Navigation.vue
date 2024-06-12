@@ -86,6 +86,12 @@ defineProps({
 
 //translation
 const { locale, setLocale } = useI18n()
+const isOn = ref(true)
+const toggleLanguage = () =>{
+isOn.value = !isOn.value
+console.log(isOn.value)
+
+}
 </script>
 <template>
     <div class="">
@@ -133,13 +139,31 @@ const { locale, setLocale } = useI18n()
   
                     </li>
                     <div class="flex  gap-10 text-center items-center">
-                        <li v-for="link in links" class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
-                        <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink>
+                        <!-- <li v-for="link in links" class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
+                        <NuxtLink :to="link.href" @click.native="toggleLinks()">{{ link.text }}</NuxtLink></li> -->
                       
+                        <li class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
+                            <NuxtLink to="/about">{{ $t('redirection_title_about') }}</NuxtLink>
+                        </li>
+                        <li class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
+                            <NuxtLink to="/services">{{ $t('redirection_title_services') }}</NuxtLink>
+                        </li>
+                        <li class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
+                            <NuxtLink to="/caseStudies">{{ $t('redirection_title_case') }}</NuxtLink>
+                        </li>
+                        <li class="hover:text-[#0067f4] hover:duration-200  duration-200  max-2xl:text-base">
+                            <NuxtLink to="/careers">{{ $t('redirection_title_careers') }}</NuxtLink>
+                        </li>
 
-                    </li>
+                 
                     </div>
-                  
+                  <!-- redirection_title_home: 'Accueil',
+            redirection_title_about: 'À propos',
+            redirection_title_services: 'Services',
+            redirection_title_case: `Cas D'études`,
+            redirection_title_careers: 'Carrières',
+            redirection_title_contact: 'Prenez contact',
+            redirection_title_learn_more: 'EN SAVOIR PLUS', -->
                 </div>
 
 
@@ -157,8 +181,8 @@ const { locale, setLocale } = useI18n()
 
 
                 <li class="flex items-center gap-5">
-                    <p class="underline cursor-pointer" @click="setLocale('fr')">FR</p>
-                    <p class="cursor-pointer" @click="setLocale('en')">EN</p>
+                    <p class="cursor-pointer" :class="{'underline': !isOn, 'hidden': isOn}"  @click="setLocale('fr'), toggleLanguage()">FR</p>
+                    <p class="cursor-pointer" :class="{'underline': isOn, 'hidden': !isOn}"  @click="setLocale('en'), toggleLanguage()">EN</p>
                     <NuxtLink to="/contact">
                         <div class="bg-[#0067f4] hover:bg-white  hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             {{$t('redirection_title_contact')}}
@@ -260,8 +284,8 @@ const { locale, setLocale } = useI18n()
                     </div>
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone flex gap-10">
-                            <p class="underline cursor-pointer">FR</p>
-                            <p class="underline cursor-pointer">EN</p>
+                            <p class="underline cursor-pointer" :class="{'text-sky-400': !isOn, 'text-black': isOn}"  @click="setLocale('fr'), toggleLanguage()">FR</p>
+                            <p class="underline cursor-pointer" :class="{'text-sky-400': isOn, 'text-black': !isOn}"  @click="setLocale('en'), toggleLanguage()">EN</p>
                         </li>
                     </div>
 

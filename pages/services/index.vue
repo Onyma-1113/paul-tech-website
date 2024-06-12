@@ -26,7 +26,7 @@
               <!-- observability -->
                 <div class="flex flex-col gap-10 w-1/2 max-lg:w-full ">
                     <img src="../../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                    <NuxtLink :to="`./services/1`"><p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_2')}} &#x279E;
+                    <NuxtLink :to="`./services/2`"><p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_2')}} &#x279E;
                     </p></NuxtLink>
                     
                     <p>{{$t('observability_description')}}</p>
@@ -38,7 +38,7 @@
                    <!-- cyber -->
                 <div class="flex flex-col justify-between gap-10 w-1/2 max-lg:w-full">
                     <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                    <NuxtLink :to="`./services/1`"> <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_3')}} &#x279E;
+                    <NuxtLink :to="`./services/3`"> <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_3')}} &#x279E;
                     </p></NuxtLink>
                    
                     <p>{{$t('cybersecurity_description')}}</p>
@@ -46,7 +46,7 @@
                     <!--cloud -->
                 <div class="flex flex-col  gap-10 w-1/2  max-lg:w-full ">
                     <img src="../../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                    <NuxtLink :to="`./services/1`"><p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_1')}} &#x279E;
+                    <NuxtLink :to="`./services/4`"><p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_1')}} &#x279E;
                     </p></NuxtLink>
      
                     <p>{{$t('cloud_description')}}</p>               

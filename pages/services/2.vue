@@ -2,25 +2,14 @@
     <!-- <TransitionComponent/> -->
     <div class="">
 
-<!-- process digi -->
+<!-- observability -->
         <div class="h-screen  w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <HeroPage :title="$t('preview_service_s_4')"
-                :description="$t('process_description')">
+            <HeroPage :title="$t('preview_service_s_2')"
+                :description="$t('observability_description')">
             </HeroPage>
         </div>
 
-        <!-- 
-             service_work_title_1: "1. Opportunity Analysis",
-            service_work_title_2: "2. Process Mapping",
-            service_work_title_3: "3. Digitalization and Performance Tracking",
-            service_work_description_1: "Our team of business analysts helps you target business processes in line with your strategic directions. Then, a 5-point opportunity analysis will be conducted and presented to your organization.",
-            service_work_description_2: "Our team of business analysts listens to your practices. Subsequently, process optimization workshops are organized. In the final step, validation and presentation sessions are held to confirm the process(es).",
-            service_work_description_3: "Our development team handles digitalization according to your technical and security requirements. Then, we work with your management team to provide visibility on efficiency and return on investment.",
-
-
-
-
-         -->
+       
         <div
             class="h-auto max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5 mt-52 max-2xl:mt-0">
             <div class="w-full h-auto flex flex-col justify-between items-center">
@@ -31,30 +20,43 @@
                         <div class="flex flex-col  gap-10 w-1/2  max-lg:w-full border-2 border-[#1C1D3B] p-10 box hover:relative hover:top-100 duration-300">
                             <img src="../../assets/img/Consumer-Demand.png" alt="" srcset=""
                                 class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_work_title_1') }}
+                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_obser_work_title_1') }}
                             </p>
-                            <p>{{ $t('service_work_description_1') }}</p>
+                            <p>{{ $t('service_obser_work_description_1') }}</p>
                         </div>
                         <div class="flex flex-col gap-10 w-1/2 max-lg:w-full border-2 border-[#1C1D3B] p-10 box">
                             <img src="../../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png"
                                 alt="" srcset="" class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_work_title_2') }}
+                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_obser_work_title_2') }}
                             </p>
-                            <p>{{ $t('service_work_description_2') }}</p>
+                            <p>{{ $t('service_obser_work_description_2') }}</p>
                         </div>
                         <div class="flex flex-col justify-between gap-10 w-1/2 max-lg:w-full border-2 border-[#1C1D3B] p-10 box">
                             <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset=""
                                 class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
-                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_work_title_3') }}
+                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_obser_work_title_3') }}
                             </p>
-                            <p>{{ $t('service_work_description_3') }}</p>
+                            <p>{{ $t('service_obser_work_description_3') }}</p>
                         </div>
 
 
                     </div>
                     <div class="flex wrap max-lg:flex-col justify-around gap-5 w-full">
 
-                       
+                        <div class="flex flex-col justify-between gap-10 w-1/2 max-lg:w-full border-2 border-[#1C1D3B] p-10 box">
+                            <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset=""
+                                class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
+                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_obser_work_title_4') }}
+                            </p>
+                            <p>{{ $t('service_obser_work_description_4') }}</p>
+                        </div>
+                        <div class="flex flex-col justify-between gap-10 w-1/2 max-lg:w-full border-2 border-[#1C1D3B] p-10 box">
+                            <img src="../../assets/img/Revolutionize-Experiences.png" alt="" srcset=""
+                                class="h-32 w-32 max-lg:h-24 max-lg:w-24 ">
+                            <p class=" text-2xl  duration-300  cursor-pointer">{{ $t('service_obser_work_title_5') }}
+                            </p>
+                            <p>{{ $t('service_obser_work_description_5') }}</p>
+                        </div>
 
                     </div>
 

@@ -3,10 +3,10 @@
   <div class="">
 
     <div class="h-screen w-full flex flex-col gap-5 justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <HeroPage title="Pushing the boundaries of digital asset liquidity provision" description="Join our vibrant and forward-thinking team in the burgeoning field of digital asset liquidity provision."
+            <HeroPage :title="$t('careers_title')" :description="$t('careers_description')"
                  />
                  <div class="w-1/2">
-                  <BtnRedirection redirection="/careers/candidaturelibre" title="CANDITATURE" showarrow="true" widthtext="w-28"/>
+                  <BtnRedirection redirection="/careers/candidaturelibre" :title="$t('redirection_title_candidature')" showarrow="true" widthtext="w-28"/>
 
                  </div>
                  
@@ -15,7 +15,23 @@
 
         <div class="h-auto  w-full flex flex-col pb-56 gap-52 mx-auto px-site max-2xl:px-16 max-md:px-5">
 <div class="card-career opacity-0" >
-  <CardCareer title="Developer - DevOps" redirection="/contact"/>
+ 
+
+  <CardCareer title="Developer - DevOps" redirection="https://www.linkedin.com/jobs/search/?currentJobId=3944465883&f_EA=true&keywords=devopst"/>
+
+
+</div>
+<div class="card-career opacity-0">
+  <CardCareer title="Developer - Exchange Connectivity"  redirection="https://www.linkedin.com/jobs/search/?currentJobId=3927807238&f_EA=true&geoId=101174742&keywords=Developer%20-%20Exchange%20Connectivity&location=Canada&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true"/>
+
+</div>
+ <div class="card-career opacity-0">
+  <CardCareer title="Senior DevOps Engineer - Cryptocurrency" redirection="https://www.linkedin.com/jobs/search/?currentJobId=3919913126&f_EA=true&geoId=101174742&keywords=Senior%20DevOps%20Engineer%20-%20Cryptocurrency&location=Canada&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true"/>
+
+</div>
+<!-- 
+<div class="card-career opacity-0">
+  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
 
 </div>
 <div class="card-career opacity-0">
@@ -23,21 +39,9 @@
 
 </div>
 <div class="card-career opacity-0">
-  <CardCareer title="Senior DevOps Engineer - Cryptocurrency" redirection="/contact"/>
-
-</div>
-<div class="card-career opacity-0">
   <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
 
-</div>
-<div class="card-career opacity-0">
-  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
-
-</div>
-<div class="card-career opacity-0">
-  <CardCareer title="Developer - Exchange Connectivity"  redirection="/contact"/>
-
-</div>
+</div> -->
 
 </div>
 

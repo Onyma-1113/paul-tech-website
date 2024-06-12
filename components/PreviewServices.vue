@@ -7,15 +7,17 @@
                 
                 <div class="flex flex-col items-center gap-10 w-1/2">
                     <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
-                    <NuxtLink :to="`/services/${1}`">
+                    <NuxtLink :to="`/services/${4}`">
                     <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_1')}}
                     </p>
                 </NuxtLink>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32">
+                    <NuxtLink :to="`/services/${2}`">
                     <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_2')}}
                     </p>
+                </NuxtLink>
                 </div>
                
             </div>
@@ -23,8 +25,10 @@
                 
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32">
+                    <NuxtLink :to="`/services/${3}`">
                     <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_3')}}
                     </p>
+                </NuxtLink>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Pathways-to-Growth.png" alt="" srcset="" class="h-32 w-32">
