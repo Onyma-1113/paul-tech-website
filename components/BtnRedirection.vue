@@ -5,7 +5,7 @@
       <div
         class="h-5  w-full  flex-col font-bold hover:duration-300 duration-300 hover:bg-gradient-to-r from-[#0067f4] to-[#DFE5F5] hover:to-blue-500 hover:text-transparent hover:bg-clip-text rounded-3xl flex justify-start  gap-5 text-white text-md cursor-pointer max-2xl:h-10 max-2xl:w-44 max-2xl:text-lg">
    <div class="ici" :class="widthtext">
-        <p class="hover:text-[#0067F4] duration-300">{{title}} &#x279E;</p>
+        <p class="hover:text-[#0067F4] duration-300 uppercase">{{title}} &#x279E;</p>
     <!-- <div class="flex justity-center items-center arrow-container " v-if="showarrow == 'true'">
         <div class=" arrow right"></div>
     </div> -->

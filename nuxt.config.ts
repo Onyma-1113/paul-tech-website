@@ -1,33 +1,27 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss" , 'nuxt-primevue','@hypernym/nuxt-gsap'],
-  // ,"@nuxtjs/supabase"
-  // supabase:{
-  //   url: process.env.SUPABASE_URL,
-  //   key: process.env.SUPABASE_KEY
-  // }
-
+  modules: ["@nuxtjs/tailwindcss" , 'nuxt-primevue','@hypernym/nuxt-gsap','@nuxtjs/i18n'],
+ 
+  i18n: {
+    vueI18n: './i18n.config.ts' 
+  },
   plugins: [
     { src: '@/plugins/vue-typed-js.js', mode: 'client' },
     { src: '@/plugins/voiceflow.js', mode: 'client' }
   ],
  
-  // supabase:{
-  //   url: process.env.SUPABASE_URL,
-  //   key: process.env.SUPABASE_KEY,
-  //   redirect: false
-  // },
+ 
   imports: {
 		dirs: ['utils', 'animations','store'],
 	},
 
-  // seo
+  
   app:{
-    head:{
-      title: 'PaulTech',
+    head: {
+      title: 'PaulTech'
     }
   }
 
-})
-
+}
+)

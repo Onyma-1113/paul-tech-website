@@ -13,7 +13,7 @@
             <!-- col compagnie that trust us -->
             <div class="flex flex-col   gap-20 ">
 
-                <h2 class="text-4xl font-bold max-lg:text-2xl ">CHALLENGES</h2>
+                <h2 class="text-4xl font-bold max-lg:text-2xl text-[#0067F4] ">CHALLENGES</h2>
                 <p class="text-2xl max-lg:text-xl">The entrepreneur's inbox currently contains over 4,000 emails, with an incoming flow
                     that far exceeds their processing capacity. This deluge of emails presents a significant challenge,
                     overwhelming their ability to efficiently manage and respond to messages. As a result, productivity
@@ -24,26 +24,26 @@
                     and missing key opportunities.</p>
 
                 <div class="flex justify-center items-center max-lg:flex-col  gap-20 max-2xl:gap-0">
-                    <img src="../../assets/img/courriels.jpg" alt="" class="h-full w-full rounded-lg">
+                    <img src="../../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full rounded-lg">
                 </div>
 
-                <h2 class="text-4xl font-bold max-lg:text-2xl">SOLUTIONS</h2>
+                <h2 class="text-4xl font-bold max-lg:text-2xl text-[#0067F4]">SOLUTIONS</h2>
                 <div class="flex gap-10 flex-col">
-                    <p class="text-4xl text-[#0067F4] max-lg:text-2xl ">Phase 1.
+                    <p class="text-4xl font-bold max-lg:text-2xl ">Phase 1.
                         Creation of Email Filtering Rules</p>
                     <p class="text-2xl  max-lg:text-xl">The client needed a solution to automatically filter out irrelevant emails,
                         easing the burden of managing a large volume of messages. This flood of emails made it difficult
                         to efficiently handle important correspondence, consuming valuable time and diverting attention
                         from critical tasks. Streamlining this process was crucial to enhancing productivity and
                         ensuring prompt responses to essential inquiries.</p>
-                    <p class="text-4xl text-[#0067F4] max-lg:text-2xl">Phase 2. Creation of Folders and Subfolders for Email
+                    <p class="text-4xl font-bold max-lg:text-2xl">Phase 2. Creation of Folders and Subfolders for Email
                         Organization</p>
                     <p class="text-2xl  max-lg:text-xl">In addition, they sought to implement automated responses for common queries,
                         recognizing the potential for substantial time savings. This proactive approach aimed to
                         streamline communication processes, enabling swift responses to frequently asked questions and
                         freeing up valuable resources for more strategic endeavors.</p>
 
-                    <p class="text-4xl text-[#0067F4] max-lg:text-2xl ">Phase 3. Integration of Artificial Intelligence</p>
+                    <p class="text-4xl font-bold max-lg:text-2xl ">Phase 3. Integration of Artificial Intelligence</p>
                     <p class="text-2xl  max-lg:text-xl">Furthermore, the client expressed a desire for a feature that could identify and
                         prioritize emails necessitating urgent responses. This functionality would enable them to
                         promptly address critical matters, enhancing their overall responsiveness and efficiency in
@@ -52,7 +52,7 @@
 
                 </div>
 
-                <h2 class="text-4xl font-bold  max-lg:text-2xl">RESULTS</h2>
+                <h2 class="text-4xl font-bold  max-lg:text-2xl text-[#0067F4] ">RESULTS</h2>
                 <p class="text-2xl  max-lg:text-xl">Implementing these solutions has yielded several benefits. Automatic filtering has significantly decreased the number of irrelevant emails, allowing the client to focus on important messages and reduce the time spent managing their inbox. This reduction in email overload has streamlined daily operations.</p>
 
 <p class="text-2xl  max-lg:text-xl">Automated responses for common queries have streamlined communication, saved time, and ensured quick replies to routine requests. This increased efficiency has freed up the client’s time for more critical tasks.</p>
@@ -65,8 +65,8 @@
 
         </div>
 
-        <div class="h-fifty-vh mt-56 max-2xl:mb-20 w-full flex items-center mx-auto px-site  max-2xl:px-16 max-md:px-5">
-  <CardTestimonial2 title="“Prophet is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”"/>
+        <div class="h-auto mt-56 max-2xl:mb-20 w-full flex items-center mx-auto px-site  max-2xl:px-16 max-md:px-5">
+  <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="John Doe " position="CEO" title="“Paultech Inc. revolutionized our email management. Their automated filtering and folder organization streamlined workflow, saving time. AI-driven prioritization ensured prompt attention to urgent issues. Highly recommended for efficient communication solutions.”"/>
 </div>
 
         <!-- case studies -->

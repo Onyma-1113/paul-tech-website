@@ -7,7 +7,7 @@
           </div>
      <!-- case studies -->
 <div class="h-eigthy-vh max-lg:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
-    <PreviewDetail/>
+    <CaseStudies firstText="All our cases studies"/>
   </div>
 
   <!-- preview testomonial -->

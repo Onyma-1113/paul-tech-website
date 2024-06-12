@@ -44,21 +44,21 @@ onMounted(() => {
 
 
 
-
+const { locale, setLocale } = useI18n()
 
 </script>
 
 <template>
   <div>
-
+    
     <!-- <ThePrealoder/> -->
 
     <div
       class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
 
-      <Hero title="We are a digitalize and transformation consulting firm."
-        description="Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. Our services help clients fully leverage the benefits of cloud computing, automate their business processes, and maximize the advantages of AI. With our customer-centric approach and commitment to excellence, we are the ideal partner to support your digital transformation."
-        showarrow='true' redirectiontitle="ABOUT" redirection="/about" redirectiontitle2="SERVICES"
+      <Hero :title="$t('home_title')"
+        :description="$t('home_description')"
+        showarrow='true' :redirectiontitle="$t('redirection_title_about')" redirection="/about" :redirectiontitle2="$t('redirection_title_services')"
         redirection2="/services" />
 
       <AbstractAnimation1 />
@@ -92,13 +92,13 @@ onMounted(() => {
     <!-- case studies -->
     <div
       class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <PreviewDetail firstText="CHECK OUR RECENT CASE STUDIES"/>
+      <PreviewDetail :firstText="$t('home_title_case')"/>
     </div>
 
     <!-- preview testomonial -->
     <div class="h-80 max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <CardTestimonial2
-        title="“Paultech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”" />
+      <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="Andres Engel " :position="$t('testomonial_1_post')"
+        :title="$t('testomonial_1_title')" />
     </div>
 
     <!-- redirection team -->
@@ -108,7 +108,7 @@ onMounted(() => {
 
 
       <CardTestomonial3
-        title="“PaulTech is an insightful consulting firm. Their highly engaged team is easy to work with and provides actionable recommendations. They bring to the table a unique mix of both analytical and creative thinking.”" />
+        :title="$t('testomonial_2_title')" />
 
 
 

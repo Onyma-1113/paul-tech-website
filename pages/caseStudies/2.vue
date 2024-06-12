@@ -12,7 +12,7 @@
             <!-- col compagnie that trust us -->
             <div class="flex flex-col   gap-20 max-2xl:gap-0">
 
-                <h2 class="text-4xl font-bold ">CHALLENGES</h2>
+                <h2 class="text-4xl font-bold text-[#0067F4]">CHALLENGES</h2>
                 <p class="text-2xl">External users who consume applications linked to the university face a number of
                     challenges. They are not identified as university customers, and lifecycle management of these users
                     is complex due to their ephemeral nature. Most of the targeted workloads are hosted at AWS, but a
@@ -22,31 +22,31 @@
                     via authorized
                     sources such as social networks (e.g., LinkedIn, Facebook) and collect information about users so
                     that they could be directed to a "customer" user status. Having limited experience with AWS B2C,
-                    the university called on FX Innovation to set up a B2C environment.</p>
+                    the university called on Paultech  to set up a B2C environment.</p>
 
                 <div class="flex justify-center items-center max-lg:flex-col  gap-20 max-2xl:gap-0">
                     <img src="../../assets/img/shutterstock_493599385_3812840d1c.jpg" alt=""
                         class="h-full w-full rounded-lg">
                 </div>
 
-                <h2 class="text-4xl font-bold ">SOLUTIONS</h2>
+                <h2 class="text-4xl font-bold text-[#0067F4] ">SOLUTIONS</h2>
                 <div class="flex gap-10 flex-col">
-                    <p class="text-4xl text-[#0067F4] ">Phase 1 . Analysis and definition of the AWS cloud foundation
+                    <p class="text-4xl font-bold ">Phase 1 . Analysis and definition of the AWS cloud foundation
                     </p>
                     <p class="text-2xl">Paultech delivered workshops on governance, technological environment and
                         operations.</p>
-                    <p class="text-4xl text-[#0067F4] ">Phase 2 . AWS landing zone</p>
+                    <p class="text-4xl font-bold">Phase 2 . AWS landing zone</p>
                     <p class="text-2xl">In addition, they sought to implement automated responses for common queries,
                         recognizing the potential for substantial time savings. This proactive approach aimed to
                         streamline communication processes, enabling swift responses to frequently asked questions and
                         freeing up valuable resources for more strategic endeavors.</p>
 
-                    <p class="text-4xl text-[#0067F4] ">Phase 3 . B2C design</p>
+                    <p class="text-4xl font-bold ">Phase 3 . B2C design</p>
                     <p class="text-2xl">Furthermore, the client expressed a desire for a feature that could identify and
                         prioritize emails necessitating urgent responses. This functionality would enable them to
                         promptly address critical matters, enhancing their overall responsiveness and efficiency in
                         managing incoming communications.</p>
-                    <p class="text-4xl text-[#0067F4] ">Phase 4 . Realization and implementation of the B2C tenant</p>
+                    <p class="text-4xl font-bold ">Phase 4 . Realization and implementation of the B2C tenant</p>
                     <p class="text-2xl">Consisted in building and implementing the B2C tenant. FX Innovation then
                         undertook the configuration and creation of cloud prerequisites, creation and configuration of
                         user flows, configuration of authorized identity providers, definition and configuration of user
@@ -56,7 +56,7 @@
 
                 </div>
 
-                <h2 class="text-4xl font-bold ">RESULTS</h2>
+                <h2 class="text-4xl font-bold  text-[#0067F4]">RESULTS</h2>
                 <p class="text-2xl">After a thorough evaluation of the customer's Azure cloud foundations, FX Innovation
                     delivered an assessment report identifying opportunities and challenges. In parallel, a cloud
                     adoption plan was developed, providing a strategic roadmap for the future. The customer also

@@ -4,7 +4,7 @@
 
 
         <div class="h-screen  w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <HeroPage title="Implementation of an Azure B2C" :description="'Case studies : Cloud Adoption'"></HeroPage>
+            <HeroPage title="Enhancing Cybersecurity of UDM" :description="'Case studies : Cybersecurity'"></HeroPage>
         </div>
 
         <div
@@ -12,62 +12,75 @@
             <!-- col compagnie that trust us -->
             <div class="flex flex-col   gap-20 max-2xl:gap-0">
 
-                <h2 class="text-4xl font-bold ">CHALLENGES</h2>
-                <p class="text-2xl">External users who consume applications linked to the university face a number of
-                    challenges. They are not identified as university customers, and lifecycle management of these users
-                    is complex due to their ephemeral nature. Most of the targeted workloads are hosted at Azure, but a
-                    large proportion remain on prem.</p>
+                <h2 class="text-4xl font-bold text-[#0067F4]">CHALLENGES</h2>
+                <p class="text-2xl">The University of Montreal faced significant cybersecurity challenges due to its
+                    expansive and
+                    diverse IT environment, which included on-premises systems, cloud-based applications, and a large
+                    number of endpoints. This complexity made it difficult to maintain comprehensive security monitoring
+                    and threat detection. The existing security infrastructure lacked integration and advanced threat
+                    analytics, leading to delayed responses to security incidents and increased vulnerability to
+                    cyberattacks.</p>
 
-                <p class="text-2xl"> The university therefore wanted to implement an Azure B2C tenant to enable connection
+                <p class="text-2xl"> The university therefore wanted to implement an Azure B2C tenant to enable
+                    connection
                     via authorized
                     sources such as social networks (e.g., LinkedIn, Facebook) and collect information about users so
                     that they could be directed to a "customer" user status. Having limited experience with AzureB2C,
-                    the university called on FX Innovation to set up a B2C environment.</p>
+                    the university called on Paultech to set up a B2C environment.</p>
 
                 <div class="flex justify-center items-center max-lg:flex-col  gap-20 max-2xl:gap-0">
-                    <img src="../../assets/img/shutterstock_493599385_3812840d1c.jpg" alt=""
-                        class="h-full w-full rounded-lg">
+                    <img src="../../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-full w-full rounded-lg">
                 </div>
 
-                <h2 class="text-4xl font-bold ">SOLUTIONS</h2>
+                <h2 class="text-4xl font-bold text-[#0067F4]">SOLUTIONS</h2>
                 <div class="flex gap-10 flex-col">
-                    <p class="text-4xl text-[#0067F4] ">Phase 1 . Analysis and definition of the Azure cloud foundation
+                    <p class="text-4xl font-bold ">Phase 1 . Assessment and Requirement Gathering
                     </p>
-                    <p class="text-2xl">Paultech delivered workshops on governance, technological environment and
-                        operations.</p>
-                    <p class="text-4xl text-[#0067F4] ">Phase 2 . Azure landing zone</p>
-                    <p class="text-2xl">In addition, they sought to implement automated responses for common queries,
-                        recognizing the potential for substantial time savings. This proactive approach aimed to
-                        streamline communication processes, enabling swift responses to frequently asked questions and
-                        freeing up valuable resources for more strategic endeavors.</p>
+                    <p class="text-2xl">Paultech conducted thorough workshops to understand the university’s current
+                        cybersecurity posture, specific threat landscape, and compliance requirements. These sessions
+                        focused on identifying key vulnerabilities, defining security objectives, and establishing a
+                        governance framework for the SIEM implementation. Paultech's experts also assessed the
+                        technological environment and operational processes to develop a tailored SIEM strategy.</p>
+                    <p class="text-4xl font-bold ">Phase 2 . SIEM Foundation Setup</p>
+                    <p class="text-2xl">The initial phase involved setting up the core infrastructure required for the
+                        SIEM implementation. This included configuring network components, security protocols, and
+                        establishing connectivity between on-premises systems and cloud services. Paultech ensured that
+                        the foundation was robust and scalable to support future expansion and integration of additional
+                        security data sources.</p>
 
-                    <p class="text-4xl text-[#0067F4] ">Phase 3 . B2C design</p>
-                    <p class="text-2xl">Furthermore, the client expressed a desire for a feature that could identify and
-                        prioritize emails necessitating urgent responses. This functionality would enable them to
-                        promptly address critical matters, enhancing their overall responsiveness and efficiency in
-                        managing incoming communications.</p>
-                    <p class="text-4xl text-[#0067F4] ">Phase 4 . Realization and implementation of the B2C tenant</p>
-                    <p class="text-2xl">Consisted in building and implementing the B2C tenant. FX Innovation then
-                        undertook the configuration and creation of cloud prerequisites, creation and configuration of
-                        user flows, configuration of authorized identity providers, definition and configuration of user
-                        attributes, integration with the application candidate, implementation of security measures, and
-                        then concluded the initiative with testing and validation of the solution..</p>
+                    <p class="text-4xl font-bold ">Phase 3 . SIEM Deployment</p>
+                    <p class="text-2xl">Paultech proceeded to deploy the SIEM solution across the university's IT
+                        environment. This involved installing SIEM agents on various servers and applications,
+                        configuring data collection settings, and integrating the SIEM with existing IT security tools.
+                        The deployment was meticulously planned to minimize disruptions and ensure seamless integration
+                        with the university's diverse infrastructure.</p>
+                    <p class="text-4xl font-bold ">Phase 4 . Customization and Optimization</p>
+                    <p class="text-2xl">Once deployed, Paultech customized the SIEM dashboards and alerting mechanisms
+                        to align with the university's specific security requirements. This included setting up
+                        real-time threat monitoring, automated incident detection, and advanced analytics to proactively
+                        identify potential security breaches. Paultech also conducted training sessions for the
+                        university's IT team to ensure they could effectively use the SIEM for ongoing security
+                        monitoring and incident response.</p>
 
 
                 </div>
 
-                <h2 class="text-4xl font-bold ">RESULTS</h2>
-                <p class="text-2xl">After a thorough evaluation of the customer's Azure cloud foundations, FX Innovation
-                    delivered an assessment report identifying opportunities and challenges. In parallel, a cloud
-                    adoption plan was developed, providing a strategic roadmap for the future. The customer also
-                    benefited from an architecture document and the Landing Zone (infrastructure as code - Bicep). The
-                    university then received a functional technological architecture document for the application
-                    candidate, a detailed solution architecture (FX Innovation model), and an Azure resource deployment
-                    file (AID - FX Innovation model). At the end of the project, our customer benefited from a fully
-                    functional and secure B2C authentication solution for users with the chosen application candidate.
+                <h2 class="text-4xl font-bold text-[#0067F4]">RESULTS</h2>
+                <p class="text-2xl">The implementation of the SIEM solution significantly enhanced the university's
+                    cybersecurity capabilities. With real-time visibility into security events and automated threat
+                    detection, the IT team could quickly identify and respond to potential threats, significantly
+                    reducing the risk of cyberattacks. The unified SIEM platform streamlined security operations,
+                    allowing for more efficient incident management and compliance monitoring.
+                </p>
+                <p class="text-2xl">Paultech's assessment and strategy development provided the university with a clear
+                    roadmap for enhancing their cybersecurity posture. The foundation setup and SIEM deployment ensured
+                    a robust and scalable solution, while customization and optimization tailored the platform to the
+                    university's specific needs. As a result, the university achieved comprehensive security monitoring
+                    across their hybrid infrastructure, leading to improved threat detection, reduced operational risks,
+                    and enhanced compliance with regulatory requirements.
                 </p>
 
-              
+
             </div>
 
 

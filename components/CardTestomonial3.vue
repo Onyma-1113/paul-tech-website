@@ -12,14 +12,14 @@
 
     <div>
       <p class="font-bold underline text-black">Michael Dunn</p>
-      <p>Chief Executive Officer, Chairman</p>
+      <p>{{ $t('testomonial_2_post') }}</p>
     </div>
 
   </div>
-  <div class="w-96 pb-5">
+  <!-- <div class="w-96 pb-5">
     <BtnRedirection title="ABOUT" redirection="/about" widthtext="w-14"/>
 
-  </div>
+  </div> -->
 
 
 </div>

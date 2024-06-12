@@ -51,12 +51,15 @@ const toggleClass = () => {
 
 // const { $gsap } = useNuxtApp()
 
+import {useI18n} from "vue-i18n";
+        
+const i18n = useI18n();
 
 const links = [
-    { href: '/about', text: 'About' },
-    { href: '/services', text: 'Services' },
-    { href: '/caseStudies', text: 'Case Studies' },
-    { href: '/careers', text: 'Careers' },
+    { href: '/about', text: i18n.t('redirection_title_about') },
+    { href: '/services', text: i18n.t('redirection_title_services') },
+    { href: '/caseStudies', text: i18n.t('redirection_title_case') },
+    { href: '/careers', text: i18n.t('redirection_title_careers') },
     // {href:'/client' ,text:'Client'}
 ]
 
@@ -81,6 +84,8 @@ defineProps({
     itemss:Object
 })
 
+//translation
+const { locale, setLocale } = useI18n()
 </script>
 <template>
     <div class="">
@@ -151,10 +156,12 @@ defineProps({
                 </div>
 
 
-                <li class="">
+                <li class="flex items-center gap-5">
+                    <p class="underline cursor-pointer" @click="setLocale('fr')">FR</p>
+                    <p class="cursor-pointer" @click="setLocale('en')">EN</p>
                     <NuxtLink to="/contact">
                         <div class="bg-[#0067f4] hover:bg-white  hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
-                            Get in touch
+                            {{$t('redirection_title_contact')}}
                         </div>
                     </NuxtLink>
                    <!-- <div class="h-32">
@@ -208,7 +215,7 @@ defineProps({
                             Get in touch
                         </div> -->
                         <div class="bg-[#0067f4] hover:bg-white  hover:text-black hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
-                            Get in touch
+                            {{$t('redirection_title_contact')}}
                         </div>
                     </NuxtLink>
                 </li>
@@ -222,33 +229,39 @@ defineProps({
                 <div class=" h-3/4   flex gap-5 w-1/4 justify-around items-center flex-col max-2xl:w-full text-center">
                     <div class="li-phone-container">
                         <li class="li-phone " @click="toggleClass">
-                            <NuxtLink to="/">Home</NuxtLink>
+                            <NuxtLink to="/">{{ $t('redirection_title_home') }}</NuxtLink>
                         </li>
                     </div>
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
-                            <NuxtLink to="/about">About</NuxtLink>
+                            <NuxtLink to="/about">{{ $t('redirection_title_about') }}</NuxtLink>
                         </li>
                     </div>
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
-                            <NuxtLink to="/services">Services</NuxtLink>
+                            <NuxtLink to="/services">{{ $t('redirection_title_services') }}</NuxtLink>
                         </li>
                     </div>
                     
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
-                            <NuxtLink to="/caseStudies">Case Studies</NuxtLink>
+                            <NuxtLink to="/caseStudies">{{ $t('redirection_title_case') }}</NuxtLink>
                         </li>
                     </div>
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
-                            <NuxtLink to="/careers">Careers</NuxtLink>
+                            <NuxtLink to="/careers">{{ $t('redirection_title_careers') }}</NuxtLink>
                         </li>
                     </div>
                     <div class="li-phone-container" @click="toggleClass">
                         <li class="li-phone">
                             <NuxtLink to="/contact">Contact</NuxtLink>
+                        </li>
+                    </div>
+                    <div class="li-phone-container" @click="toggleClass">
+                        <li class="li-phone flex gap-10">
+                            <p class="underline cursor-pointer">FR</p>
+                            <p class="underline cursor-pointer">EN</p>
                         </li>
                     </div>
 

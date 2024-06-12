@@ -2,57 +2,63 @@
     <div class="flex flex-col">
 
 
-    <div class="w-full h-3/6 flex  justify-between items-start max-lg:hidden ">
-        <div class="flex flex-col w-1/2 gap-10 ">
-            <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
-            <h2 class="text-3xl font-bold ">{{firstText}}</h2>
-            <h1 class="text-4xl w-4/6">{{$t('case_title_1')}}</h1>
     
-            <div class="w-auto">
-                <BtnRedirection :title="$t('redirection_title_learn_more')" :redirection="`/caseStudies/${1}`" widthtext="w-32"/>
-                <!-- <div class="ici w-32">
-                    <p class="hover:text-[#0067F4] duration-300">{{title}} &#x279E;</p>
-                    <div class="h-1 bg-[#DFE5F5] line-blue"></div>
-                </div> -->
-         
-                <!-- <div class="h-1 w-52 bg-sky-400"></div> -->
-            </div>
-    
-        </div>
-        <div class="flex flex-col gap-10 w-auto w-1/2  ">
-           <!-- <img src="../assets/img/digital_camera.jpg" alt="" class="h-full w-full img-project "> -->
-           <img src="../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full img-project ">
-        </div>
-    </div>
     <!-- les autre case studies -->
-    <div class="w-full h-3/6 flex justify-between items-center gap-10 mt-10 max-lg:hidden">
-       <div class="h-full w-1/3 flex flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
-        <NuxtLink :to="`/caseStudies/2`">
-
-        <img src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-1/2 w-full img-p-2">
-        <h2 class="font-bold">{{$t('case_title_type_2')}}</h2>
-        <p>{{$t('case_title_2')}} </p>
+    <h2 class="text-6xl font-bold pt-56 pb-36 max-2xl:text-5xl max-md:text-4xl ">ALL CASE STUDIES</h2>
+    <div class="w-full h-auto flex flex-wrap justify-between items-center gap-5 mt-10 max-lg:hidden">
+        
+       <div class="h-1/2 w-40-percent flex  flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
+        <NuxtLink :to="`/caseStudies/4`">
+        <div class="flex gap-2 flex-col">
+            <img src="../assets/img/students-socialising-lobby-modern-university-287596.jpg" alt="" class="h-full w-full img-p-2 rounded-lg">
+        <h2 class="font-bold">CASE STUDIES : OBSERVABILITY</h2>
+        <p>Implementation of an Azure B2C </p>
+        </div>
+      
     </NuxtLink>
        </div>
 
    
-       <div class="h-full w-1/3 flex flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
-        <NuxtLink :to="`/caseStudies/4`">
-        <img  src="../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-1/2 w-full img-p-2">
-        <h2 class="font-bold">{{$t('case_title_type_4')}}</h2>
-        <p>{{$t('case_title_4')}} </p>
+       <div class="h-full w-40-percent flex flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
+        <NuxtLink :to="`/caseStudies/3`">
+        
+        <div class="flex gap-2 flex-col">
+            <img src="../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-full w-full img-p-2 rounded-lg">
+        <h2 class="font-bold">CASE STUDIES : CYBERSECURITY</h2>
+        <p>Enhancing Cybersecurity of UDM</p>
+        </div>
     </NuxtLink>
        </div>
     
-       <div class="h-full w-1/3 flex flex-col justify-center ">
-        <BtnRedirection :title="$t('redirection_title_case')" redirection="/caseStudies" widthtext="w-32"/>
+       <div class="h-full w-40-percent  flex flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
+        <NuxtLink :to="`/caseStudies/1`">
+        
+        <div class="flex gap-2 flex-col">
+            <img src="../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full img-p-2 rounded-lg">
+            <h2 class="font-bold">CASE STUDIES : PROCESS DIGITALIZE</h2>
+        <p>Email manager for a construction business </p>
+        </div>
+    </NuxtLink>
        </div>
+       <div class="h-full w-40-percent flex flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
+        <NuxtLink :to="`/caseStudies/2`">
+      
+        <div class="flex gap-2 flex-col">
+            <img  src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-1/2 w-full img-p-2  rounded-lg">          
+            <h2 class="font-bold">CASE STUDIES : CLOUD ADOPTION</h2>
+            <p>Implementation of an AWS B2C </p>
+        </div>
+        
+    </NuxtLink>
+       </div>
+       
     </div>
+    
 
     <!-- responsive  -->
     
     <div class="w-full h-3/6 hidden flex-col justify-between items-start max-lg:flex  pb-10">
-        <h2 class="font-bold pb-10">{{firstText}}</h2>
+        <h2 class="font-bold pb-10 ">{{firstText}}</h2>
         <div class="flex flex-col  w-auto w-1/2 ">
            <img src="../assets/img/courriels.jpg" alt="" class="h-full w-full  ">
         </div>
@@ -88,7 +94,6 @@
         <div class="flex flex-col  w-auto w-1/2 ">
            <img src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-full w-full  ">
         </div>
-    </NuxtLink>
         <div class="flex flex-col w-full gap-5 pt-2 ">
             <!-- <img src="../assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" alt="" class="w-36"> -->
             <h2 class="font-bold">CASE STUDIES : CLOUD ADOPTION</h2>
@@ -100,11 +105,11 @@
                </div>
                
         </div>
-    
+    </NuxtLink>
     </div>
 </div>
     </template>
-   
+  
     <style scoped>
     .line-blue{width: 100%;}
 .ici {
@@ -128,14 +133,17 @@
 .ici:hover::after {
     width: 100%;
 }
-.img-project{
+/* .img-project{
 height: 500px;
 width: 100%
+} */
+.w-40-percent{
+width: 45%
 }
-.img-p-2{
+/* .img-p-2{
     height: 300px;
     width: 600px
-}
+} */
 </style>
 <script setup>
 onMounted(()  =>{

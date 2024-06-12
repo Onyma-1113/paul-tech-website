@@ -2,19 +2,19 @@
 
     <div class="w-full h-auto flex flex-col justify-between items-center">
         <div class="flex flex-col  w-full gap-20">
-            <h2 class="text-4xl font-bold">WHAT WE DO</h2>
+            <h2 class="text-4xl font-bold">{{$t('preview_service_title')}}</h2>
             <div class="flex wrap justify-around  gap-5 w-full max-lg:flex-col max-lg:items-center">
                 
                 <div class="flex flex-col items-center gap-10 w-1/2">
                     <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
                     <NuxtLink :to="`/services/${1}`">
-                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Cloud adoption
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_1')}}
                     </p>
                 </NuxtLink>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/2.2.2-Springbox_Services_Integrated-Planning-Orchestration.png" alt="" srcset="" class="h-32 w-32">
-                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Observability
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_2')}}
                     </p>
                 </div>
                
@@ -23,13 +23,13 @@
                 
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Revolutionize-Experiences.png" alt="" srcset="" class="h-32 w-32">
-                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Cybersecurity
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_3')}}
                     </p>
                 </div>
                 <div class="flex flex-col gap-10 w-1/2  items-center ">
                     <img src="../assets/img/Pathways-to-Growth.png" alt="" srcset="" class="h-32 w-32">
                     <NuxtLink :to="`/services/${1}`">
-                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">Process digitalization and AI
+                    <p class=" text-2xl  duration-300 hover:text-[#0067f4] cursor-pointer">{{$t('preview_service_s_4')}}
                         
                     </p>
                 </NuxtLink>
