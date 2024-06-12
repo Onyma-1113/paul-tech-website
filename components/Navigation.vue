@@ -181,8 +181,8 @@ console.log(isOn.value)
 
 
                 <li class="flex items-center gap-5">
-                    <p class="cursor-pointer" :class="{'underline': !isOn, 'hidden': isOn}"  @click="setLocale('fr'), toggleLanguage()">FR</p>
-                    <p class="cursor-pointer" :class="{'underline': isOn, 'hidden': !isOn}"  @click="setLocale('en'), toggleLanguage()">EN</p>
+                    <p class="cursor-pointer" :class="{'underline': isOn, 'hidden': !isOn}"  @click="setLocale('fr'), toggleLanguage()">FR</p>
+                    <p class="cursor-pointer" :class="{'underline': !isOn, 'hidden': isOn}"  @click="setLocale('en'), toggleLanguage()">EN</p>
                     <NuxtLink to="/contact">
                         <div class="bg-[#0067f4] hover:bg-white  hover:text-black  hover:duration-300 duration-300  text-white h-11 w-36 flex justify-center items-center rounded-3xl">
                             {{$t('redirection_title_contact')}}
