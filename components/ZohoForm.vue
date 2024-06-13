@@ -103,7 +103,7 @@
 
       </form>
       <!-- separation ici-->
-      <!-- <form id="webform14177000000109012"
+      <form id="webform14177000000109012"
             action="https://crm.zohocloud.ca/crm/WebToLeadForm"
             name="WebToLeads14177000000109012"
             method="POST"
@@ -148,7 +148,7 @@
             <input type="reset" class="zcwf_button" name="reset" value="Re-paramétrer" title="Re-paramétrer">
           </div>
         </div>
-      </form> -->
+      </form>
     </div>
   </template>
   
