@@ -2,7 +2,7 @@
     <!-- <TransitionComponent /> -->
     <div class="">
 
-        <div class=" max-lg:flex-col max-lg:pt-28 max-lg:h-auto h-screen w-full flex items-center  mx-auto px-site  max-2xl:px-16 max-md:px-5">
+        <div class=" max-lg:flex-col max-lg:pt-28 max-lg:h-auto  h-fifty-vh pt-56 w-full flex items-center  mx-auto px-site  max-2xl:px-16 max-md:px-5">
             <HeroPage :title="$t('about_title')"
                :description="$t('about_description')" />
             <AbstractAnimation2 />

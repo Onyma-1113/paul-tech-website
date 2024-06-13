@@ -3,8 +3,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-      <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" 
-            id="webform14177000000109012"
+      <!-- <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" 
+      id="webform14177000000109012"
             action="https://crm.zohocloud.ca/crm/WebToLeadForm"
             name="WebToLeads14177000000109012"
             method="POST"
@@ -101,7 +101,7 @@
           class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] "  :value="$t('candidature_submit')" id="formsubmit">
           <input type="reset" class="zcwf_button hidden" name="reset" value="Re-paramétrer" title="Re-paramétrer">
 
-      </form>
+      </form> -->
       <!-- separation ici-->
       <form id="webform14177000000109012"
             action="https://crm.zohocloud.ca/crm/WebToLeadForm"
