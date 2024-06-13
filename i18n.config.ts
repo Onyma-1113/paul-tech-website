@@ -134,7 +134,7 @@ export default defineI18nConfig(() => ({
             canditature_file_auth: 'File authorize',
             candidature_submit: 'Submit',
             //contact
-
+            contact_form_compagny: "Compagny Name",
             contact_description: "Dear client, if you'd like to discuss future projects or have any other questions, please don't hesitate to contact us. We look forward to hearing from you.",
             contact_form_last_name: 'Last Name',
             contact_form_first_name: 'First Name',
@@ -323,7 +323,7 @@ export default defineI18nConfig(() => ({
             //contact
 
             contact_description: "Cher client, si vous souhaitez discuter de futurs projets ou avez d'autres questions, n'hésitez pas à nous contacter. Nous avons hâte d'avoir de vos nouvelles.",
-
+            contact_form_compagny: "Nom de la Société",
             contact_form_last_name: "Nom",
             contact_form_first_name: "Prénom",
             contact_form_phone: "Téléphone",

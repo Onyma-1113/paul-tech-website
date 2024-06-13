@@ -95,8 +95,15 @@
             contact_form_phone:'Phone',
             contact_form_email:'Email',
             contact_form_message:'Subject Message', -->
-      <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" method="post" action="" name="contact-form">
+      <!-- <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" method="post" action="" name="contact-form">
+        
         <div class="grid sm:grid-cols-2 gap-10">
+          <div class="relative flex items-center sm:col-span-2">
+            <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_compagny')}}</label>
+            <input type="phone"  name="telephone"
+              class="px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+            
+          </div>
           <div class="relative flex items-center">
             <label class="text-[13px] absolute top-[-30px] left-0 text-white">{{$t('contact_form_first_name')}}</label>
             <input type="text"  name="prenom"
@@ -168,12 +175,12 @@
 
         <input type="submit" 
           class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] "  :value="$t('candidature_submit')" id="submit">
-      </form>
-
+      </form> -->
+      <ZohoForm/>
     </div>
 
   </div>
-  <ZohoForm/>
+
 
 </template>
 <script setup>
