@@ -49,7 +49,7 @@
           <NuxtLink to="/caseStudies">{{$t('redirection_title_case')}}</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/caseStudies">Contact</NuxtLink>
+          <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
       </div>
       <div class="flex items-center">
@@ -78,7 +78,7 @@
           <NuxtLink to="/caseStudies">{{$t('redirection_title_case')}}</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/caseStudies">Contact</NuxtLink>
+          <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
         <div class="flex items-center">
         <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>

@@ -98,12 +98,36 @@ export default defineI18nConfig(() => ({
             canditature_title: "Open Application",
             canditature_description: "Apply for a career that matches your talent",
             canditature_mention: "Unless otherwise indicated, all fields are required.",
-            canditature_first_name: 'First Name',
-            canditature_last_name: 'Last Name',
+
+            canditature_subtitle_perso: "Personal Information",
+            canditature_first_name: 'First name',
+            canditature_last_name: 'Last name',
             canditature_email: 'Email',
             canditature_phone: 'Phone',
+            canditature_postal: 'Postal code',
+
+            canditature_langue: "Languages Spoken",
+
+
+            canditature_langue_fr: "French",
+            canditature_langue_en: "English",
+            canditature_subtitle_academic: "Academic Information",
+            canditature_school: "Educational Institution (College / University / Other)",
+            canditature_program: "Study Program",
+            canditature_time_left: "Time Remaining Until Graduation",
+            canditature_subtitle_pro_c: "Professional Information - Skills",
+            canditature_skills: "Skills",
+            canditature_subtitle_pro_e: "Professional Information - Main Experience",
+            canditature_name_exp: "Company/Institution/Personal Project Name",
+            canditature_name_post: "Position/Role",
+            canditature_name_exp_desc: "Experience Description",
+            canditature_time_exp: "Duration",
+            canditature_name_exp_name_ref: "Reference Name (optional)",
+            canditature_name_exp_num_ref: "Reference Phone Number (optional)",
+            canditature_subtitle_pro_r: "Professional Information - Resources",
             canditature_cv_title: 'Attach your resume',
-            canditature_porfolio_title: 'Attach your porfolio (optionnel)',
+            canditature_porfolio_title: 'Attach your cover letter (optionnel)',
+            canditature_website: "Website (optional)",
 
             canditature_nb_file: 'One File.',
             canditature_limit: 'Limit 3 Mo.',
@@ -252,17 +276,50 @@ export default defineI18nConfig(() => ({
             canditature_description: 'Postuler pour une carrière à la hauteur de ton talent',
             canditature_mention: 'Sauf indication contraire, tous les champs sont obligatoires.',
 
+            canditature_subtitle_perso: 'Informations Personnelles',
+
+
             canditature_first_name: 'Prenom',
             canditature_last_name: 'Nom',
             canditature_email: 'Courriel',
             canditature_phone: 'Teléphone',
+
+            canditature_postal: 'Code postal',
+            canditature_langue: 'Langues parlées',
+            canditature_langue_fr: "Français",
+            canditature_langue_en: "Anglais",
+            canditature_subtitle_academic: 'Informations Académiques',
+            canditature_school: 'Établissement scolaire ( Cégep / Université / autre )',
+            canditature_program: "Programme d'étude",
+            canditature_time_left: "Temps restant avant l'obtention de votre diplôme",
+            canditature_subtitle_pro_c: 'Informations Professionnelles - Compétences',
+            canditature_skills: 'Compétences',
+            canditature_subtitle_pro_e: 'Informations Professionnelles - Expérience principale',
+            canditature_name_exp: 'Nom de la compagnie/établissement/projet personnel',
+            canditature_name_post: 'Fonction/rôle',
+            canditature_name_exp_desc: "Description de l'expérience",
+            canditature_time_exp: "Durée",
+            canditature_name_exp_name_ref: "Nom de la référence (champ non obligatoire)",
+            canditature_name_exp_num_ref: "Numéro de téléphone de la référence (champ non obligatoire)",
+            canditature_subtitle_pro_r: 'Informations Professionnelles - Ressources',
+            canditature_website: 'Site Internet (champ non obligatoire)',
+
+
+
+
+
+
+
+
+
+
             canditature_cv_title: 'Ajouter votre CV',
             canditature_nb_file: 'Un seul fichier.',
             canditature_limit: 'Limité à 3 Mo.',
             canditature_file_auth: 'Types autorisés',
 
             candidature_submit: 'Soumettre',
-            canditature_porfolio_title: 'Ajoute ton portfolio (optionnel)',
+            canditature_porfolio_title: 'Ajouter votre lettre de présentation (optionnel)',
             //contact
 
             contact_description: "Cher client, si vous souhaitez discuter de futurs projets ou avez d'autres questions, n'hésitez pas à nous contacter. Nous avons hâte d'avoir de vos nouvelles.",
