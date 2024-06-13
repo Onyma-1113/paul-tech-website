@@ -30,7 +30,7 @@
 
           <div class="relative flex items-center">
             <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="First_Name">{{$t('contact_form_first_name')}}</label>
-            <input type="text"  id="First_Name" name="First_Name"
+            <input type="text" id="First_Name" name="First Name"
               class=" zcwf_col_fld px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
@@ -43,7 +43,7 @@
 
           <div class="relative flex items-center">
             <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="Last_Name">{{$t('contact_form_last_name')}}</label>
-            <input type="text" id="Last_Name" name="Last_Name"
+            <input type="text" id="Last_Name" name="Last Name"
               class="zcwf_col_fld px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
