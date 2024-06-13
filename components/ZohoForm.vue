@@ -3,7 +3,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-      <!-- <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" 
+      <form class="font-[sans-serif] text-[#333] max-w-4xl w-full px-6 my-10" 
       id="webform14177000000109012"
             action="https://crm.zohocloud.ca/crm/WebToLeadForm"
             name="WebToLeads14177000000109012"
@@ -18,20 +18,20 @@
 
 
 
-
+        <div class="zcwf_title hidden">zoho client</div>
         <div class="grid sm:grid-cols-2 gap-10">
             <div class="relative flex items-center sm:col-span-2">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white" for="Company">{{$t('contact_form_compagny')}}</label>
+            <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="Company">{{$t('contact_form_compagny')}}</label>
             <input type="text"  id="Company" name="Company"
-              class="px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+              class=" zcwf_col_fld px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             
           </div>
 
 
           <div class="relative flex items-center">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white" for="First_Name">{{$t('contact_form_first_name')}}</label>
+            <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="First_Name">{{$t('contact_form_first_name')}}</label>
             <input type="text"  id="First_Name" name="First_Name"
-              class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+              class=" zcwf_col_fld px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
               <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
@@ -42,9 +42,9 @@
           </div>
 
           <div class="relative flex items-center">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white" for="Last_Name">{{$t('contact_form_last_name')}}</label>
+            <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="Last_Name">{{$t('contact_form_last_name')}}</label>
             <input type="text" id="Last_Name" name="Last_Name"
-              class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+              class="zcwf_col_fld px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 24 24">
               <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
@@ -55,9 +55,9 @@
           </div>
 
           <div class="relative flex items-center sm:col-span-2">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white"  for="Phone">{{$t('contact_form_phone')}}</label>
+            <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white"  for="Phone">{{$t('contact_form_phone')}}</label>
             <input type="phone"  id="Phone" name="Phone"
-              class="px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+              class="zcwf_col_fld px-2 pt-3 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg fill="#bbb" class="w-[18px] h-[18px] absolute right-2" viewBox="0 0 64 64">
               <path
                 d="m52.148 42.678-6.479-4.527a5 5 0 0 0-6.963 1.238l-1.504 2.156c-2.52-1.69-5.333-4.05-8.014-6.732-2.68-2.68-5.04-5.493-6.73-8.013l2.154-1.504a4.96 4.96 0 0 0 2.064-3.225 4.98 4.98 0 0 0-.826-3.739l-4.525-6.478C20.378 10.5 18.85 9.69 17.24 9.69a4.69 4.69 0 0 0-1.628.291 8.97 8.97 0 0 0-1.685.828l-.895.63a6.782 6.782 0 0 0-.63.563c-1.092 1.09-1.866 2.472-2.303 4.104-1.865 6.99 2.754 17.561 11.495 26.301 7.34 7.34 16.157 11.9 23.011 11.9 1.175 0 2.281-.136 3.29-.406 1.633-.436 3.014-1.21 4.105-2.302.199-.199.388-.407.591-.67l.63-.899a9.007 9.007 0 0 0 .798-1.64c.763-2.06-.007-4.41-1.871-5.713z"
@@ -67,9 +67,9 @@
 
 
           <div class="relative flex items-center sm:col-span-2">
-            <label class="text-[13px] absolute top-[-30px] left-0 text-white" for="Email">{{$t('contact_form_email')}}</label>
+            <label class=" zcwf_col_lab text-[13px] absolute top-[-30px] left-0 text-white" for="Email">{{$t('contact_form_email')}}</label>
             <input type="email"  name="Email" id="Email"
-              class="px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
+              class="zcwf_col_fld px-2 pt-4 pb-3 bg-white w-full text-sm border-b-2 border-gray-100 focus:border-[#333] outline-none rounded-md" />
             <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2"
               viewBox="0 0 682.667 682.667">
               <defs>
@@ -88,22 +88,24 @@
             </svg>
           </div>
           <div class="sm:col-span-2">
-            <label for="Description" class="block text-sm font-medium text-white">{{$t('contact_form_message')}}</label>
+            <label for="Description" class=" zcwf_col_lab block text-sm font-medium text-white">{{$t('contact_form_message')}}</label>
             <div class="mt-1">
               <textarea required="" id="Description" name="Description" rows="4"
-                class="border-2 .border-gray-100  block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 "></textarea>
+                class="zcwf_col_fld border-2 .border-gray-100  block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 "></textarea>
             </div>
           </div>
 
         </div>
-
-        <input type="submit" 
-          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] "  :value="$t('candidature_submit')" id="formsubmit">
+<div class="zcwf_col_fld">
+    <input type="submit" 
+          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] zcwf_button "  :value="$t('candidature_submit')" id="formsubmit">
           <input type="reset" class="zcwf_button hidden" name="reset" value="Re-paramétrer" title="Re-paramétrer">
+</div>
+       
 
-      </form> -->
+      </form>
       <!-- separation ici-->
-      <form id="webform14177000000109012"
+      <!-- <form id="webform14177000000109012"
             action="https://crm.zohocloud.ca/crm/WebToLeadForm"
             name="WebToLeads14177000000109012"
             method="POST"
@@ -148,7 +150,7 @@
             <input type="reset" class="zcwf_button" name="reset" value="Re-paramétrer" title="Re-paramétrer">
           </div>
         </div>
-      </form>
+      </form> -->
     </div>
   </template>
   
@@ -243,7 +245,7 @@
   #crmWebToEntityForm * {
     direction: ltr;
   }
-  .zcwf_lblLeft .zcwf_title {
+  /* .zcwf_lblLeft .zcwf_title {
     word-wrap: break-word;
     padding: 0px 6px 10px;
     font-weight: bold;
@@ -251,5 +253,5 @@
   .zcwf_lblLeft.cpT_primaryBtn:hover {
     background: linear-gradient(#02acff 0, #006be4 100%) no-repeat padding-box !important;
     box-shadow: 0 -2px 
-  }
+  } */
 </style>  
