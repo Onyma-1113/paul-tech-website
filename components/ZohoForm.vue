@@ -97,8 +97,10 @@
 
         </div>
 <div class="zcwf_col_fld">
-    <input type="submit" 
-          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] zcwf_button "  :value="$t('candidature_submit')" id="formsubmit">
+    <!-- <input type="submit" 
+          class="mt-10 px-2 py-2.5 w-full rounded-sm text-sm  hover:bg-[#222] text-white bg-[#0067f4] zcwf_button "  :value="$t('candidature_submit')" id="formsubmit"> -->
+          <input type="submit" id="formsubmit" class="formsubmit zcwf_button" value="Soumettre" title="Soumettre">
+
           <input type="reset" class="zcwf_button hidden" name="reset" value="Re-paramétrer" title="Re-paramétrer">
 </div>
        
