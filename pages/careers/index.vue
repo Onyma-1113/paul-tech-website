@@ -2,7 +2,7 @@
   <!-- <TransitionComponent/> -->
   <div class="">
 
-    <div class=" h-fifty-vh pt-24 mb-56 w-full flex flex-col gap-5 justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+    <div class=" h-eighy-vh  pt-24 mb-56 w-full flex flex-col gap-5 justify-center mx-auto px-site max-2xl:px-16 max-md:px-5">
             <HeroPage :title="$t('careers_title')" :description="$t('careers_description')"
                  />
                  <div class="w-1/2">

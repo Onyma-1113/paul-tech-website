@@ -37,7 +37,8 @@ onMounted(()=>{
 <style scoped>
 .d1{
     position: relative;
-    right:130px
+    right:130px;
+    top:80px;
 }
 .d2{
     position: relative;

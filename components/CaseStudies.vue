@@ -11,7 +11,7 @@
             case_title_type_4: 'CASE STUDIES : OBSERVABILITY', -->
     
     <!-- les autre case studies -->
-    <h2 class="text-6xl font-bold pt-56 pb-36 max-2xl:text-5xl max-md:text-4xl ">{{ $t('case_studies_description') }}</h2>
+    <h2 class="text-4xl font-bold pt-56 pb-36 max-2xl:text-5xl max-md:text-4xl ">{{ $t('case_studies_description') }}</h2>
     <div class="w-full h-auto flex flex-wrap justify-between items-center gap-5 mt-10 max-lg:hidden">
         
        <div class="h-1/2 w-40-percent flex  flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
