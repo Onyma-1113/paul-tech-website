@@ -86,6 +86,14 @@ definePageMeta({
     layout: 'mainlayout'
 })
 
+useHead({
+  title: 'PaulTech | Service',
+  meta: [
+    { name: 'description', property:'og:description',content: "Paultech Inc is a leading startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions to modernize and optimize IT environments efficiently and securely. Our services help clients leverage cloud computing, automate business processes, and maximize AI advantages. Driven by our values of humanity, performance, and responsibility, we ensure our solutions meet each clients unique needs, deliver tangible results, and adhere to sustainable and ethical practices." }
+  ]
+})
+
+
 let tl = gsap.timeline()
 const serviceAnimation = () =>{
   

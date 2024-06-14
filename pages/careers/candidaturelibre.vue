@@ -194,6 +194,13 @@ definePageMeta({
   layout: 'mainlayout'
 })
 
+useHead({
+  title: 'PaulTech | Application',
+  meta: [
+    { name: 'description', property:'og:description',content: "Open Application, Apply for a career that matches your talent" }
+  ]
+})
+
 let tl = gsap.timeline()
 const serviceAnimation = () => {
   setTimeout(() => {

@@ -73,6 +73,13 @@ definePageMeta({
     },
 })
 
+useHead({
+  title: 'PaulTech | Service - Cybersecurity',
+  meta: [
+    { name: 'description', property:'og:description',content: "Strengthen cybersecurity by integrating the necessary tools to detect and address vulnerabilities, ensuring robust protection and swift threat mitigation." }
+  ]
+})
+
 </script>
 <style scoped>
 .box{

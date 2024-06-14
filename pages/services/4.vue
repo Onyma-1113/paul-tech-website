@@ -80,6 +80,13 @@ definePageMeta({
     },
 })
 
+useHead({
+  title: 'PaulTech | Service - Cloud adoption',
+  meta: [
+    { name: 'description', property:'og:description',content: "Maximize efficiency with cloud adoption by integrating shift-left practices and embracing cloud-native migration. Transform your infrastructure with cloud adoption: prioritize a shift-left approach and advance through cloud-native migration, accelerating innovation and seamless integration."}
+  ]
+})
+
 </script>
 <style scoped>
 .box{

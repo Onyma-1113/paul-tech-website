@@ -60,6 +60,12 @@ definePageMeta({
   layout: 'mainlayout'
 })
 
+useHead({
+  title: 'PaulTech | Careers',
+  meta: [
+    { name: 'description', property:'og:description',content: "Pushing the boundaries of digital asset liquidity provision Join our vibrant and forward-thinking team in the burgeoning field of digital asset liquidity provision." }
+  ]
+})
 let tl = gsap.timeline()
 const serviceAnimation = () => {
   setTimeout(() => {

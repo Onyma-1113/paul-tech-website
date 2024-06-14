@@ -22,6 +22,13 @@ definePageMeta({
 
     layout: 'mainlayout'
 })
+
+useHead({
+  title: 'PaulTech | Case studies',
+  meta: [
+    { name: 'description', property:'og:description',content: "Solutions that spark transformation, build relevance and fuel sustainable growth. Process digitalization and AI,Cybersecurity,Cloud adoption, Observability" }
+  ]
+})
 import {gsap} from 'gsap'
 const caseTransitionAnimation = () =>{
   let tl = gsap.timeline()

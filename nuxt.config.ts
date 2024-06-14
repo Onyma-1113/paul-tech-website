@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss" , 'nuxt-primevue','@hypernym/nuxt-gsap','@nuxtjs/i18n'],
  
   i18n: {
-    vueI18n: './i18n.config.ts' 
+    vueI18n: './i18n.config.ts' ,
+    baseUrl: 'https://paultechh.netlify.app'
   },
   plugins: [
     { src: '@/plugins/vue-typed-js.js', mode: 'client' },

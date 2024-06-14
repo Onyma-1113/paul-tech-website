@@ -86,6 +86,13 @@ definePageMeta({
     },
 })
 
+useHead({
+  title: 'PaulTech | Service - Observability',
+  meta: [
+    { name: 'description', property:'og:description',content: "Enhance end-user experience through observability by integrating advanced monitoring tools, ensuring comprehensive visibility and proactive issue resolution." }
+  ]
+})
+
 </script>
 <style scoped>
 .box{

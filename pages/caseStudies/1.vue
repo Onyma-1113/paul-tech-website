@@ -83,7 +83,12 @@ definePageMeta({
 
     layout: 'mainlayout'
 })
-
+useHead({
+  title: 'PaulTech | Case studies - Email manager for a construction business',
+  meta: [
+    { name: 'description', property:'og:description',content: "Email manager for a construction business : Case studies - Process Digitalization" }
+  ]
+})
 onMounted(() => {
 })
 

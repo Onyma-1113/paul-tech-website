@@ -87,6 +87,12 @@ definePageMeta({
     layout: 'mainlayout'
 })
 
+useHead({
+  title: 'PaulTech | Case studies - Implementation of an AWS B2C',
+  meta: [
+    { name: 'description', property:'og:description',content: "Implementation of an AWS B2C : Case studies - Cloud Adoption" }
+  ]
+})
 onMounted(() => {
 })
 

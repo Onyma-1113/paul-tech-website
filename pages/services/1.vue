@@ -95,6 +95,12 @@ definePageMeta({
         mode: 'out-in' // default
     },
 })
+useHead({
+  title: 'PaulTech | Service - Process digitalization and AI',
+  meta: [
+    { name: 'description', property:'og:description',content: "Enhance process efficiency through digitalization by leveraging data, automation, and AI for streamlined operations and optimized performance." }
+  ]
+})
 
 </script>
 <style scoped>
