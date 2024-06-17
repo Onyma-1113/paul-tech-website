@@ -99,7 +99,7 @@ console.log(isOn.value)
 
         
         <nav
-            class="h-32 w-screen mx-auto bg-[#010923] px-site flex justify-center items-center max-2xl:h-auto max-2xl:px-16  max-md:px-5 fixed z-20 max-lg:hidden">
+            class="h-28 w-screen mx-auto bg-[#010923] px-site-nav flex justify-center items-center max-2xl:h-auto max-2xl:px-16  max-md:px-5 fixed z-20 max-lg:hidden">
             <ul
                 class="h-1/2 w-full flex flex-row justify-between items-center text-white rounded-3xl text-lg ul-nav ">
                 <div class="flex items-center"> 

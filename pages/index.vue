@@ -29,7 +29,24 @@ const clickToUseTyped = () => {
   }
 };
 
+let images = [
+      "https://picsum.photos/id/237/1024/800",
+      "https://picsum.photos/id/238/1024/800",
+      "https://picsum.photos/id/239/1024/800"
+    ]
 
+let active = 0
+
+const carousel = () =>{
+  let i = 0;
+    setInterval(() => {
+      if (i > images.length - 1) {
+        i = 0;
+      }
+      active = i;
+      i++;
+    }, 2000);
+}
 
 onMounted(() => {
   clickToUseTyped()
@@ -37,7 +54,8 @@ onMounted(() => {
   cardShowAnimation({ element: '.card-container' })
 
 
-
+ carousel()
+  
 
 
 });
@@ -54,51 +72,91 @@ const { locale, setLocale } = useI18n()
     <!-- <ThePrealoder/> -->
 
     <div
-      class="h-screen w-full flex items-center max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
+      class="h-ninety-vh  w-full flex items-end max-lg:flex-col max-lg:pt-28 max-lg:h-auto max-lg:justify-center  mx-auto px-site overflow-hidden max-2xl:px-16 max-md:px-5">
 
-      <Hero :title="$t('home_title')"
+      <!-- <Hero :title="$t('home_title')"
         :description="$t('home_description')"
         showarrow='true' :redirectiontitle="$t('redirection_title_about')" redirection="/about" :redirectiontitle2="$t('redirection_title_services')"
         redirection2="/services" />
 
-      <AbstractAnimation1 />
+      <AbstractAnimation1 /> -->
+      <img src="../assets/img/page1 img1.png" class="h-screen w-full relative top-52" alt="">
+      <div class="absolute ml-2 mb-5 backdrop-blur-sm bg-black/50 flex items-center justify-center p-20  w-3/6 text-5xl">
+        <h1>{{ $t('about_description') }}</h1>
+      </div>
+      <div class="absolute h-full w-full flex items-end justify-end pr-10 mb-10 gap-5">
+        <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
+        <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
+
+        <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
+
+
+      </div>
+      <!-- <div class="relative slide">
+    <div class="carousel-indicators absolute bottom-0 flex bg-yellow-100 h-24 w-full justify-center items-center">
+      <ol class="z-50 flex w-4/12 justify-center">
+        <li v-for="(img, i) in images" :key="i" class="md:w-4 md:h-4 bg-gray-300 rounded-full cursor-pointer mx-2"></li>
+      </ol>
+    </div>
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <div v-for="(img, i) in images" :id="`slide-${i}`" :key="i" :class="`${active === i ? 'active' : 'left-full'}`" class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out">
+        <img class="block w-full" :src="img" alt="First slide" />
+      </div>
+    </div>
+  </div> -->
 
     </div>
 
     <!-- compagny that trust us -->
     <div
-      class="w-full h-three-quart-vh max-2xl:gap-10  flex-col bg-[#DFE5F5] flex max-lg:flex-row gap-32 justify-center items-center">
+      class="w-full h-fifty-vh max-2xl:gap-10  flex-col  flex max-lg:flex-row gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
-      <div class="flex max-lg:flex-col justify-center items-center gap-20 max-2xl:gap-0">
-        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-
-
-      </div>
-
-      <div class="flex justify-center items-center max-lg:flex-col  gap-20 max-2xl:gap-0">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-GE.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-        <img src="../assets/img/Website_Relaunch_Logo2_MP-Electrolux-1.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-        <img src="../assets/img/Website_Relaunch_Logos2_MP-Chick-Fil-A.png" alt="" srcset="" class="w-96 max-2xl:w-72">
-
-
+      <div class="flex max-lg:flex-col justify-center items-center  w-1/2 gap-20 max-2xl:gap-0">
+      <h2 class="text-6xl">
+        {{ $t('about_title') }}
+      </h2>
 
 
       </div>
+
+     
 
     </div>
     <!-- case studies -->
     <div
-      class="h-screen max-2xl:my-20 max-2xl:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <PreviewDetail :firstText="$t('home_title_case')"/>
+      class="h-screen  bg-[#DFE5F5] max-2xl:my-20 max-2xl:h-auto w-full flex  mx-auto  max-2xl:px-16 max-md:px-5 text-black overflow-hidden">
+      <!-- <PreviewDetail :firstText="$t('home_title_case')"/> -->
+      <div class=" h-full w-full flex   ">
+        <div class="w-1/2 h-full flex flex-col justify-center gap-20 px-site-nav">
+          <h2 class="text-6xl">{{ $t('about_title_who_are_we') }}</h2>
+          <p class="text-4xl">{{ $t('about_title_who_are_we_description') }}</p>
+          <p class="text-4xl">{{ $t('about_title_who_are_we_description_2') }}</p>
+          <div class="flex w-full justify-end text-[#0067f4] underline text-2xl">
+            <NuxtLink to="/about"> more</NuxtLink>
+
+          </div>
+        </div>
+        <div class="w-1/2 h-full">
+          <img src="../assets/img/page1 img2.jpg" alt="" srcset="" class="h-full w-full">
+        </div>
+      </div>
+       
     </div>
 
     <!-- preview testomonial -->
-    <div class="h-80 max-2xl:h-auto max-2xl:mb-20 w-full flex mx-auto px-site max-2xl:px-16 max-md:px-5">
-      <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="Andres Engel " :position="$t('testomonial_1_post')"
-        :title="$t('testomonial_1_title')" />
+    <div class="h-fifty-vh max-2xl:h-auto max-2xl:mb-20 w-full flex flex-col mx-auto px-site max-2xl:px-16 max-md:px-5">
+      <!-- <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="Andres Engel " :position="$t('testomonial_1_post')"
+        :title="$t('testomonial_1_title')" /> -->
+        <div>
+          <h2 class="text-6xl">{{ $t('about_title_who_are_we') }}</h2>
+        </div>
+        <div class="flex items-center justify-center gap-10">
+          <div>
+            <img src="../assets/img/Consumer-Demand.png" alt="" srcset="" class="h-32 w-32 ">
+          </div>
+        </div>
+       
+
     </div>
 
     <!-- redirection team -->
@@ -151,9 +209,13 @@ const { locale, setLocale } = useI18n()
     flex-direction: row;
     gap:2px; width:100px;
 } */
+.px-site-nav {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .px-site {
-  padding-left: 34rem;
-  padding-right: 34rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (max-width: 2200px) {
@@ -225,6 +287,9 @@ li {
 
 .h-eighy-vh {
   height: 80vh;
+}
+.h-ninety-vh {
+  height: 90vh;
 }
 
 .h-thirdy-vh {
@@ -310,5 +375,24 @@ html.lenis body {
   /* background: -webkit-linear-gradient(#0067f4, #DFE5F5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+
+
+
+.left-full {
+  left: -100%;
+}
+
+.carousel-item {
+  float: left;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+}
+
+.carousel-item.active {
+  left: 0;
 }
 </style>
