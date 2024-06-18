@@ -71,6 +71,7 @@ const { locale, setLocale } = useI18n()
     
     <!-- <ThePrealoder/> -->
 
+<<<<<<< HEAD
     <div
       class=" h-[85vh] w-full flex items-end    mx-auto  overflow-hidden  ">
 
@@ -227,12 +228,83 @@ const { locale, setLocale } = useI18n()
 
 
     </div>
+=======
+
+  <!-- <h1>Hadsddsha</h1>
+    <h2>contries database</h2> -->
+  <!-- <ul>
+      <div v-if="countries == null">
+        <li></li>
+      </div>
+      <div v-if="countries != null">
+        <li v-for="country in countries.data" :key="country.id">{{ country.name }}</li>
+        <p>{{ countries.data[1] }}</p>
+      </div>
+        
+    </ul> -->
+  <!-- <h2>user info</h2>
+    <p>{{ user.email }}</p>
+
+    <button @click="signOut" class="border-solid border-2 border-sky-500">Logout</button>
+    <span>{{errorMsgSignOut}}</span> -->
+  <!-- <div class="w-screen mx-auto px-32 "> -->
+
+  <!-- home section 1 -->
+  <!-- <div class="h-screen w-screen fixed top-0 left-0 z">
+    <img src="../assets/img/duplo24.jpg" alt="">
+  </div> -->
+  <!-- <div class="h-screen w-screen fixed top-0 left-0 transition z-50 flex" :class="[!isPlay ? hiddenTransition  : '', 'flex']">
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="h-screen w-1/5 bg-red-400 ts">
+
+    </div>
+    <div class="transition-text ">
+      <div class="text-8xl flex">
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span">H</h1>
+        </div>
+
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span ">O</h1>
+        </div>
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span ">M</h1>
+        </div>
+        <div class="transition-text-span-div">
+          <h1  class="transition-text-span">E</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div> -->
+
+
+  <div
+    class="w-full h-fifty-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0 relative z-100 section-1">
+   <Hero/>
+>>>>>>> site3
 
   </div>
 
   <!-- <TransitionComponent /> -->
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> site3
   <!-- section 7 contact redirection -->
 
 
