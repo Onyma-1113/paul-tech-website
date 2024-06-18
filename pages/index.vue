@@ -12,22 +12,10 @@ useHead({
 
 
 
-import { ref, onMounted } from 'vue';
-import Typed from "typed.js";
-const typedRef = ref(null);
 
 
-const clickToUseTyped = () => {
-  if (typedRef.value) {
-    new Typed(typedRef.value, {
-      strings: ["Cloud", "Observability", "Process digitalization", "Cybersecurity", "Artificial Intelligence"],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-      showCursor: false,
-    });
-  }
-};
+
+
 
 let images = [
       "https://picsum.photos/id/237/1024/800",
@@ -35,26 +23,11 @@ let images = [
       "https://picsum.photos/id/239/1024/800"
     ]
 
-let active = 0
 
-const carousel = () =>{
-  let i = 0;
-    setInterval(() => {
-      if (i > images.length - 1) {
-        i = 0;
-      }
-      active = i;
-      i++;
-    }, 2000);
-}
 
 onMounted(() => {
-  clickToUseTyped()
-  typedRef.value = ref.typedRef;
-  cardShowAnimation({ element: '.card-container' })
+ 
 
-
- carousel()
   
 
 
@@ -73,7 +46,7 @@ const { locale, setLocale } = useI18n()
 
 <<<<<<< HEAD
     <div
-      class=" h-[85vh] w-full flex items-end    mx-auto  overflow-hidden  ">
+      class=" h-[100vh] w-full flex items-end    mx-auto  overflow-hidden  ">
 
       <!-- <Hero :title="$t('home_title')"
         :description="$t('home_description')"
@@ -81,8 +54,8 @@ const { locale, setLocale } = useI18n()
         redirection2="/services" />
 
       <AbstractAnimation1 /> -->
-      <img src="../assets/img/page1 img1.png" class="h-full w-full relative top-28" alt="">
-      <div class="absolute ml-2 mb-5 backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-3xl max-2xl:w-4/6 max-2xl:text-3xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
+      <img src="../assets/img/page1 img1.png" class="h-full w-full relative top-24" alt="">
+      <div class="absolute ml-2 mb-5 backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-3xl max-2xl:w-3/6 max-2xl:text-2xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
         <h1>{{ $t('about_description') }}</h1>
       </div>
       <div class="absolute h-full w-full flex items-end justify-end pr-10 mb-10 gap-5">
@@ -110,7 +83,7 @@ const { locale, setLocale } = useI18n()
 
     <!-- compagny that trust us -->
     <div
-      class="w-full h-fifty-vh max-2xl:gap-10  flex-col  flex max-lg:flex-row gap-32 justify-center items-center">
+      class="w-full h-[50vh] max-2xl:gap-10  flex-col  flex max-lg:flex-row gap-32 justify-center items-center">
       <!-- col compagnie that trust us -->
       <div class="flex max-lg:flex-col justify-center items-center  w-1/2 max-2xl:w-4/6  max-lg:w-5/6 gap-20 max-2xl:gap-0">
       <h2 class="text-5xl  max-2xl:text-3xl max-lg:text-2xl">
@@ -125,13 +98,13 @@ const { locale, setLocale } = useI18n()
     </div>
     <!-- case studies -->
     <div
-      class="h-[85vh] who-we-are max-2xl:h-auto bg-[#DFE5F5] max-2xl:my-20  w-full flex  mx-auto    text-black overflow-hidden">
+      class="h-[85vh] who-we-are  bg-[#DFE5F5]   w-full flex  mx-auto    text-black overflow-hidden">
       <!-- <PreviewDetail :firstText="$t('home_title_case')"/> -->
-      <div class=" h-auto w-full flex   ">
-        <div class="w-1/2 h-auto flex flex-col justify-center  gap-10 px-section pt-10 pb-10">
-          <h2 class="text-5xl t-1 max-2xl:text-3xl max-xl:text-2xl  font-bold">{{ $t('about_title_who_are_we') }}</h2>
-          <p class="text-3xl t-2  max-2xl:text-2xl max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description') }}</p>
-          <p class="text-3xl t-2  max-2xl:text-2xl max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description_2') }}</p>
+      <div class=" h-auto max-2xl:h-full w-full flex justify-center items-center  ">
+        <div class="w-1/2 h-auto flex flex-col justify-center  gap-10 px-section  max-2xl:pt-0 max-2xl:pb-0">
+          <h2 class="  max-2xl:text-5xl font-bold">{{ $t('about_title_who_are_we') }}</h2>
+          <p class="text-3xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description') }}</p>
+          <p class="text-3xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description_2') }}</p>
           <div class="flex w-full justify-end text-[#0067f4] underline text-2xl">
             <NuxtLink to="/about"> more</NuxtLink>
 
@@ -347,21 +320,19 @@ const { locale, setLocale } = useI18n()
 
 @media screen and (max-width: 1700px) {
   .px-section{
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.who-we-are{
-  height: 80vh;
-}
+
 .img-who{
   height: auto;
 }
-.t-1{
+/*.t-1{
   font-size: 2em;
-}
-.t-2{
+}*/
+/*.t-2{
   font-size: 1.5em;
-}
+}*/
 }
 
 .svg-icon{
