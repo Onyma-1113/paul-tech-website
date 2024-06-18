@@ -1,6 +1,13 @@
 <template>
     <!-- footer -->
-  <div class="w-screen h-one-quart-vh bg-[#010923] flex justify-between px-20 max-lg:hidden border-t-2">
+ 
+  <div class="w-screen h-one-quart-vh flex justify-center items-center">
+    <span class="italic text-xl">Paultech © 2024</span>
+  </div>
+ 
+ 
+ 
+    <!-- <div class="w-screen h-one-quart-vh bg-[#010923] flex justify-between px-20 max-lg:hidden border-t-2">
     <div class="h-full flex flex-col justify-around">
       <svg id="Layer_1" class="max-2xl:mt-3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height=80px width="80px" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.37 1215.77">
   <defs>
@@ -95,7 +102,7 @@
    
       
 
-  </div>
+  </div> -->
 </template>
 <script setup></script>
 <style scoped>

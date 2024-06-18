@@ -15,13 +15,14 @@ export default defineI18nConfig(() => ({
             redirection_title_candidature: 'APPLICATION',
             // home
             home_title: 'We are a digitalize and transformation consulting firm.',
-            home_description: "Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. Our services help clients fully leverage the benefits of cloud computing, automate their business processes, and maximize the advantages of AI. With our customer-centric approach and commitment to excellence, we are the ideal partner to support your digital transformation.",
+            home_description: "Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. ",
             home_title_case: "OUR RECENT CASE STUDIES",
             // about
             about_title: 'Paultech harnesses the potential of individuals, enterprises, and brands to propel progress within society.',
             about_description: "Leveraging our cross-disciplinary expertise in consulting and experience fields, we facilitate the rapid realization and amplification of our clients growth aspirations.",
             about_title_who_are_we: 'WHO ARE WE',
-            about_title_who_are_we_description: 'Paultech Inc is a leading startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions to modernize and optimize IT environments efficiently and securely. Our services help clients leverage cloud computing, automate business processes, and maximize AI advantages. Driven by our values of humanity, performance, and responsibility, we ensure our solutions meet each clients unique needs, deliver tangible results, and adhere to sustainable and ethical practices.',
+            about_title_who_are_we_description: 'Paultech Inc is a leading startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions to modernize and optimize IT environments efficiently and securely.',
+           about_title_who_are_we_description_2: 'Our services help clients leverage cloud computing, automate business processes, and maximize AI advantages. Driven by our values of humanity, performance, and responsibility, we ensure our solutions meet each clients unique needs, deliver tangible results, and adhere to sustainable and ethical practices.',
             //card reason
             card_reason_title: 'WHY PAULTECH IS DIFFERENT',
             card_reason_sub_title_1: 'Commitment to Transparency',

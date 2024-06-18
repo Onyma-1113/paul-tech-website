@@ -18,7 +18,7 @@
                 <!-- <img src="../assets/img/squares.jpg" alt="" srcset="" class="fixed top-0 left-0 w-screen h-screen z-0"> -->
                 <slot />
       
-                    <ContactRedirection />
+                    
          
                
                   
