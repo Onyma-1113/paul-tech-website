@@ -270,6 +270,7 @@ const { locale, setLocale } = useI18n()
 >>>>>>> site3
 
   </div>
+</div>
 
   <!-- <TransitionComponent /> -->
 
