@@ -44,9 +44,8 @@ const { locale, setLocale } = useI18n()
     
     <!-- <ThePrealoder/> -->
 
-<<<<<<< HEAD
     <div
-      class=" h-[100vh] w-full flex items-end    mx-auto  overflow-hidden  ">
+      class=" h-[80vh] w-full flex items-end   mx-auto   ">
 
       <!-- <Hero :title="$t('home_title')"
         :description="$t('home_description')"
@@ -55,17 +54,17 @@ const { locale, setLocale } = useI18n()
 
       <AbstractAnimation1 /> -->
       <img src="../assets/img/page1 img1.png" class="h-full w-full relative top-24" alt="">
-      <div class="absolute ml-2 mb-5 backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-3xl max-2xl:w-3/6 max-2xl:text-2xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
+      <div class="absolute ml-2  backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-3xl max-2xl:w-3/6 max-2xl:text-2xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
         <h1>{{ $t('about_description') }}</h1>
       </div>
-      <div class="absolute h-full w-full flex items-end justify-end pr-10 mb-10 gap-5">
+      <!-- <div class="absolute h-full w-full flex items-end justify-end mr-96 mb-10 gap-5 ">
         <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
         <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
 
         <NuxtLink to="https://www.instagram.com/"> <img src="../assets/img/pngwing.com (1).png" alt="" srcset="" class="h-10"></NuxtLink>
 
 
-      </div>
+      </div> -->
       <!-- <div class="relative slide">
     <div class="carousel-indicators absolute bottom-0 flex bg-yellow-100 h-24 w-full justify-center items-center">
       <ol class="z-50 flex w-4/12 justify-center">
@@ -98,31 +97,31 @@ const { locale, setLocale } = useI18n()
     </div>
     <!-- case studies -->
     <div
-      class="h-[85vh] who-we-are  bg-[#DFE5F5]   w-full flex  mx-auto    text-black overflow-hidden">
+      class="h-[85vh] who-we-are  bg-[#DFE5F5]   w-full flex  mx-auto    text-black overflow-hidden ">
       <!-- <PreviewDetail :firstText="$t('home_title_case')"/> -->
       <div class=" h-auto max-2xl:h-full w-full flex justify-center items-center  ">
-        <div class="w-1/2 h-auto flex flex-col justify-center  gap-10 px-section  max-2xl:pt-0 max-2xl:pb-0">
-          <h2 class="  max-2xl:text-5xl font-bold">{{ $t('about_title_who_are_we') }}</h2>
-          <p class="text-3xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description') }}</p>
-          <p class="text-3xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description_2') }}</p>
+        <div class="w-1/2 h-auto flex flex-col justify-center  gap-10 px-site  max-2xl:pt-0 max-2xl:pb-0">
+          <h2 class="text-4xl  max-2xl:text-5xl font-bold">{{ $t('about_title_who_are_we') }}</h2>
+          <p class="text-2xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description') }}</p>
+          <p class="text-2xl t-2  max-2xl:text-base max-xl:text-xl leading-relaxed">{{ $t('about_title_who_are_we_description_2') }}</p>
           <div class="flex w-full justify-end text-[#0067f4] underline text-2xl">
             <NuxtLink to="/about"> more</NuxtLink>
 
           </div>
         </div>
         <div class="w-1/2 h-full">
-          <img src="../assets/img/page1 img2.jpg" alt="" srcset="" class=" h-full  w-full ">
+          <img src="../assets/img/page1 img2.jpg" alt="" srcset="" class=" object-contain h-full w-full relative mb-96 ">
         </div>
       </div>
        
     </div>
 
    
-    <div class="h-eighy-vh px-section max-2xl:h-auto max-2xl:mb-20 w-full flex flex-col justify-around mx-auto  max-2xl:px-16 max-md:px-5">
+    <div class="h-eighy-vh px-site max-2xl:h-auto max-2xl:mb-20 w-full flex flex-col justify-around mx-auto  max-2xl:px-16 max-md:px-5">
       <!-- <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="Andres Engel " :position="$t('testomonial_1_post')"
         :title="$t('testomonial_1_title')" /> -->
         <div>
-          <h2 class="text-5xl t-1 font-bold">{{ $t('preview_service_title') }}</h2>
+          <h2 class="text-5xl t-1 font-bold ">{{ $t('preview_service_title') }}</h2>
         </div>
         <div class="flex items-center justify-center gap-10 text-4xl h-1/2 ">
           <!-- cloud -->
@@ -185,7 +184,7 @@ const { locale, setLocale } = useI18n()
     <!-- redirection team -->
     <!-- avant c etait h-fifty-vh -->
     <div
-      class="w-full  h-eighy-vh   max-2xl:h-auto  max-2xl:mb-20 bg-[#DFE5F5]  text-black flex flex-col  gap-10 justify-center items-center">
+      class="w-full  h-eighy-vh px-site   max-2xl:h-auto  max-2xl:mb-20 bg-[#DFE5F5]  text-black flex flex-col  gap-10 justify-center items-center">
 
     <p class="text-5xl  max-2xl:text-3xl max-lg:text-2xl w-4/6 text-center italic leading-relaxed">{{ $t('testomonial_about_title') }}</p>
     <div class="w-full h-1/2 flex flex-col justify-center items-center gap-2">
@@ -201,7 +200,7 @@ const { locale, setLocale } = useI18n()
 
 
     </div>
-=======
+
 
   <!-- <h1>Hadsddsha</h1>
     <h2>contries database</h2> -->
@@ -264,21 +263,13 @@ const { locale, setLocale } = useI18n()
   </div> -->
 
 
-  <div
-    class="w-full h-fifty-vh flex flex-col justify-center gap-20 items-start max-2xl:gap-10 max-sm:items-center transition-wait opacity-0 relative z-100 section-1">
-   <Hero/>
->>>>>>> site3
-
-  </div>
+ 
 </div>
 
   <!-- <TransitionComponent /> -->
 
-<<<<<<< HEAD
-
-=======
   
->>>>>>> site3
+
   <!-- section 7 contact redirection -->
 
 
@@ -318,6 +309,10 @@ const { locale, setLocale } = useI18n()
   padding-left: 10rem;
   padding-right: 10rem;
 }
+.px-site {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 
 @media screen and (max-width: 1700px) {
   .px-section{
@@ -343,16 +338,10 @@ const { locale, setLocale } = useI18n()
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.px-site {
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
+
 
 @media screen and (max-width: 2200px) {
-  .px-site {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
+
 }
 
 @media screen and (max-width: 1800px) {
@@ -364,15 +353,15 @@ const { locale, setLocale } = useI18n()
 
 @media screen and (max-width: 1600px) {
   .px-site {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .px-site {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
