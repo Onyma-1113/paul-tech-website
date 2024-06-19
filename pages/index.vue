@@ -54,7 +54,7 @@ const { locale, setLocale } = useI18n()
 
       <AbstractAnimation1 /> -->
       <img src="../assets/img/page1 img1.png" class="h-full w-full relative top-24" alt="">
-      <div class="absolute ml-2  backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-3xl max-2xl:w-3/6 max-2xl:text-2xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
+      <div class="absolute ml-2  backdrop-blur-sm bg-black/50 flex items-center justify-center p-10  w-3/6 text-4xl max-2xl:w-3/6 max-2xl:text-2xl max-xl:text-2xl max-lg:text-xl max-lg:p-10">
         <h1>{{ $t('about_description') }}</h1>
       </div>
       <!-- <div class="absolute h-full w-full flex items-end justify-end mr-96 mb-10 gap-5 ">
@@ -110,7 +110,7 @@ const { locale, setLocale } = useI18n()
           </div>
         </div>
         <div class="w-1/2 h-full">
-          <img src="../assets/img/page1 img2.jpg" alt="" srcset="" class=" object-contain h-full w-full relative mb-96 ">
+          <img src="../assets/img/page1 img2.jpg" alt="" srcset="" class=" h-full w-full relative mb-96 ">
         </div>
       </div>
        
@@ -121,7 +121,7 @@ const { locale, setLocale } = useI18n()
       <!-- <CardTestimonial2 image="/_nuxt/assets/img/Prophet_Website22_Logos_MeUndies-white-2-600x121.webp" name="Andres Engel " :position="$t('testomonial_1_post')"
         :title="$t('testomonial_1_title')" /> -->
         <div>
-          <h2 class="text-5xl t-1 font-bold ">{{ $t('preview_service_title') }}</h2>
+          <h2 class="text-4xl t-1 font-bold ">{{ $t('preview_service_title') }}</h2>
         </div>
         <div class="flex items-center justify-center gap-10 text-4xl h-1/2 ">
           <!-- cloud -->
@@ -186,7 +186,7 @@ const { locale, setLocale } = useI18n()
     <div
       class="w-full  h-eighy-vh px-site   max-2xl:h-auto  max-2xl:mb-20 bg-[#DFE5F5]  text-black flex flex-col  gap-10 justify-center items-center">
 
-    <p class="text-4xl  max-2xl:text-3xl max-lg:text-2xl w-4/6 text-center italic leading-relaxed">{{ $t('testomonial_about_title') }}</p>
+    <p class="text-5xl  max-2xl:text-3xl max-lg:text-2xl w-4/6 text-center italic leading-relaxed">{{ $t('testomonial_about_title') }}</p>
     <div class="w-full h-1/2 flex flex-col justify-center items-center gap-2">
       <p class="font-bold text-lg">Michael Dunn</p>
       <p class="text-lg"> {{ $t('testomonial_2_post') }}</p>

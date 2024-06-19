@@ -1,7 +1,7 @@
 <template>
     <!-- footer -->
  
-  <div class="w-screen h-one-quart-vh flex justify-center items-center">
+  <div class="w-screen h-one-quart-vh flex justify-center items-center border-t-2 border-white">
     <span class="italic text-xl">Paultech © 2024</span>
   </div>
  

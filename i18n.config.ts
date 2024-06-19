@@ -15,7 +15,7 @@ export default defineI18nConfig(() => ({
             redirection_title_candidature: 'APPLICATION',
             // home
             home_title: 'We are a digitalize and transformation consulting firm.',
-            home_description: "Paultech Inc. is a startup specializing in process digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. ",
+            home_description: "Paultech Inc. is a startup specializing in process  digitalization, AI, observability, and cloud adoption. We offer innovative solutions that enable businesses to modernize and optimize their IT environments efficiently and securely. ",
             home_title_case: "OUR RECENT CASE STUDIES",
             // about
             about_title: 'Paultech harnesses the potential of individuals, enterprises, and brands to propel progress within society.',
