@@ -102,7 +102,7 @@ export default defineI18nConfig(() => ({
 
             canditature_subtitle_perso: "Personal Information",
             canditature_first_name: 'First name',
-            canditature_last_name: 'Last name',
+            canditature_last_name: 'Last name and first name',
             canditature_email: 'Email',
             canditature_phone: 'Phone',
             canditature_postal: 'Postal code',
@@ -281,7 +281,7 @@ export default defineI18nConfig(() => ({
 
 
             canditature_first_name: 'Prenom',
-            canditature_last_name: 'Nom',
+            canditature_last_name: 'Nom et prénom',
             canditature_email: 'Courriel',
             canditature_phone: 'Teléphone',
 
