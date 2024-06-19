@@ -186,7 +186,7 @@ const { locale, setLocale } = useI18n()
     <div
       class="w-full  h-eighy-vh px-site   max-2xl:h-auto  max-2xl:mb-20 bg-[#DFE5F5]  text-black flex flex-col  gap-10 justify-center items-center">
 
-    <p class="text-5xl  max-2xl:text-3xl max-lg:text-2xl w-4/6 text-center italic leading-relaxed">{{ $t('testomonial_about_title') }}</p>
+    <p class="text-4xl  max-2xl:text-3xl max-lg:text-2xl w-4/6 text-center italic leading-relaxed">{{ $t('testomonial_about_title') }}</p>
     <div class="w-full h-1/2 flex flex-col justify-center items-center gap-2">
       <p class="font-bold text-lg">Michael Dunn</p>
       <p class="text-lg"> {{ $t('testomonial_2_post') }}</p>
