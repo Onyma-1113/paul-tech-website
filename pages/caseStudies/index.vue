@@ -2,11 +2,13 @@
     <!-- <TransitionComponent/> -->
     <div class="">
       
-        <div class="max-lg:pt-0 h-eighy-vh  pt-24 w-full flex items-center  mx-auto px-site max-2xl:px-16 max-md:px-5">
-            <HeroPage :title="$t('case_studies_title')"></HeroPage>
-          </div>
+      <div
+      class="s1 max-lg:flex-col max-lg:pt-28 max-lg:h-auto  h-[40vh]  pt-56 w-full flex items-center  mx-auto  max-2xl:px-16 max-md:px-5 overflow-hidden">
+      <HeroPage title="CASE STUDIES" img="/_nuxt/assets/img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" />
+
+    </div>
      <!-- case studies -->
-<div class="h-eigthy-vh max-lg:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
+<div class="h-auto max-lg:h-auto w-full flex items-center mx-auto px-site max-2xl:px-16 max-md:px-5">
     <CaseStudies firstText="All our cases studies"/>
   </div>
 

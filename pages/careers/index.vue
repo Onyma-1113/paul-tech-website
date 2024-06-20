@@ -12,6 +12,12 @@
                  
         </div>
 
+      <!--   <div
+      class="s1 max-lg:flex-col max-lg:pt-28 max-lg:h-auto  h-[40vh]  pt-56 w-full flex items-center  mx-auto  max-2xl:px-16 max-md:px-5 overflow-hidden">
+      <HeroPage title="CAREERS" img="/_nuxt/assets/img/cytonn-photography-n95VMLxqM2I-unsplash.jpg" />
+
+    </div> -->
+
 
         <div class="h-auto  w-full flex flex-col pb-56 gap-52 mx-auto px-site max-2xl:px-16 max-md:px-5">
 <div class="card-career opacity-0" >

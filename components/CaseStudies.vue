@@ -12,14 +12,14 @@
     
     <!-- les autre case studies -->
     <h2 class="text-4xl font-bold pt-56 pb-36 max-2xl:text-5xl max-md:text-4xl ">{{ $t('case_studies_description') }}</h2>
-    <div class="w-full h-auto flex flex-wrap justify-between items-center gap-5 mt-10 max-lg:hidden">
+    <div class="w-full h-auto flex flex-wrap justify-between items-center gap-10 mt-10 max-lg:hidden">
         
        <div class="h-1/2 w-40-percent flex  flex-col justify-center hover:text-[#0067F4]  duration-300 cursor-pointer">
         <NuxtLink :to="`/caseStudies/4`">
         <div class="flex gap-2 flex-col">
-            <img src="../assets/img/students-socialising-lobby-modern-university-287596.jpg" alt="" class="h-full w-full img-p-2 rounded-lg">
-        <h2 class="font-bold">{{$t('case_title_type_4')}}</h2>
-        <p>{{$t('case_title_4')}} </p>
+            <img src="../assets/img/students-socialising-lobby-modern-university-287596.jpg" alt="" class="h-full w-full img-p-2 rounded-3xl">
+        <h2 class="font-bold text-2xl">{{$t('case_title_type_4')}}</h2>
+        <p class="text-xl">{{$t('case_title_4')}} </p>
         </div>
       
     </NuxtLink>
@@ -30,9 +30,9 @@
         <NuxtLink :to="`/caseStudies/3`">
         
         <div class="flex gap-2 flex-col">
-            <img src="../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-full w-full img-p-2 rounded-lg">
-        <h2 class="font-bold">{{$t('case_title_type_3')}}</h2>
-        <p>{{ $t('case_title_3') }}</p>
+            <img src="../assets/img/Cybersecurity Definition What is this Field all About.png" alt="" class="h-full w-full img-p-2 rounded-3xl">
+        <h2 class="font-bold text-2xl">{{$t('case_title_type_3')}}</h2>
+        <p class="text-xl">{{ $t('case_title_3') }}</p>
         </div>
     </NuxtLink>
        </div>
@@ -41,9 +41,9 @@
         <NuxtLink :to="`/caseStudies/1`">
         
         <div class="flex gap-2 flex-col">
-            <img src="../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full img-p-2 rounded-lg">
-            <h2 class="font-bold">{{$t('case_title_type_1')}}</h2>
-        <p>{{$t('case_title_1')}} </p>
+            <img src="../assets/img/Finance-Process-Management-Systems.webp" alt="" class="h-full w-full img-p-2 rounded-3xl">
+            <h2 class="font-bold text-2xl">{{$t('case_title_type_1')}}</h2>
+        <p class="text-xl">{{$t('case_title_1')}} </p>
         </div>
     </NuxtLink>
        </div>
@@ -51,9 +51,9 @@
         <NuxtLink :to="`/caseStudies/2`">
       
         <div class="flex gap-2 flex-col">
-            <img  src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-1/2 w-full img-p-2  rounded-lg">          
-            <h2 class="font-bold">{{$t('case_title_type_2')}}</h2>
-            <p>{{$t('case_title_2')}} </p>
+            <img  src="../assets/img/shutterstock_493599385_3812840d1c.jpg" alt="" class="h-1/2 w-full img-p-2  rounded-3xl">          
+            <h2 class="font-bold text-2xl">{{$t('case_title_type_2')}}</h2>
+            <p class="text-xl">{{$t('case_title_2')}} </p>
         </div>
         
     </NuxtLink>
